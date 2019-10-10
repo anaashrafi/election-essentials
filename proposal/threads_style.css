@@ -1,9 +1,11 @@
-﻿*
+﻿/* Makes everything touch the edges of the screen*/
+*
 {
 	margin: 0;
 	padding: 0;
 }
 
+/* Background Image*/
 header
 {
 	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(background.jpg);
