@@ -1,0 +1,150 @@
+/* Makes everything touch the edges of the screen*/
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* Background Image*/
+header
+{
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(background.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position:center;
+}
+/*Makes our tabs centered on screen*/
+.table{
+	display: table;
+	margin: 0 auto;
+	/*margin-top: 25px;*/
+}
+
+
+/*Makes our ordered list into horizontal tabs*/
+.nav-tabs li
+{
+	display: inline-block;
+	margin-top: 25px;
+}
+
+/*tabs text formatting*/
+.nav-tabs li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	transition: 0.45s ease;
+}
+
+/*Shows that the home page is the active page atm*/
+.nav-tabs li.active-tab a
+{
+	border: 1px solid white;	/*Creates border around HOME*/
+}
+
+.nav-tabs a:hover{
+	background-color: white;
+	color: black;
+}
+
+/*Positioning of the title*/
+.title{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 355px);
+	z-index: 2;
+}
+
+/*Text settings for the title*/
+.title div{
+	float: left;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 40px;
+	font-weight: 200;
+}
+
+.title div span{
+	color: #3e6de5 !important;
+}
+
+/*Login positioning*/
+.login{
+	position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% + 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+}
+
+/*Login username settings*/
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+/*Login password settings*/
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+/*Login button settings*/
+.login input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
