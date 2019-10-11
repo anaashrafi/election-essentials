@@ -1,0 +1,71 @@
+		/*Style for overall card layout*/
+		#cards {
+			width: 60%;
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 20px;
+			
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 120px); /*auto fills columns so it adapts to window size*/
+			grid-gap: 20px;
+			justify-content: center;
+		}
+		
+		/*Style for the individual cards*/
+		.candidate-card {
+			padding: 10px;
+			border-radius: 10px;
+			display: grid;
+			grid-template-areas: 'picture' 'name';
+			grid-columns: 100px;
+			
+			grid-template-rows: 100px 2em;
+			box-shadow: -5px 5px 5px gray;
+		}
+		
+		/*For candidate pictures, just pulling from twitter for now*/
+		.candidate-picture {
+			grid-area: picture;
+		}
+
+		img {
+			height: 100px;
+			width: 100px;
+			border-radius: 10px;
+		}
+		
+		/*Candidate name text*/
+		.candidate-name {
+			margin-top: 10px;
+			font-size: 15px;
+			grid-area: name;
+			text-align: center;
+		}
+		
+		/*Differentiating candidates by party*/
+		.republican {
+			background-color: rgb(236, 196, 196);
+			border-color: red;
+		}
+		.democrat {
+			background-color: rgb(205, 227, 239);
+			border-color: blue;
+		}
+		
+		/*May be changed, currently for candidate names in mind. No text underline hover*/
+		a:link { 
+			color: #000000; 
+			text-decoration: none
+		}
+		a:visited { 
+			color: #000000; 
+			text-decoration: none
+		}
+		a:hover { 
+			color: #3366CC; 
+			text-decoration: underline
+		}
+		a:active { 
+			color: #000000; 
+			text-decoration: none
+		}
