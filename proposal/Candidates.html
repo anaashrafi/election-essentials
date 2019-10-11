@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Election Essentials</title>
+	<link href="threads_style.css" rel="stylesheet" type="text/css">
+	
+	<style>
+	
+		/*Style for overall card layout*/
+		#cards {
+			width: 60%;
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 20px;
+			
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 120px); /*auto fills columns so it adapts to window size*/
+			grid-gap: 20px;
+			justify-content: center;
+		}
+		
+		/*Style for the individual cards*/
+		.candidate-card {
+			padding: 10px;
+			border-radius: 10px;
+			display: grid;
+			grid-template-areas: 'picture' 'name';
+			grid-columns: 100px;
+			
+			grid-template-rows: 100px 2em;
+			box-shadow: -5px 5px 5px gray;
+		}
+		
+		/*For candidate pictures, just pulling from twitter for now*/
+		.candidate-picture {
+			grid-area: picture;
+		}
+
+		img {
+			height: 100px;
+			width: 100px;
+			border-radius: 10px;
+		}
+		
+		/*Candidate name text*/
+		.candidate-name {
+			margin-top: 10px;
+			font-size: 15px;
+			grid-area: name;
+			text-align: center;
+		}
+		
+		/*Differentiating candidates by party*/
+		.republican {
+			background-color: rgb(236, 196, 196);
+			border-color: red;
+		}
+		.democrat {
+			background-color: rgb(205, 227, 239);
+			border-color: blue;
+		}
+		
+		/*May be changed, currently for candidate names in mind. No text underline hover*/
+		a:link { 
+			color: #000000; 
+			text-decoration: none
+		}
+		a:visited { 
+			color: #000000; 
+			text-decoration: none
+		}
+		a:hover { 
+			color: #3366CC; 
+			text-decoration: underline
+		}
+		a:active { 
+			color: #000000; 
+			text-decoration: none
+		}
+	</style>
+	
+</head>
+
+<body>
+	<header>
+
+		<div class ="table">
+			<ul class ="nav-tabs">
+				<li><a href=""> HOME </a></li> <!-- class="active-tab" means this is the page the user is currently on-->
+				<li class="active-tab"><a href="Candidates.html"> CANDIDATES </a></li>
+				<li><a href=""> VOTER INFORMATION </a></li>
+				<li><a href=""> MY PROFILE </a></li>
+				<li><a href="login.html"> LOGIN </a></li>
+				<li><a href=""> ABOUT </a></li>
+			</ul>
+		</div>
+		
+		<div id="cards"> <!---cards are a href to make the whole thing clickable --->
+			<a href="" class="candidate-card democrat">
+				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1175087314458034177/TgjtVgfG_400x400.png" alt="Joe Biden"></img></div>
+				<div class="candidate-name">Joe Biden</div>
+			</a>
+
+			<a href="" class="candidate-card democrat">
+				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1097820307388334080/9ddg5F6v_400x400.png" alt="Bernie Sanders" height="100px"></img></div>
+				<div class="candidate-name">Bernie Sanders</div>
+			</a>
+
+			<a href="" class="candidate-card republican">
+				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg" alt="Donald Trump"></img></div>
+				<div class="candidate-name">Donald Trump</div>
+			</a>						
+		</div>
+	</header>
+	
+
+	
+</body>
+</html>
