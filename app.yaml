@@ -7,6 +7,6 @@ handlers:
   static_files: proposal/threads.html
   upload: proposal/threads.html
 
-- url: /(.*)
-  static_files: www/\1
-  upload: www/(.*)
+- url: /
+  static_dir: proposal
+  
