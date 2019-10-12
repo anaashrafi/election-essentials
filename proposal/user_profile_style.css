@@ -6,17 +6,12 @@
 }
 
 /* Background Image*/
-header
+body
 {
-	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://github.com/anaashrafi/Election-Essentials/blob/master/proposal/background.jpg?raw=true);
-  display:grid;
-  height: 1600px;
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(background.jpg);
+	height: 100vh;
 	background-size: cover;
 	background-position:center;
-  grid-template-columns: 0.1fr 1fr 0.1fr;
-  grid-template-rows: 0.1fr;
-  align-items:center;
-  justify-content: center;
 }
 /*Makes our tabs centered on screen*/
 .table{
@@ -61,14 +56,14 @@ header
 
 #essentialsForeground
 {
+  margin-top: 20px;
+  padding-bottom: 2em;
   display:grid;
-  grid-column-start:2;
-  grid-column-end:3;
-  grid-row-start:2;
-  width:100%;
+  width:70%;
+  margin-left: 15%;
+  margin-right: 15%;
   height:80%;
   background: rgba(225, 225, 225, .8);
-  grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
   grid-template-rows: 0.1fr repeat(auto-fill, 100px);
   align-items:center;
 }
@@ -76,7 +71,7 @@ header
 .title
 {
   grid-row-start:1;
-  grid-column-start:2;
+  grid-column-start:1;
   grid-column-end:4;
   font-size: 50px;
   width:100%;
@@ -85,7 +80,6 @@ header
 }
 
 .checkBoxWrapper{
-  padding-left:45%;
   display:grid;
   grid-template-column: 1fr 1fr;
   justify-content: left;
@@ -104,11 +98,12 @@ header
 
 #bookmarksForeground
 {
+  margin-top: 20px;
+  padding-bottom: 2em;
   display:grid;
-  grid-column-start:2;
-  grid-column-end:3;
-  grid-row-start:3;
-  width:100%;
+  width:70%;
+  margin-left: 15%;
+  margin-right: 15%;
   height:80%;
   background: rgba(225, 225, 225, .8);
   grid-template-rows: 0.1fr repeat(auto-fill, 100px);
