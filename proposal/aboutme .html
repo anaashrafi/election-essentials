@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="/javascripts/git.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function DoStuff(){
+        var myMap = new Map();
+
+        // setting the values
+        myMap.set("ple", "Phat Le");
+        myMap.set("anaashrafi", "Ana Ashrafi");
+        myMap.set("austinduong", "Austin Duong");
+        myMap.set("RoyceHong", "Royce Hong");
+        myMap.set("adridutta", "Adri Dutta");
+        myMap.set("GeorgeZhang98", "George Zhang");
+
+        var x = document.getElementById("foo");
+        var obj = $.getJSON('https://api.github.com/repos/anaashrafi/Election-Essentials/contributors',
+            function(data, err) {
+                if (err !== "success") {
+                 //   x.innerHTML = "Err";
+                 } else {
+                  // x.innerHTML = "No Err";
+                }
+                //TODO
+           
+        var repos = data;
+        $(repos).each(function() {
+            if(myMap.has(this.login)){
+                var output = "<ul>"; 
+                output += "<li>Commits: " + this.contributions + 
+                    "<li>Issues: 0" +
+                        "<li>Test Cases 0" + 
+                "</li></li></li>";
+                output += "</ul>";
+                document.getElementById(myMap.get(this.login)+"-stats").innerHTML=output; 
+            }
+        });  
+
+          
+        });
+    }
+</script>
+<head>
+    <meta charset="utf-8" />
+    <title>Election Essentials</title>
+</head>
+
+<body onload="DoStuff()">
+	<header>
+    <h1> About Me </h1>
+    <p id = "foo"></p>
+    <h2>Group Members</h2>
+    <div id = "Ana Ashrafi">
+        <h3>Ana Ashrafi</h3>
+        <p>Major: Electrical and Computer Engineering
+        <br>Responsibilities: Candidate Profiles</p>
+        <img src = "Hairy.png"> <img>
+        <p>Ana is a third year ECE major at the University of Texas at Austin. In her free time, she serves as the Vice President of the Student Engineering Council and plays soccer with her friends!
+               </p>
+        <div id = "Ana Ashrafi-stats"></div>
+    </div>
+    <div id = "Adri Dutta">
+        <h3>Adri Dutta</h3>
+        <p>Major: Electrical and Computer Engineering
+        <br>Responsibilities: </p>
+        <img src = "Hairy.png"> <img>
+        <p>Adri is a senior at the University of Texas at Austin. During his free time he likes to watch competitive League of Legends and basketball.
+             </p>
+        <div id = "Adri Dutta-stats"></div>
+    </div>
+    <div id = "Austin Duong">
+        <h3>Austin Duong</h3>
+        <p>Major: Electrical and Computer Engineering
+        <br>Responsibilities: </p>
+        <img src = "Hairy.png"> <img>
+        <p>Austin is a third-year ECE major at the University of Texas at Austin. In his spare time, he likes playing video games and browsing memes.
+        </p>
+        <div id = "Austin Duong-stats"></div>
+    </div>
+    <div id = "George Zhang">
+        <h3>George Zhang</h3>
+        <p>Major: Electrical and Computer Engineering
+        <br>Responsibilities: </p>
+        <img src = "Hairy.png"> <img>
+        <p>
+        </p>
+        <div id = "George Zhang-stats"></div>
+    </div>
+    <div id = "Phat Le">
+        <h3>Phat Le</h3>
+        <p>Major: Electrical and Computer Engineering
+        <br>Responsibilities: </p>
+        <img src = "Hairy.png"> <img>
+        <p>
+        </p>
+        <div id = "Phat Le-stats"></div>
+    </div>
+    <div id = "Royce Hong">
+        <h3>Royce Hong</h3>
+        <p>Major: Electrical and Computer Engineering
+        <br>Responsibilities: </p>
+        <img src = "Hairy.png"> <img>
+        <p>
+        </p>
+        <div id = "Royce Hong-stats"></div>
+    </div>
+	</header>
+</body>
+
+
+</html>
