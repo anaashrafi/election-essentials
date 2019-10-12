@@ -49,7 +49,7 @@ header
 .nav-tabs li.active-tab a
 {
 	border: 1px solid white;	/*Creates border around HOME*/
-  
+
 }
 
 .nav-tabs a:hover{
@@ -89,7 +89,7 @@ header
   display:grid;
   grid-template-column: 1fr 1fr;
   justify-content: left;
-  align-items: center; 
+  align-items: center;
   grid-column-gap:3%;
 }
 
@@ -127,7 +127,7 @@ header
   display:grid;
   grid-template-column: 1fr 1fr;
   justify-content: left;
-  align-items: center; 
+  align-items: center;
   grid-column-gap:3%;
   width:100%;
 }
