@@ -118,7 +118,6 @@ body
 }
 
 .bookmarkWrapper{
-  padding-left:14%;
   display:grid;
   grid-template-column: 1fr 1fr;
   justify-content: left;

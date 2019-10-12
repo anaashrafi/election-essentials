@@ -6,18 +6,12 @@
 }
 
 /* Background Image*/
-header
+body
 {
-	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://github.com/anaashrafi/Election-Essentials/blob/master/proposal/background.jpg?raw=true);
-  display:grid;
-  height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(background.jpg);
+	height: 100vh;
 	background-size: cover;
 	background-position:center;
-  grid-template-columns: 0.1fr 1fr 0.1fr;
-  grid-template-rows: 0.1fr 1fr;
-  grid-row-gap:20px;
-  align-items:center;
-  justify-content: center;
 }
 /*Makes our tabs centered on screen*/
 .table{
@@ -50,7 +44,7 @@ header
 .nav-tabs li.active-tab a
 {
 	border: 1px solid white;	/*Creates border around HOME*/
-  
+
 }
 
 .nav-tabs a:hover{
@@ -62,6 +56,8 @@ header
 
 #foreground
 {
+	margin-top: 20px;
+  padding-bottom: 2em;
   display:grid;
   grid-column-start:2;
   grid-column-end:3;
@@ -90,7 +86,7 @@ header
   display:grid;
   grid-template-column: 1fr 1fr;
   justify-content: left;
-  align-items: center; 
+  align-items: center;
   grid-column-gap:3%;
 }
 
