@@ -22,6 +22,9 @@
 			grid-template-rows: 100px 2em;
 			box-shadow: -5px 5px 5px gray;
 		}
+		.candidate-card:hover {
+			opacity: 0.9;
+		}
 		
 		/*For candidate pictures, just pulling from twitter for now*/
 		.candidate-picture {
