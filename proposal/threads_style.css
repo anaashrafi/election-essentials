@@ -49,3 +49,9 @@ header
 	background-color: white;
 	color: black;
 }
+
+.samplearticles{
+	display: table;
+	margin: auto;
+	margin-top: 300px;
+}
