@@ -24,30 +24,15 @@
 		<!-- temporary "articles" that will link to expanded articles when clicked -->
 		<div class ="samplearticles">
 
-			<button id="article1" type="button">News Article 1</button>
-				<script type="text/javascript">
-					document.getElementById("article1").onclick = function () {
-						location.href = "expanded_article_1.html";										// Change this to the expanded article page 1.html
-					};
-				</script>
-			<br>
-
-			<button id="article2" type="button">News Article 2</button>
-				<script type="text/javascript">
-					document.getElementById("article2").onclick = function () {
-						location.href = "expanded_article_2.html";										// Change this to the expanded article page 2.html
-					};
-				</script>
-			<br>
-
-			<button id="article3" type="button">News Article 3</button>
-				<script type="text/javascript">
-					document.getElementById("article3").onclick = function () {
-						location.href = "expanded_article_3.html";										// Change this to the expanded article page 3.html
-					};
-				</script>
-			<br>
-
+			<a href="expanded_article_1.html" class="article">
+				<div class="article-name">Sample Article 1</div>
+			</a>
+			<a href="expanded_article_2.html" class="article">
+				<div class="article-name">Sample Article 2</div>
+			</a>
+			<a href="expanded_article_3.html" class="article">
+				<div class="article-name">Sample Article 3</div>
+			</a>
 		</div>
 
 	</header>

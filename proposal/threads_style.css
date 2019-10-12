@@ -50,8 +50,37 @@ header
 	color: black;
 }
 
+/*CSS for articles*/
 .samplearticles{
 	display: table;
 	margin: auto;
 	margin-top: 300px;
+}
+.article {
+	background-color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 5px;
+	height: 2em;
+	width: max(150px,auto);
+	border-radius: 5px;
+	display: block;
+	box-shadow: -5px 5px 5px gray;
+}
+/*Currently for article title in mind. No text underline until hover*/
+a.article:link { 
+	color: #000000; 
+	text-decoration: none
+}
+a.article:visited { 
+	color: #000000; 
+	text-decoration: none
+}
+a.article:hover { 
+	color: #3366CC; 
+	text-decoration: underline
+}
+a.article:active { 
+	color: #000000; 
+	text-decoration: none
 }
