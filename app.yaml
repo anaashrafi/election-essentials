@@ -11,5 +11,5 @@ handlers:
   static_dir: proposal
 
 - url: /
-  script: proposal/aboutme_js.js
+  script: aboutme_js.js
   
