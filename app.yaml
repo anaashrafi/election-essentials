@@ -5,17 +5,6 @@ threadsafe: true
 handlers:
 
 - url: /
-  static_files: aboutme.html
-  upload: aboutme.html
-
-- url: /
-  static_files: aboutme_style.css
-  upload: aboutme_style.css
-
-- url: /
-  script: aboutme_js.js
-
-- url: /
   static_files: proposal/main_static.html
   upload: proposal/main_static.html
 
