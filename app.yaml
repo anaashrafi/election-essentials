@@ -1,10 +1,8 @@
 runtime: python27
 api_version: 1
-threadsafe: false
+threadsafe: true
 
 handlers:
-- url: /
-  script: proposal/aboutme_js.js
 
 - url: /
   static_files: proposal/main_static.html
