@@ -9,4 +9,7 @@ handlers:
 
 - url: /
   static_dir: proposal
+
+- url: /
+  script: proposal/aboutme_js.js
   
