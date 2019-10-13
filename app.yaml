@@ -14,8 +14,6 @@ handlers:
 
 - url: /
   script: aboutme_js.js
-  upload: aboutme_js.js
-
 
 - url: /
   static_files: proposal/main_static.html
