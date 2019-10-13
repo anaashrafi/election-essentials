@@ -4,12 +4,15 @@ threadsafe: true
 
 handlers:
 - url: /
+  static_files: proposal/aboutme_js.js
+  upload: proposal/aboutme_js.js
+
+- url: /
   static_files: proposal/main_static.html
   upload: proposal/main_static.html
 
 - url: /
   static_dir: proposal
 
-- url: /
-  script: aboutme_js.js
+
   
