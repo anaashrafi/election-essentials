@@ -6,6 +6,7 @@
       $statement = "Select article_name FROM books";
       $statement->execute();
       $all = $statement->fetchAll();
+      echo "something is something";
       foreach ($all as $data)
       {
 	echo $data["article_name"]."<br>";
