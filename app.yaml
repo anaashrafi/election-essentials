@@ -1,7 +1,6 @@
 runtime: php55
 api_version: 1
 threadsafe: true
-application: backend-256601
 version: v1
 
 handlers:
