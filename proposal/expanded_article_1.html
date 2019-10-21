@@ -8,16 +8,14 @@
 
 
   <?php
-      $dbServername = "database";
-      $dbUsername = "duttaadri2014@gmail.com";
-      $dbPassword = "D6qs1FPzuOdE6JFu";
-      $dbName = "books";
-      $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
-
-      $sql = "SELECT * FROM users;";
-      $results = mysqli_query($conn, $sql);
-
-      $row = mysqli_fetch_assoc($results);
+      $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
+      $user = 'duttaadri2014@gmail.com';
+      $password = 'D6qs1FPzuOdE6JFu';
+      $db = new PDO($dsn, $user, $password);
+      $statement = "Select article_name FROM books";
+      $statement->execute();
+      $all = $statement->fetchAll();
+	
      
 
 
@@ -43,7 +41,7 @@
         <br>
       <div class="articleBody">
         <p>
-          <?php echo $row['article_name']?>
+          <?php print_r($all); ?>
         </p> <br>
 
         <p>
