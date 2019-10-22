@@ -12,6 +12,8 @@ body
 	height: 100vh;
 	background-size: cover;
 	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
 }
 /*Makes our tabs centered on screen*/
 .table{
