@@ -8,10 +8,12 @@
 /* Background Image*/
 body
 {
-	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(background.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
 }
 /*Makes our tabs centered on screen*/
 .table{
@@ -52,4 +54,16 @@ body
 
 img {
 	height: 200px;
+}
+
+#aboutInfo
+{
+	background: rgba(225, 225, 225, .85);
+	margin-bottom: 60px;
+	margin-right: 60px;
+	margin-left: 60px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	background-origin:initial;
 }

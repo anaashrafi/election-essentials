@@ -1,12 +1,22 @@
-runtime: python27
+runtime: php55
 api_version: 1
 threadsafe: true
 
 handlers:
+- url: /.*
+  script: index.php
+  
 - url: /
-  static_files: proposal/threads.html
-  upload: proposal/threads.html
+  static_files: proposal/main_static.html
+  upload: proposal/main_static.html
 
-- url: /(.*)
-  static_files: www/\1
-  upload: www/(.*)
+- url: /
+  static_dir: proposal
+
+env_variables:
+  MYSQL_DSN: mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata
+  MYSQL_USER: duttaadri2014@gmail.com
+  MYSQL_PASSWORD: D6qs1FPzuOdE6JFu  
+
+
+  

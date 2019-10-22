@@ -12,6 +12,10 @@ body
 	height: 100vh;
 	background-size: cover;
 	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	max-width: 100%;
+    overflow-x: hidden;
 }
 /*Makes our tabs centered on screen*/
 .table{
