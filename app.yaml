@@ -3,12 +3,47 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /.*
-  script: index.php
-  
 - url: /
-  static_files: proposal/main_static.html
-  upload: proposal/main_static.html
+  script: main_static.php
+
+- url: /main_static\.php
+  script: main_static.php
+
+- url: /candidates\.php
+  script: candidates.php
+
+- url: /threads\.php
+  script: threads.php
+
+- url: /voting_info\.php
+  script: voting_info.php
+
+- url: /login\.php
+  script: login.php
+
+- url: /aboutme\.php
+  script: aboutme.php
+
+- url: /biden_profile\.php
+  script: biden_profile.php
+
+- url: /expanded_article_1\.php
+  script: expanded_article_1.php
+
+- url: /expanded_article_2\.php
+  script: expanded_article_2.php
+
+- url: /expanded_article_3\.php
+  script: expanded_article_3.php
+
+- url: /sanders_profile\.php
+  script: sanders_profile.php
+
+- url: /trump_profile\.php
+  script: trump_profile.php
+
+- url: /user_profile\.php
+  script: user_profile.php
 
 - url: /
   static_dir: proposal
