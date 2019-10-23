@@ -45,6 +45,9 @@ handlers:
 - url: /user_profile\.php
   script: user_profile.php
 
+- url: /preference_send\.php
+  script: preference_send.php
+
 - url: /
   static_dir: proposal
 
