@@ -17,7 +17,7 @@
             var economy = $("#economy").prop("checked");
             var environment = $("#environment").prop("checked");  
             var cjs = $("#cjs").prop("checked");
-            var immigration = $("#economyimmigration").prop("checked");
+            var immigration = $("#immigration").prop("checked");
             var healthcare = $("#healthcare").prop("checked");
             var education = $("#education").prop("checked");
             var military = $("#military").prop("checked");
@@ -36,7 +36,7 @@
             lgbtq: lgbtq,
             reproductive_issues: reproductive_issues,
             gun_violence: gun_violence}, function (response) {
-            alert(response);
+               location.href = "threads.php";
         });  
 
         });
