@@ -1,5 +1,24 @@
-<!DOCTYPE html>
+<?php
+      
+      $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
+      $user = 'duttaadri2014@gmail.com';
+      $db = new PDO($dsn, $user);
+      $statement = $db->prepare("use Election_Essentials;");
+      $statement->execute();
+      $sqlGet = "Select * from Ar_Ti_To_Ar Where Title = '" . $_REQUEST['title']."';";
+      $statement = $db->prepare($sqlGet);
+      $statement->execute();
+      $data = $statement->fetchAll();
 
+
+
+
+
+
+
+
+
+echo '<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -23,20 +42,12 @@
 
     <div class="article">
         <br>
-        <p>Sample Article 1</p>
+        <p>'.$data[0]["Title"].'</p>
         <br>
       <div class="articleBody">
-        <p>
-          <?php echo 'Database connection done'; ?>
-        </p> <br>
+        <p>'.$data[0]["Article"].' </p> 
 
-        <p>
-          Diam donec adipiscing tristique risus nec feugiat in fermentum. Eu augue ut lectus arcu bibendum at varius vel. Orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Aliquet enim tortor at auctor urna nunc id cursus metus. Potenti nullam ac tortor vitae purus faucibus. Elit ut aliquam purus sit amet luctus venenatis lectus magna. Sit amet facilisis magna etiam tempor. Enim tortor at auctor urna nunc. Quam pellentesque nec nam aliquam sem et tortor consequat. Mi ipsum faucibus vitae aliquet nec ullamcorper sit.
-        </p> <br>
 
-        <p>
-          Varius morbi enim nunc faucibus a pellentesque. Dui faucibus in ornare quam viverra. Turpis massa tincidunt dui ut. Scelerisque viverra mauris in aliquam sem fringilla ut morbi. Orci phasellus egestas tellus rutrum. Sed faucibus turpis in eu mi bibendum. In aliquam sem fringilla ut morbi tincidunt augue interdum. Ipsum dolor sit amet consectetur. Ipsum suspendisse ultrices gravida dictum fusce ut. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus.
-        </p>
     </div>
   </div>
 
@@ -46,4 +57,6 @@
 
 </body>
 
-</html>
+</html>'
+
+?>

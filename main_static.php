@@ -1,5 +1,5 @@
 <?php
-    include 'data_connection.php';
+    include 'username.php';
 
 ?>
 
