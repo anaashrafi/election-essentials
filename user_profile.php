@@ -1,108 +1,160 @@
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Election Essentials</title>
-	<link href="user_profile_style.css" rel="stylesheet" type="text/css">
-</head>
+    <html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <meta charset='utf-8' />
+        <title>Election Essentials</title>
+        <link href='user_profile_style.css' rel='stylesheet' type='text/css'>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <script>
+            $(document).ready(function(){
+        $("#submit").click(function(){
+            var economy = $("#economy").prop("checked");
+            var environment = $("#environment").prop("checked");  
+            var cjs = $("#cjs").prop("checked");
+            var immigration = $("#immigration").prop("checked");
+            var healthcare = $("#healthcare").prop("checked");
+            var education = $("#education").prop("checked");
+            var military = $("#military").prop("checked");
+            var lgbtq = $("#lgbtq").prop("checked");
+            var reproductive_issues = $("#reproductive_issues").prop("checked");
+            var gun_violence = $("#gun_violence").prop("checked");
 
-<body>
-	<header>
+            var preference_send = 'preference_send.php';
+            $.post(preference_send, {economy: economy, 
+            environment: environment,
+            cjs: cjs,
+            immigration: immigration,
+            healthcare: healthcare,
+            education: education,
+            military: military,
+            lgbtq: lgbtq,
+            reproductive_issues: reproductive_issues,
+            gun_violence: gun_violence}, function (response) {
+               alert("Essentials Changed");
+        });  
 
-		<div class ="table">
-			<ul class ="nav-tabs">
-				<li><a href="threads.php"> HOME </a></li> <!-- class="active-tab" means this is the page the user is currently on-->
-				<li><a href="candidates.php"> CANDIDATES </a></li>
-				<li><a href="voting_info.php"> VOTER INFORMATION </a></li>
-				<li class="active-tab"><a href="user_profile.php"> MY PROFILE </a></li>
-        <li><a href="login.php"> LOGIN </a></li>
-				<li><a href="aboutme.php"> ABOUT </a></li>
-			</ul>
-		</div>
+        });
+});
 
-    <div id="essentialsForeground">
-        <h2 class="title"> Your Essentials </h2>
-            <div class="checkBoxWrapper" style="grid-row-start:2;grid-column-start:2;">
-              <input class="checkBox" type="checkbox">
+        </script>
+    </head>
+
+    <body>
+        <header>
+
+            <div class ='table'>
+                <ul class ='nav-tabs'>
+                    <li><a href='threads.php'> HOME </a></li> <!-- class='active-tab' means this is the page the user is currently on-->
+                    <li><a href='candidates.php'> CANDIDATES </a></li>
+                    <li><a href='voting_info.php'> VOTER INFORMATION </a></li>
+                    <li class='active-tab'><a href='user_profile.php'> MY PROFILE </a></li>
+                    <li><a href='login.php'> LOGIN </a></li>
+                    <li><a href='aboutme.php'> ABOUT </a></li>
+                </ul>
+            </div>
+
+        <div id='essentialsForeground'>
+            <h2 class='title'> Your Essentials </h2>
+                <div class="checkBoxWrapper" style="grid-row-start:2;grid-column-start:2;">
+              <input id = "economy" class="checkBox" type="checkbox">
               <p class="checkBoxChoices"style="grid-column-start:2;"> Economy
 </p>
             </div>
 
             <div class="checkBoxWrapper" style="grid-row-start:2;grid-column-start:3;">
-              <input class="checkBox" type="checkbox">
+              <input id = "environment"  class="checkBox" type="checkbox">
               <p class="checkBoxChoices" style="grid-column-start:2;"> Environment
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:3;grid-column-start:2;">
-              <input class="checkBox" type="checkbox">
+              <input id = "cjs" class="checkBox" type="checkbox">
               <p class="checkBoxChoices"style="grid-column-start:2;"> Criminal Justice System
 
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:3;grid-column-start:3;">
-              <input class="checkBox" type="checkbox">
+              <input id = "immigration" class="checkBox" type="checkbox">
               <p class="checkBoxChoices"style="grid-column-start:2;"> Immigration
 </p>
             </div>
 
                <div class="checkBoxWrapper" style="grid-row-start:4;grid-column-start:2;">
-              <input class="checkBox" type="checkbox">
+              <input id = "healthcare" class="checkBox" type="checkbox">
               <p class="checkBoxChoices"style="grid-column-start:2;"> Healthcare
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:4;grid-column-start:3;">
-              <input class="checkBox" type="checkbox">
+              <input id = "education" class="checkBox" type="checkbox">
               <p class="checkBoxChoices"style="grid-column-start:2;"> Education
 
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:5;grid-column-start:2;">
-              <input class="checkBox" type="checkbox">
+              <input id = "military" class="checkBox" type="checkbox">
               <p class="checkBoxChoices"style="grid-column-start:2;"> Military
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:5;grid-column-start:3;">
-              <input class="checkBox" type="checkbox">
+              <input id = "lgbtq" class="checkBox" type="checkbox">
               <p class="checkBoxChoices"style="grid-column-start:2;"> LGBTQ+
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:6;grid-column-start:2;">
-              <input class="checkBox" type="checkbox">
+              <input id = "reproductive_issues" class="checkBox" type="checkbox">
               <p class="checkBoxChoices"style="grid-column-start:2;"> Reproductive Issues
 </p>
             </div>
         <div class="checkBoxWrapper" style="grid-row-start:6;grid-column-start:3;">
-              <input class="checkBox" type="checkbox">
+              <input id="gun_violence" class="checkBox" type="checkbox">
               <p class="checkBoxChoices"style="grid-column-start:2;"> Gun Violence
 </p>
             </div>
-
-		</div>
-
-    <div id="bookmarksForeground">
-      <h2 class="title"> Bookmarks </h2>
-      <div class="bookmarkWrapper" style="grid-row-start:2;grid-column-start:2;">
-
-              <a class="bookmarkText" href="">Sample Bookmark #1</a>
-            </div>
-      <div class="bookmarkWrapper" style="grid-row-start:3;grid-column-start:2;">
-
-              <a class="bookmarkText" href="">Sample Bookmark #2</a>
+            <div style="grid-row-start:7;grid-column-start:2;grid-column-end:3;justify-content:center;padding-left:48%;transform:scale(1.5);">
+            <br>
+            <button id="submit">SUBMIT</button>
+          </div>
             </div>
 
-      <div class="bookmarkWrapper" style="grid-row-start:4;grid-column-start:2;">
+<?php
+    include 'username.php'; //holds Username
 
-              <a class="bookmarkText" href="">Sample Bookmark #3</a>
-            </div>
-    </div>
+    $getData = "select * from Us_Bo_Ma where Username = '" .$username. "';";
 
-	</header>
-</body>
-</html>
+    $dsn = "mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata";
+    $user = "duttaadri2014@gmail.com";
+    $db = new PDO($dsn, $user);
+    
+    $statement = $db->prepare("use Election_Essentials;");
+    $statement->execute();
+    $statement = $db->prepare($getData);
+    $statement->execute();
+    $bookmarks = $statement->fetchAll();
+    echo "
+        <div id='bookmarksForeground'>
+        <h2 class='title'> Bookmarks </h2>
+        <div class='bookmarkWrapper' style='grid-row-start:2;grid-column-start:2;'>
+
+                <a class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark1']."</a>
+                </div>
+        <div class='bookmarkWrapper' style='grid-row-start:3;grid-column-start:2;'>
+
+                <a class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark2']."</a>
+                </div>
+
+        <div class='bookmarkWrapper' style='grid-row-start:4;grid-column-start:2;'>
+
+                <a class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark3']."</a>
+                </div>
+        </div>
+
+        </header>
+    </body>
+    </html>";
+?>
