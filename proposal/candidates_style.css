@@ -17,9 +17,9 @@
 			border-radius: 10px;
 			display: grid;
 			grid-template-areas: 'picture' 'name';
-			grid-columns: 100px;
+			grid-template-columns: 100px;
 			
-			grid-template-rows: 100px 2em;
+			grid-template-rows: 100px 2.5em;
 			box-shadow: -5px 5px 5px gray;
 		}
 		.candidate-card:hover {
