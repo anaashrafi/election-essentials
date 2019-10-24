@@ -49,7 +49,7 @@
       <!---------------------------------------------------------------------------------------
         image needs to be another column 
         ------------------------------------------------------------------------------------>
-        <img src='https://pbs.twimg.com/profile_images/1175087314458034177/TgjtVgfG_400x400.png' alt=".$all[0]['Candidate_Name']."></img>
+        <img src=".$all[0]['Profile_Pic']." alt=".$all[0]['Candidate_Name']."></img>
       </div>
 
       <br>
