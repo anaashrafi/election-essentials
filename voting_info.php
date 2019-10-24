@@ -1,3 +1,22 @@
+<?php
+        $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
+        $user = 'duttaadri2014@gmail.com';
+        $db = new PDO($dsn, $user);
+        $statement = $db->prepare("use Election_Essentials;");
+        $statement->execute();
+        $sqlGet = "Select * from Vo_In;";
+        $statement = $db->prepare($sqlGet);
+        $statement->execute();
+        $data = $statement->fetchAll();
+        $general = $data[0]['Data1'];
+        $primary = $data[1]['Data1'];
+
+
+
+
+
+
+echo '
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -23,9 +42,9 @@
 
 <div id="registration">
   <p>
-    Primary Election Deadline: February 3, 2020
+    Primary Election Deadline: '.$primary.'
     <br>
-    General Election Deadline: October 4, 2020
+    General Election Deadline: ' .$general. '
   </p>
 
 </div>
@@ -34,3 +53,6 @@
 
 
 </html>
+'
+
+?>
