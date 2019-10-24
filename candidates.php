@@ -64,9 +64,9 @@
 				<div class="candidate-name">Tulsi Gabbard</div>
 			</a>
 
-      <a id="Kamela Harris" onclick="grabCandidate()" class="candidate-card democrat">
+      <a id="Kamala Harris" onclick="grabCandidate(this.id)" class="candidate-card democrat">
 				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1093306247766515712/MBaqSY2M_400x400.jpg" alt="Kamela Harris"></img></div>
-				<div class="candidate-name">Kamela Harris</div>
+				<div class="candidate-name">Kamala Harris</div>
 			</a>
 
       <a id="Amy Klobuchar" onclick="grabCandidate(this.id)" class="candidate-card democrat">
