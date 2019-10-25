@@ -24,8 +24,8 @@ handlers:
 - url: /aboutme\.php
   script: aboutme.php
 
-- url: /biden_profile\.php
-  script: biden_profile.php
+- url: /candidate_profile\.php
+  script: candidate_profile.php
 
 - url: /expanded_article_1\.php
   script: expanded_article_1.php
