@@ -30,11 +30,11 @@ handlers:
 - url: /expanded_article_1\.php
   script: expanded_article_1.php
 
-- url: /expanded_article_2\.php
-  script: expanded_article_2.php
+- url: /username\.php
+  script: username.php
 
-- url: /expanded_article_3\.php
-  script: expanded_article_3.php
+- url: /bookmark_keeping\.php
+  script: bookmark_keeping.php
 
 - url: /sanders_profile\.php
   script: sanders_profile.php

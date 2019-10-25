@@ -37,6 +37,14 @@
         });
 });
 
+
+        function goToArticle(name) {
+                var title = document.getElementById(name).innerHTML;
+                var url = 'expanded_article_1.php?title='+title;
+                $.post(url, {data: title}, function (response) {
+                 location.href ='expanded_article_1.php?title='+title;
+                 });
+        }
         </script>
     </head>
 
@@ -135,22 +143,22 @@
     $statement->execute();
     $statement = $db->prepare($getData);
     $statement->execute();
-    $bookmarks = $statement->fetchAll();
+    $bookmarks = $statement->fetchAll(); 
     echo "
         <div id='bookmarksForeground'>
         <h2 class='title'> Bookmarks </h2>
         <div class='bookmarkWrapper' style='grid-row-start:2;grid-column-start:2;'>
 
-                <a class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark1']."</a>
+                <a id='bookmark1' onclick='goToArticle(this.id)' class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark1']. "</a>
                 </div>
         <div class='bookmarkWrapper' style='grid-row-start:3;grid-column-start:2;'>
 
-                <a class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark2']."</a>
+                <a id='bookmark2' onclick='goToArticle(this.id)' class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark2']. "</a>
                 </div>
 
         <div class='bookmarkWrapper' style='grid-row-start:4;grid-column-start:2;'>
 
-                <a class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark3']."</a>
+                <a id='bookmark3' onclick='goToArticle(this.id)' class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark3']. "</a>
                 </div>
         </div>
 
