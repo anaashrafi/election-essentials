@@ -71,12 +71,17 @@
             <br>
             <h2>Tools Used</h2>
             <p>
-            HTML: Used to generate static pages.<br>
-            CSS: Used to style HTML for the static pages.<br>
-            JavaScript: Used to pull data dynamically from GitHub.<br>
+            HTML: Used for displaying all information on our web pages.<br>
+            CSS: Used for styling our web pages.<br>
+            JavaScript:  Used to add function to buttons and make the candidates and articles clickable.<br>
+            PHP: Used for interacting with and pulling data from the SQL database.<br>
             Draw.io: Used for UML diagrams.<br>
-            GitHub: Version control. <br>
-            Google Cloud Platform: Used to deploy our app and create our domain.
+            GitHub: Used for version control.<br>
+            Google Cloud Platform: Used for deploying our app and helping us interact with the SQL database.<br>
+            Python: Used for scripting the web scraper and putting the JSON files into the database.<br>
+            JQuery: Used for JSON communication with the database.<br>
+            MySQL: Used to store our databases like the articles, candidate profile information, and bookmarks.<br>
+
             </p>
             <br>
             <h2>Data</h2>
