@@ -93,6 +93,10 @@
 				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1097820307388334080/9ddg5F6v_400x400.png" alt="Bernie Sanders"></img></div>
 				<div class="candidate-name">Bernie Sanders</div>
 			</a>
+    <a id="Joe Sestak" onclick="grabCandidate(this.id)" class="candidate-card democrat">
+				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/708686702081155072/le1ze7HE_400x400.jpg" alt="Joe Sestak"></img></div>
+				<div class="candidate-name">Joe Sestak</div>
+			</a>
 
       <a id="Tom Steyer" onclick="grabCandidate(this.id)" class="candidate-card democrat">
 				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1180190742519656449/rNDail0A_400x400.jpg" alt="Tom Steyer"></img></div>
