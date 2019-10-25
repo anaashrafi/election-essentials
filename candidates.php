@@ -148,9 +148,9 @@
        //document.write("Hello test");
     //jquery attemp
     //alert(name);
-    var candidate_profile_send = 'biden_profile.php?candidate='+name; //'?candidate=name' makes variable definition
+    var candidate_profile_send = 'candidate_profile.php?candidate='+name; //'?candidate=name' makes variable definition
     $.post(candidate_profile_send, {candidate: name}, function (response) {
-                window.location.href = "biden_profile.php?candidate="+name;
+                window.location.href = "candidate_profile.php?candidate="+name;
         }); 
     //alert("goodbyeeeeeeeeeeee");
      //xmlhttp test

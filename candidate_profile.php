@@ -70,11 +70,11 @@
       <div id='learnMore'>
         <br>
         <p>
-          Learn more about ".$all[0]['Candidate_Name']."'s campaign at 
+          Learn more about ".$all[0]['Candidate_Name']."'s campaign 
           <!---------------------------------------------------------------------------------------
         website link needs to be another column 
         ------------------------------------------------------------------------------------>
-            <a href= 'https://joebiden.com/'>here.</a>
+            <a href= '".$all[0]['Website']."'>here.</a>
         </p>
         <br>
       </div>
