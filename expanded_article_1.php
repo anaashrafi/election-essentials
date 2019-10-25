@@ -42,7 +42,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         function saveBookmark() {
-            alert("entered function");
             var bookmark_send = "bookmark_keeping.php?article="+title+"&write=1";
             var title = document.getElementById("article_title").innerHTML;
             $.post(bookmark_send, {article: title, write: 1}, function (response) {
