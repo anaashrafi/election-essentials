@@ -39,11 +39,18 @@
 
 
         function goToArticle(name) {
-                var title = document.getElementById(name).innerHTML;
-                var url = 'expanded_article_1.php?title='+title;
-                $.post(url, {data: title}, function (response) {
-                 location.href ='expanded_article_1.php?title='+title;
-                 });
+                var url = 'expanded_article_1.php?title='+name;
+                $.post(url, {data: name}, function (response) {
+                    location.href ='expanded_article_1.php?title='+name;
+                });
+        }
+
+        function removeBookmark(name) {
+            var bookmark_send = "bookmark_keeping.php?article="+name+"&write=0";
+            $.post(bookmark_send, {article: name, write: 0}, function (response) {
+                alert("Bookmark removed");
+                location.reload();
+            }); 
         }
         </script>
     </head>
@@ -130,6 +137,8 @@
           </div>
             </div>
 
+        <div id='bookmarksForeground'>
+        <h2 class='title'> Bookmarks </h2>
 <?php
     include 'username.php'; //holds Username
 
@@ -144,25 +153,17 @@
     $statement = $db->prepare($getData);
     $statement->execute();
     $bookmarks = $statement->fetchAll(); 
-    echo "
-        <div id='bookmarksForeground'>
-        <h2 class='title'> Bookmarks </h2>
-        <div class='bookmarkWrapper' style='grid-row-start:2;grid-column-start:2;'>
-
-                <a id='bookmark1' onclick='goToArticle(this.id)' class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark1']. "</a>
-                </div>
-        <div class='bookmarkWrapper' style='grid-row-start:3;grid-column-start:2;'>
-
-                <a id='bookmark2' onclick='goToArticle(this.id)' class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark2']. "</a>
-                </div>
-
-        <div class='bookmarkWrapper' style='grid-row-start:4;grid-column-start:2;'>
-
-                <a id='bookmark3' onclick='goToArticle(this.id)' class='bookmarkText' href=''>" .$bookmarks[0]['Bookmark3']. "</a>
-                </div>
-        </div>
+    $rows = $statement->rowCount();
+    for($i = 0; $i < $rows; $i++){
+        echo "
+            <div class='bookmarkWrapper' style='grid-row-start:".($i+2).";grid-column-start:1;'>
+                <a class='bookmarkText' href='expanded_article_1.php?title=".$bookmarks[$i]['Article']."'>".$bookmarks[$i]['Article']."</a>
+                <button onclick='removeBookmark(\"".$bookmarks[$i]['Article']."\")' class='removeButton'>Remove</button>
+            </div>
+        ";
+    }
+?>
 
         </header>
     </body>
-    </html>";
-?>
+    </html>

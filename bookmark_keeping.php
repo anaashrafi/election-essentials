@@ -7,25 +7,19 @@
     $user = "duttaadri2014@gmail.com";
     $db = new PDO($dsn, $user);
 
-
-/**********************************************
-unfinished
-*************************************************/
-    if(write == "1") { //write = 1 is writing to table
-        $result = $db->query("select * from Us_Bo_Ma where Username = '".$username."' and match (Bookmark1, Bookmark2, Bookmark3) against ('null');");
-        if($result->num_rows == 0) {
-            // row not found, do stuff...
-        } else {
-            // do other stuff...
-
-        }
+    if($readwrite == 1) { //write = 1 is writing to table
+        $putBookmark = "insert into Us_Bo_Ma values ('".$username."', '".$title."');";
+        //echo $putBookmark;
+        $statement = $db->prepare("use Election_Essentials;");
+        $statement->execute();
+        $statement = $db->prepare($putBookmark);
+        $statement->execute();
     } else {    //write = 0 is delete
-        $deleteData = "select * from Us_Bo_Ma where Username = '".$username."' and match (Bookmark1, Bookmark2, Bookmark3) against ('".$title."');";
-        
+        $deleteData = "delete from Us_Bo_Ma where Username = '".$username."' and Article = '".$title."';";
+        //echo $deleteData;
         $statement = $db->prepare("use Election_Essentials;");
         $statement->execute();
         $statement = $db->prepare($deleteData);
         $statement->execute();
-        $bookmarks = $statement->fetchAll(); 
     }
 ?>

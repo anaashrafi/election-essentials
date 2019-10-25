@@ -16,9 +16,27 @@
 				<li><a href="user_profile.php"> MY PROFILE </a></li>
 				<li><a href="login.php"> LOGIN </a></li>
 				<li><a href="aboutme.php"> ABOUT </a></li>
-                <li><a href="" onclick="saveBookmark()">BOOKMARK ARTICLE</a></li>
+<?php
+      include 'username.php'; //holds Username
+
+      $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
+      $user = 'duttaadri2014@gmail.com';
+      $db = new PDO($dsn, $user);
+      $statement = $db->prepare("use Election_Essentials;");
+      $statement->execute();
+      $check = "Select * from Us_Bo_Ma Where Username = '" .$username. "' and Article = '".$_REQUEST['title']."';";
+      $statement = $db->prepare($check);
+      $statement->execute();
+      $row = $statement->fetch(PDO::FETCH_ASSOC);
+      $count = $statement->rowCount();
+      if($count == 0){
+                echo '<li><a href="" onclick="saveBookmark()">ADD BOOKMARK</a></li>';
+      }else {
+                echo '<li><a href="" onclick="removeBookmark()">REMOVE BOOKMARK</a></li>';
+      }
+?>
 			</ul>
-		</div>;
+		</div>
 <?php
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
       $user = 'duttaadri2014@gmail.com';
@@ -42,10 +60,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         function saveBookmark() {
-            var bookmark_send = "bookmark_keeping.php?article="+title+"&write=1";
             var title = document.getElementById("article_title").innerHTML;
+            var bookmark_send = "bookmark_keeping.php?article="+title+"&write=1";
             $.post(bookmark_send, {article: title, write: 1}, function (response) {
                 alert("Bookmarked");
+                location.reload();
+            }); 
+        }
+
+        function removeBookmark() {
+            var title = document.getElementById("article_title").innerHTML;
+            var bookmark_send = "bookmark_keeping.php?article="+title+"&write=0";
+            $.post(bookmark_send, {article: title, write: 0}, function (response) {
+                alert("Bookmark removed");
+                location.reload();
             }); 
         }
     </script>
