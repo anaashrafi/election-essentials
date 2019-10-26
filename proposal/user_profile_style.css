@@ -105,10 +105,8 @@ body
 	margin-right: 15%;
 	margin-left: 15%;
     width: 70%;
-	padding-right: 30px;
-	padding-bottom: 30px;
-	padding-left: 30px;
-	background-origin:initial;
+	padding: 5px;
+    padding-bottom: 20px;
     display: grid;
     justify-content: center;
   align-items: center;
@@ -121,7 +119,7 @@ body
 
 .bookmarkWrapper{
   display:grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   justify-content: center;
   align-items: center;
   grid-column-gap:3%;
