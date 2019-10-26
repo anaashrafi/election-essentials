@@ -161,52 +161,52 @@
           var lgb = "<?php echo $lgbtitle; ?>" ;
           var gun = "<?php echo $guntitle; ?>" ;
           if (eco != 'none'){
-            $('#articles').append('<a class="article"><div onclick="button(this.innerHTML)" class="article-name">'+eco+'</div></a>');  
+            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+eco+'</a>');  
           }
         
 
                   if (env != 'none'){
-            $('#articles').append('<a class="article"><div onclick="button(this.innerHTML)" class="article-name">'+env+'</div></a>');  
+            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+env+'</a>');  
           }
         
 
                   if (cjs != 'none'){
-            $('#articles').append('<a  class="article"><div onclick="button(this.innerHTML)" class="article-name">'+cjs+'</div></a>');  
+            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+cjs+'</a>');  
           }
         
 
                   if (hea != 'none'){
-            $('#articles').append('<a  class="article"><div onclick="button(this.innerHTML)" class="article-name">'+hea+'</div></a>');  
+            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+hea+'</a>');  
           }
         
 
                   if (rep != 'none'){
-            $('#articles').append('<a  class="article"><div onclick="button(this.innerHTML)" class="article-name">'+rep+'</div></a>');  
+            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+rep+'</a>');  
           }
         
 
                   if (mil != 'none'){
-            $('#articles').append('<a  class="article"><div onclick="button(this.innerHTML)" class="article-name">'+mil+'</div></a>');  
+            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+mil+'</a>');  
           }
         
 
                   if (imm != 'none'){
-            $('#articles').append('<a class="article"><div onclick="button(this.innerHTML)" class="article-name">'+imm+'</div></a>');  
+            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+imm+'</a>');  
           }
         
 
                   if (edu != 'none'){
-            $('#articles').append('<a   class="article"><div onclick="button(this.innerHTML)" class="article-name">'+edu+'</div></a>');  
+            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+edu+'</a>');  
           }
         
 
                   if (lgb != 'none'){
-            $('#articles').append('<a   class="article"><div onclick="button(this.innerHTML)" class="article-name">'+lgb+'</div></a>');  
+            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+lgb+'</a>');  
           }
         
 
                   if (gun != 'none'){
-            $('#articles').append('<a class="article"><div onclick="button(this.innerHTML)" class="article-name">'+gun+'</div></a>');  
+            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+gun+'</a>');  
           }
         });
 
