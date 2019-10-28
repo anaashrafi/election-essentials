@@ -1,9 +1,11 @@
   <?php
+      include 'username.php'; //holds Username
+
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
       $user = 'duttaadri2014@gmail.com';
       $db = new PDO($dsn, $user);
       $statement = $db->prepare("use Election_Essentials;");
-      $sqlGet = 'Select * from Us_Pr Where Username = "Anon1";';
+      $sqlGet = 'Select * from Us_Pr Where Username = "'.$username.'";';
       $statement->execute();
       $statement = $db->prepare($sqlGet);
       $statement->execute();
@@ -20,127 +22,53 @@
       $lgbtq = $data[0]['LGBTQ'];
       $gun_violence = $data[0]['Gun_Violence'];
 
-      $econtitle= 'none';
-      $envtitle= 'none';
-      $cjstitle= 'none';
-      $heatitle= 'none';
-      $reptitle= 'none';
-      $miltitle= 'none';
-      $immtitle= 'none';
-      $edutitle= 'none';
-      $lgbtitle= 'none';
-      $guntitle= 'none';
+      $getArticles = "Select * from Es_To_Ar_Ti where Essential = 'Dummy'"; //dummy here to make appending simpler
 
-      if ($economy)
-      {
-          $sqlGet = 'Select * from Es_To_Ar_Ti Where Essential = "Economy";';
-          $statement = $db->prepare($sqlGet);
-          $statement->execute();
-          $data = $statement->fetchAll();
-          $econtitle = $data[0]['Title1']; 
+      if ($economy){
+        $getArticles .= ' or Essential = "Economy"';
       }
 
-      if ($military)
-      {
-          $sqlGet = 'Select * from Es_To_Ar_Ti Where Essential = "Military";';
-          $statement = $db->prepare($sqlGet);
-          $statement->execute();
-          $data = $statement->fetchAll();
-          $miltitle = $data[0]['Title1']; 
+      if ($military){
+        $getArticles .= ' or Essential = "Military"';
       }
 
-            if ($cjs)
-      {
-          $sqlGet = 'Select * from Es_To_Ar_Ti Where Essential = "CJS";';
-          $statement = $db->prepare($sqlGet);
-          $statement->execute();
-          $data = $statement->fetchAll();
-          $cjstitle = $data[0]['Title1']; 
+      if ($cjs){
+        $getArticles .= ' or Essential = "CJS"'; 
       }
 
-            if ($healthcare)
-      {
-          $sqlGet = 'Select * from Es_To_Ar_Ti Where Essential = "Healthcare";';
-          $statement = $db->prepare($sqlGet);
-          $statement->execute();
-          $data = $statement->fetchAll();
-          $heatitle = $data[0]['Title1']; 
+      if ($healthcare){
+        $getArticles .= ' or Essential = "Healthcare"';
       }
 
-            if ($reproductive_issues)
-      {
-          $sqlGet = 'Select * from Es_To_Ar_Ti Where Essential = "Reproductive Issues";';
-          $statement = $db->prepare($sqlGet);
-          $statement->execute();
-          $data = $statement->fetchAll();
-          $reptitle = $data[0]['Title1']; 
+      if ($reproductive_issues){
+        $getArticles .= ' or Essential = "Reproductive Issues"';
       }
 
-            if ($environment)
-      {
-          $sqlGet = 'Select * from Es_To_Ar_Ti Where Essential = "Environment";';
-          $statement = $db->prepare($sqlGet);
-          $statement->execute();
-          $data = $statement->fetchAll();
-          $envtitle = $data[0]['Title1']; 
+      if ($environment){
+        $getArticles .= ' or Essential = "Environment"';
       }
 
-            if ($immigration)
-      {
-          $sqlGet = 'Select * from Es_To_Ar_Ti Where Essential = "Immigration";';
-          $statement = $db->prepare($sqlGet);
-          $statement->execute();
-          $data = $statement->fetchAll();
-          $immtitle = $data[0]['Title1']; 
+      if ($immigration){
+        $getArticles .= ' or Essential = "Immigration"';
       }
 
-            if ($education)
-      {
-          $sqlGet = 'Select * from Es_To_Ar_Ti Where Essential = "Education";';
-          $statement = $db->prepare($sqlGet);
-          $statement->execute();
-          $data = $statement->fetchAll();
-          $edutitle = $data[0]['Title1']; 
+      if ($education){
+        $getArticles .= ' or Essential = "Education"';
       }
 
-            if ($lgbtq)
-      {
-          $sqlGet = 'Select * from Es_To_Ar_Ti Where Essential = "LGBTQ";';
-          $statement = $db->prepare($sqlGet);
-          $statement->execute();
-          $data = $statement->fetchAll();
-          $lgbtitle = $data[0]['Title1']; 
+      if ($lgbtq){
+        $getArticles .= ' or Essential = "LGBTQ"';
       }
 
-            if ($gun_violence)
-      {
-          $sqlGet = 'Select * from Es_To_Ar_Ti Where Essential = "Gun Violence";';
-          $statement = $db->prepare($sqlGet);
-          $statement->execute();
-          $data = $statement->fetchAll();
-          $guntitle = $data[0]['Title1']; 
+      if ($gun_violence){
+        $getArticles .= ' or Essential = "Gun Violence"';
       }      
 
-      
-
-
-        
-
-
-
-      
-
-    //   echo $economy;
-    //   echo $environment;
-    //   echo $cjs;
-    //   echo $healthcare;
-    //   echo $reproductive_issues;
-
-      
+      $getArticles .= ";"; //end of appending
    ?>
 
 
-﻿<!DOCTYPE html
+<!DOCTYPE html
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -148,79 +76,12 @@
 	<link href="threads_style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script> 
     <script>
-        $(document).ready(function() {
-          
-          var eco = "<?php echo $econtitle; ?>" ;
-          var env = "<?php echo $envtitle; ?>" ;
-          var cjs = "<?php echo $cjstitle; ?>" ;
-          var hea = "<?php echo $heatitle; ?>" ;
-          var rep = "<?php echo $reptitle; ?>" ;
-          var mil = "<?php echo $miltitle; ?>" ;
-          var imm = "<?php echo $immtitle; ?>" ;
-          var edu = "<?php echo $edutitle; ?>" ;
-          var lgb = "<?php echo $lgbtitle; ?>" ;
-          var gun = "<?php echo $guntitle; ?>" ;
-          if (eco != 'none'){
-            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+eco+'</a>');  
-          }
-        
-
-                  if (env != 'none'){
-            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+env+'</a>');  
-          }
-        
-
-                  if (cjs != 'none'){
-            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+cjs+'</a>');  
-          }
-        
-
-                  if (hea != 'none'){
-            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+hea+'</a>');  
-          }
-        
-
-                  if (rep != 'none'){
-            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+rep+'</a>');  
-          }
-        
-
-                  if (mil != 'none'){
-            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+mil+'</a>');  
-          }
-        
-
-                  if (imm != 'none'){
-            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+imm+'</a>');  
-          }
-        
-
-                  if (edu != 'none'){
-            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+edu+'</a>');  
-          }
-        
-
-                  if (lgb != 'none'){
-            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+lgb+'</a>');  
-          }
-        
-
-                  if (gun != 'none'){
-            $('#articles').append('<a onclick="button(this.innerHTML)" class="article article-name">'+gun+'</a>');  
-          }
-        });
-
         function button(name) {
                 var url = 'expanded_article_1.php?title='+name;
                 $.post(url, {data: name}, function (response) {
                  location.href ='expanded_article_1.php?title='+name;
         });
         }
-
-        
-
-
-
     </script>
 
 
@@ -243,18 +104,19 @@
 			</ul>
 		</div>
 
-		<!-- temporary "articles" that will link to expanded articles when clicked -->
 		<div id="articles" class ="samplearticles">
-
-		<!--	 <a  href="expanded_article_1.php" class="article">
-			 	<div id = "art1" class="article-name">Sample Article 1</div>
-			 </a>
-			 <a href="expanded_article_2.php" class="article">
-			 	<div class="article-name">Sample Article 2</div>
-			 </a>
-			 <a href="expanded_article_3.php" class="article">
-			 	<div class="article-name">Sample Article 3</div>
-			 </a> -->
+<?php
+            $statement = $db->prepare("use Election_Essentials;");
+            $statement->execute();
+            $statement = $db->prepare($getArticles);
+            $statement->execute();
+            $articles = $statement->fetchAll(); 
+            $rows = $statement->rowCount();
+            for($i = 0; $i < $rows; $i++){
+                echo "
+                    <a onclick='button(this.innerHTML)' class='article article-name'>".$articles[$i]['Title1']."</a>";
+            }
+?>
 		</div>
 
 	</header>
