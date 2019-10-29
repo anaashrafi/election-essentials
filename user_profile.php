@@ -54,6 +54,30 @@
         }
         </script>
     </head>
+  <?php
+      include 'username.php'; //holds Username
+
+      $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
+      $user = 'duttaadri2014@gmail.com';
+      $db = new PDO($dsn, $user);
+      $statement = $db->prepare("use Election_Essentials;");
+      $sqlGet = 'Select * from Us_Pr Where Username = "'.$username.'";';
+      $statement->execute();
+      $statement = $db->prepare($sqlGet);
+      $statement->execute();
+      $data = $statement->fetchAll();
+    
+      $economy= $data[0]['Economy'];
+      $military = $data[0]['Military'];
+      $cjs = $data[0]['Criminal_Justice_System'];
+      $healthcare = $data[0]['Healthcare'];
+      $reproductive_issues = $data[0]['Reproductive_Issues'];
+      $environment = $data[0]['Environment'];
+      $immigration = $data[0]['Immigration'];
+      $education = $data[0]['Education'];
+      $lgbtq = $data[0]['LGBTQ'];
+      $gun_violence = $data[0]['Gun_Violence'];
+?>
 
     <body>
         <header>
@@ -72,62 +96,62 @@
         <div id='essentialsForeground'>
             <h2 class='title'> Your Essentials </h2>
                 <div class="checkBoxWrapper" style="grid-row-start:2;grid-column-start:2;">
-              <input id = "economy" class="checkBox" type="checkbox">
+              <input id = "economy" class="checkBox" type="checkbox" <?php if($economy){echo "checked";}?>>
               <p class="checkBoxChoices"style="grid-column-start:2;"> Economy
 </p>
             </div>
 
             <div class="checkBoxWrapper" style="grid-row-start:2;grid-column-start:3;">
-              <input id = "environment"  class="checkBox" type="checkbox">
+              <input id = "environment"  class="checkBox" type="checkbox" <?php if($environment){echo "checked";}?>>
               <p class="checkBoxChoices" style="grid-column-start:2;"> Environment
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:3;grid-column-start:2;">
-              <input id = "cjs" class="checkBox" type="checkbox">
+              <input id = "cjs" class="checkBox" type="checkbox" <?php if($cjs){echo "checked";}?>>
               <p class="checkBoxChoices"style="grid-column-start:2;"> Criminal Justice System
 
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:3;grid-column-start:3;">
-              <input id = "immigration" class="checkBox" type="checkbox">
+              <input id = "immigration" class="checkBox" type="checkbox" <?php if($immigration){echo "checked";}?>>
               <p class="checkBoxChoices"style="grid-column-start:2;"> Immigration
 </p>
             </div>
 
                <div class="checkBoxWrapper" style="grid-row-start:4;grid-column-start:2;">
-              <input id = "healthcare" class="checkBox" type="checkbox">
+              <input id = "healthcare" class="checkBox" type="checkbox" <?php if($healthcare){echo "checked";}?>>
               <p class="checkBoxChoices"style="grid-column-start:2;"> Healthcare
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:4;grid-column-start:3;">
-              <input id = "education" class="checkBox" type="checkbox">
+              <input id = "education" class="checkBox" type="checkbox" <?php if($education){echo "checked";}?>>
               <p class="checkBoxChoices"style="grid-column-start:2;"> Education
 
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:5;grid-column-start:2;">
-              <input id = "military" class="checkBox" type="checkbox">
+              <input id = "military" class="checkBox" type="checkbox" <?php if($military){echo "checked";}?>>
               <p class="checkBoxChoices"style="grid-column-start:2;"> Military
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:5;grid-column-start:3;">
-              <input id = "lgbtq" class="checkBox" type="checkbox">
+              <input id = "lgbtq" class="checkBox" type="checkbox" <?php if($lgbtq){echo "checked";}?>>
               <p class="checkBoxChoices"style="grid-column-start:2;"> LGBTQ+
 </p>
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:6;grid-column-start:2;">
-              <input id = "reproductive_issues" class="checkBox" type="checkbox">
+              <input id = "reproductive_issues" class="checkBox" type="checkbox" <?php if($reproductive_issues){echo "checked";}?>>
               <p class="checkBoxChoices"style="grid-column-start:2;"> Reproductive Issues
 </p>
             </div>
         <div class="checkBoxWrapper" style="grid-row-start:6;grid-column-start:3;">
-              <input id="gun_violence" class="checkBox" type="checkbox">
+              <input id="gun_violence" class="checkBox" type="checkbox" <?php if($gun_violence){echo "checked";}?>>
               <p class="checkBoxChoices"style="grid-column-start:2;"> Gun Violence
 </p>
             </div>
