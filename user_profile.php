@@ -158,7 +158,7 @@
               <p class="checkBoxChoices"style="grid-column-start:2;"> Gun Violence
 </p>
             </div>
-            <div style="grid-row-start:7;grid-column-start:2;grid-column-end:3;justify-content:center;padding-left:48%;transform:scale(1.5);">
+            <div style="grid-row-start:7;grid-column-start:2;grid-column-end:3;justify-content:center;padding-left:55%;transform:scale(1.5);">
             <br>
             <button id="submit">SUBMIT</button>
           </div>
