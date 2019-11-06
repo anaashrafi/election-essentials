@@ -1,3 +1,3 @@
 <?php
-    $username = 'Anon1';
+    $username = $_REQUEST['username'];
 ?>

@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Election Essentials</title>
     <?php
+        include 'username.php';
         include 'config.php'; //holds api key
         echo '<meta name="google-signin-client_id" content="'.$CLIENT_ID.'">';
     ?>
@@ -40,6 +41,7 @@ hotfix for signout button to look like signin button
 </a>
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script> 
 <script>
 function sign(googleUser){
     if(googleUser == ''){
@@ -53,9 +55,22 @@ function sign(googleUser){
     }
 }
 
-
 function onSignIn(googleUser) {
 // for database 
+var profile = googleUser.getBasicProfile();
+var userID = profile.getId();
+var username_send = "username.php?username="+String(userID);
+$.post(username_send, {username: String(userID)}, function (response) {}); 
+////////////////////////////// more secure id method
+/*var id_token = googleUser.getAuthResponse().id_token;
+
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://yourbackend.example.com/tokensignin');
+xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+xhr.onload = function() {
+    console.log('Signed in as: ' + xhr.responseText);
+};
+xhr.send('idtoken=' + id_token); */
 } </script>
 
 
@@ -63,6 +78,8 @@ function onSignIn(googleUser) {
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut();
+    var username_send = "username.php?username=Anon1";
+    $.post(username_send, {username: "Anon1"}, function (response) {}); 
   }
 </script>
 </body>
