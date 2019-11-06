@@ -54,11 +54,10 @@
                 <li><a href='candidates.php'> CANDIDATES </a></li>
                 <li><a href='voting_info.php'> VOTER INFORMATION </a></li>
                 <li><a href='user_profile.php'> MY PROFILE </a></li>
-                <li><a href='login.php'> LOGIN </a></li>
                 <li class='active-tab'><a href='aboutme.php'> ABOUT </a></li>
             </ul>
         </div>
-
+        <?php include 'login.php';?>
         <div id='aboutInfo'>
             <h1 align='center' style='margin-top: 30px;'> About Us </h1>
             <br>

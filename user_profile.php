@@ -6,6 +6,7 @@
         <title>Election Essentials</title>
         <link href='user_profile_style.css' rel='stylesheet' type='text/css'>
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <?php include 'login.php';?>
         <script>
             $(document).ready(function(){
         $("#submit").click(function(){

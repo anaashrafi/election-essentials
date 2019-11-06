@@ -34,12 +34,13 @@ echo '
 				<li><a href="candidates.php"> CANDIDATES </a></li>
 				<li class="active-tab"><a href="voting_info.php"> VOTER INFORMATION </a></li>
 				<li><a href="user_profile.php"> MY PROFILE </a></li>
-				<li><a href="login.php"> LOGIN </a></li>
         <li><a href="aboutme.php"> ABOUT </a></li>
 			</ul>
 		</div>
 </header>
-
+';?>
+          <?php include 'login.php';?>
+          <?php echo'
 <div id="registration">
   <p>
     Primary Election Deadline: '.$primary.'

@@ -14,8 +14,8 @@
 				<li><a href="candidates.php"> CANDIDATES </a></li>
 				<li><a href="voting_info.php"> VOTER INFORMATION </a></li>
 				<li><a href="user_profile.php"> MY PROFILE </a></li>
-				<li><a href="login.php"> LOGIN </a></li>
-				<li><a href="aboutme.php"> ABOUT </a></li>
+                <li><a href="aboutme.php"> ABOUT </a></li>
+                <?php include 'login.php';?>
 <?php
       include 'username.php'; //holds Username
 
