@@ -4,18 +4,25 @@
 <head>
     <meta charset="utf-8" />
     <title>Election Essentials</title>
+    <?php
+        include 'config.php'; //holds api key
+        echo '<meta name="google-signin-client_id" content="'.$CLIENT_ID.'">';
+    ?>
 </head>
 
 <style>
-    
+    .google-button {
+        position: absolute; 
+        top: 17px; 
+        right: 20px;
+      }
 </style>
 
 <body>
 
-<div id="sign-in" class="g-signin2 google-button" data-onsuccess="sign" style="position: absolute; top: 17px; right: 20px;"></div>
+<div id="sign-in" class="g-signin2 google-button" data-onsuccess="sign"></div>
 <a href="#" style="display: none;" id="sign-out" class="google-button" onclick="sign('');">Sign out</a>
 
-<meta name="google-signin-client_id" content="a">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script>
 function sign(googleUser){

@@ -34,6 +34,9 @@ handlers:
 - url: /username\.php
   script: username.php
 
+- url: /config\.php
+  script: config.php
+
 - url: /bookmark_keeping\.php
   script: bookmark_keeping.php
 
