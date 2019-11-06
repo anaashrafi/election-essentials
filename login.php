@@ -7,7 +7,7 @@
 </head>
 
 <style>
-
+    
 </style>
 
 <body>
@@ -15,7 +15,7 @@
 <div id="sign-in" class="g-signin2 google-button" data-onsuccess="sign" style="position: absolute; top: 17px; right: 20px;"></div>
 <a href="#" style="display: none;" id="sign-out" class="google-button" onclick="sign('');">Sign out</a>
 
-<meta name="google-signin-client_id" content="1090701263750-0o55nsvbah0e58cgf10q0p03cuojuk9g.apps.googleusercontent.com">
+<meta name="google-signin-client_id" content="a">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script>
 function sign(googleUser){

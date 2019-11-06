@@ -89,7 +89,6 @@
                     <li><a href='candidates.php'> CANDIDATES </a></li>
                     <li><a href='voting_info.php'> VOTER INFORMATION </a></li>
                     <li class='active-tab'><a href='user_profile.php'> MY PROFILE </a></li>
-                    <li><a href='login.php'> LOGIN </a></li>
                     <li><a href='aboutme.php'> ABOUT </a></li>
                 </ul>
             </div>
