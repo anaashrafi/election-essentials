@@ -49,12 +49,6 @@
 <body>
 	<header>
 
-		<div class ="table">
-			<ul class ="nav-tabs">
-				<li class="active-tab"><a href="login.php"> LOGIN </a></li> <!-- class="active-tab" means this is the page the user is currently on-->
-          </ul>
-        </div>
-
       <div id="foreground">
         <h2 id="title"> What Are Your Essentials? </h2>
             <div class="checkBoxWrapper" style="grid-row-start:2;grid-column-start:2;">
