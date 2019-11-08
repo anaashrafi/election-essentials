@@ -1,6 +1,5 @@
   <?php
     session_start();
-    echo 'This is username: ' .$_SESSION['user'];
      //holds Username
       include 'login.php';
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';

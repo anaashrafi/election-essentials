@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<?php
-    session_start();
-    echo 'user is'. $_SESSION['user'];
-?>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -10,7 +6,6 @@
     <title>Election Essentials</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php
-        include_once ('username.php');
         include 'config.php'; //holds api key
         echo '<meta name="google-signin-client_id" content="'.$CLIENT_ID.'">';
     ?>
@@ -92,7 +87,7 @@ var data = {
             username: userIDString
         };
 var username_send = "username.php?username="+String(userID);
-$.post('username.php', {use:userID}, function (data){alert(data)});
+$.post('username.php', {use:userID}, function (data){});
 //$.post(username_send, {username: String(userID)}, function (response) {}); 
 ////////////////////////////// more secure id method
 /*var id_token = googleUser.getAuthResponse().id_token;
@@ -113,7 +108,7 @@ xhr.send('idtoken=' + id_token); */
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut();
     var username = 'Anon1';
-    $.post('username.php', {use:username}, function (data){alert(data)});
+    $.post('username.php', {use:username}, function (data){});
 
   }
 </script>
