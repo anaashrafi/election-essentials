@@ -1,11 +1,26 @@
   <?php
     
-    include_once('username.php');
+    session_start();
         
-    $setData = "update Us_Pr " ."Set Economy =" . $_POST['economy'] . "," . "Criminal_Justice_System =" . $_POST['cjs'] . "," . "Healthcare =" . $_POST['healthcare']. "," . "Military =" . $_POST['military']. "," . "Reproductive_Issues =" . $_POST['reproductive_issues']. "," . "Environment =" . $_POST['environment']. "," . "Immigration =" . $_POST['immigration']. "," . "Education =" . $_POST['education']. "," . "LGBTQ =" . $_POST['lgbtq']. "," . "Gun_Violence =" . $_POST['gun_violence'] . 
-" Where Username = 'Anon1';";
+ 
 
-  echo $_SESSION['user'];
+      $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
+      $user = 'duttaadri2014@gmail.com';
+      $db = new PDO($dsn, $user);
+      $statement = $db->prepare("use Election_Essentials;");
+      $statement->execute();
+      $check = "Select * from Us_Pr Where Username = '".$_SESSION['user']."';";
+      $statement = $db->prepare($check);
+      $statement->execute();
+      $row = $statement->fetch(PDO::FETCH_ASSOC);
+      $count = $statement->rowCount();
+      if($count == 0){
+                $setData = "Insert Into Us_Pr " ."Values Economy =" . $_POST['economy'] . "," . "Criminal_Justice_System =" . $_POST['cjs'] . "," . "Healthcare =" . $_POST['healthcare']. "," . "Military =" . $_POST['military']. "," . "Reproductive_Issues =" . $_POST['reproductive_issues']. "," . "Environment =" . $_POST['environment']. "," . "Immigration =" . $_POST['immigration']. "," . "Education =" . $_POST['education']. "," . "LGBTQ =" . $_POST['lgbtq']. "," . "Gun_Violence =" . $_POST['gun_violence'] . 
+" Where Username = '".$_SESSION['user']."';";
+      }else {
+                   $setData = "update Us_Pr " ."Set Economy =" . $_POST['economy'] . "," . "Criminal_Justice_System =" . $_POST['cjs'] . "," . "Healthcare =" . $_POST['healthcare']. "," . "Military =" . $_POST['military']. "," . "Reproductive_Issues =" . $_POST['reproductive_issues']. "," . "Environment =" . $_POST['environment']. "," . "Immigration =" . $_POST['immigration']. "," . "Education =" . $_POST['education']. "," . "LGBTQ =" . $_POST['lgbtq']. "," . "Gun_Violence =" . $_POST['gun_violence'] . 
+" Where Username = '".$_SESSION['user']."';";
+      }
 
   //".$_SESSION['user']."'; ";
 

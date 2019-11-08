@@ -1,5 +1,4 @@
 <?php
-    include_once('username.php');
     include_once('login.php');
 ?>
 
@@ -11,7 +10,7 @@
     <title>Election Essentials</title>
 	<link href="main_style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script> 
-    <?php include 'login.php';?>
+    
 <script >
       $(document).ready(function(){
         $("#submit").click(function(){
@@ -37,7 +36,6 @@
             lgbtq: lgbtq,
             reproductive_issues: reproductive_issues,
             gun_violence: gun_violence}, function (response) {
-                alert(response);
                 location.href = "threads.php";
         });  
 
