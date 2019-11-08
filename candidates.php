@@ -78,16 +78,6 @@
 				<div class="candidate-name">Wayne Messam</div>
 			</a>
 
-      <a id="Beto O Rourke" onclick="grabCandidate(this.id)" class="candidate-card democrat">
-				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1177725147878477825/Znz9ndSl_400x400.jpg" alt="Beto O’Rourke"></img></div>
-				<div class="candidate-name">Beto O’Rourke</div>
-			</a>
-
-      <a id="Tim Ryan" onclick="grabCandidate(this.id)" class="candidate-card democrat">
-				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1123997971123712001/dExluxzg_400x400.png" alt="Tim Ryan"></img></div>
-				<div class="candidate-name">Tim Ryan</div>
-			</a>
-
 			<a id="Bernie Sanders" onclick="grabCandidate(this.id)" class="candidate-card democrat">
 				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1097820307388334080/9ddg5F6v_400x400.png" alt="Bernie Sanders"></img></div>
 				<div class="candidate-name">Bernie Sanders</div>
@@ -115,8 +105,13 @@
       <a id="Andrew Yang" onclick="grabCandidate(this.id)" class="candidate-card democrat">
 				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1042886888225267712/1W9BKljE_400x400.jpg" alt="Andrew Yang"></img></div>
 				<div class="candidate-name">Andrew Yang</div>
-			</a>
-
+            </a>
+            
+        <a id="Roque De La Fuente" onclick="grabCandidate(this.id)" class="candidate-card republican">
+				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/972106822403244033/x6xz5sQQ_400x400.jpg" alt="Roque De La Fuente"></img></div>
+				<div class="candidate-name">Roque De La Fuente</div>
+            </a>
+            
       <a id="Mark Sanford" onclick="grabCandidate(this.id)" class="candidate-card republican">
 				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1078744075732426752/nFjsV21f_400x400.jpg" alt="Mark Sanford"></img></div>
 				<div class="candidate-name">Mark Sanford</div>

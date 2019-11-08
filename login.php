@@ -8,6 +8,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Election Essentials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php
         include_once ('username.php');
         include 'config.php'; //holds api key
@@ -21,9 +22,32 @@
         top: 17px; 
         right: 20px;
       }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        position:absolute;
+        top:60px;
+        right:20px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
 </style>
 
 <body>
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" class="fa fa-twitter" data-show-count="false"></a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <div id="sign-in" class="g-signin2 google-button" data-onsuccess="sign"></div>
 

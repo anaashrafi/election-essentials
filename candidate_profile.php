@@ -60,10 +60,16 @@
         <br>
         <div style='display: inline-block; text-align:left;'>
           <p>
-            Gun Laws: Leans " .$all[0]['Gun_Violence']."<br>
+            Economy: Leans " .$all[0]['Economy']."<br>
+            Criminal Justice System: Leans " .$all[0]['Criminal_Justice_System']."<br>
+            Healthcare: Leans ".$all[0]['Healthcare']."<br>
+            Military: Leans ".$all[0]['Military']."<br>
             Reproductive Issues: Leans " .$all[0]['Reproductive_Issues']."<br>
+            Environment: Leans " .$all[0]['Environment']."<br>
+            Immigration: Leans " .$all[0]['Immigration']."<br>
+            Education: Leans " .$all[0]['Education']."<br>
             LGBTQ+ Issues: Leans ".$all[0]['LGBTQ']."<br>
-            Healthcare: Leans ".$all[0]['Healthcare']."
+            Gun Laws: Leans " .$all[0]['Gun_Violence']."<br>
           </p>
           </div>
         <br>
