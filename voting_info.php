@@ -16,7 +16,7 @@
 
 
 
-echo '
+?>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -38,17 +38,24 @@ echo '
 			</ul>
 		</div>
 </header>
-';?>
           <?php include 'login.php';?>
-          <?php echo'
-<div id="registration">
-  <p>
-    Primary Election Deadline: '.$primary.'
-    <br>
-    General Election Deadline: ' .$general. '
-  </p>
 
-</div>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for state info...">
+
+<ul id="myUL">
+  <li><a href="#">Alabama</a></li>
+  <li><a href="#">Alaska</a></li>
+  <li><a href="#">Arizona</a></li>
+  <li><a href="#">Arkansas</a></li>
+
+  <li><a href="#">California</a></li>
+  <li><a href="#">Colorado</a></li>
+  <li><a href="#">Connecticut</a></li>
+
+  <li><a href="#">Delaware</a></li>
+</ul>
+
+
 
 </body>
 
@@ -56,4 +63,24 @@ echo '
 </html>
 '
 
-?>
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
