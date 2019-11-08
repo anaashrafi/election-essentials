@@ -8,7 +8,7 @@
         <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
         <?php 
             include 'login.php';
-            include 'username.php';
+            
         ?>
         <script>
             $(document).ready(function(){
@@ -59,13 +59,13 @@
         </script>
     </head>
   <?php
-      include 'username.php'; //holds Username
+      session_start(); //holds Username
 
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
       $user = 'duttaadri2014@gmail.com';
       $db = new PDO($dsn, $user);
       $statement = $db->prepare("use Election_Essentials;");
-      $sqlGet = 'Select * from Us_Pr Where Username = "'.$username.'";';
+      $sqlGet = 'Select * from Us_Pr Where Username = "'.$_SESSION['user'].'";';
       $statement->execute();
       $statement = $db->prepare($sqlGet);
       $statement->execute();
@@ -167,9 +167,9 @@
         <div id='bookmarksForeground'>
         <h2 class='title'> Bookmarks </h2>
 <?php
-    include 'username.php'; //holds Username
+     
 
-    $getData = "select * from Us_Bo_Ma where Username = '" .$username. "';";
+    $getData = "select * from Us_Bo_Ma where Username = '" .$_SESSION['user']. "';";
 
     $dsn = "mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata";
     $user = "duttaadri2014@gmail.com";
