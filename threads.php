@@ -1,11 +1,14 @@
   <?php
-      include 'username.php'; //holds Username
+    session_start();
+     //holds Username
       include 'login.php';
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
-      $user = 'duttaadri2014@gmail.com';
+      $user = 'duttaadri2014@gmail.com';                                            //'.$_SESSION['user'].'";'
       $db = new PDO($dsn, $user);
       $statement = $db->prepare("use Election_Essentials;");
-      $sqlGet = 'Select * from Us_Pr Where Username = "'.$username.'";';
+      $sqlGet = 'Select * from Us_Pr Where Username = "Anon1";';
+      $_SESSION['user'] = "hello";
+      
       $statement->execute();
       $statement = $db->prepare($sqlGet);
       $statement->execute();

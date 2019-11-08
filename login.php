@@ -6,7 +6,6 @@
     <title>Election Essentials</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <?php
-        include 'username.php';
         include 'config.php'; //holds api key
         echo '<meta name="google-signin-client_id" content="'.$CLIENT_ID.'">';
     ?>
@@ -65,8 +64,8 @@ hotfix for signout button to look like signin button
 </a>
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script> 
-<script>
+<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script> 
+<script type="text/javascript">
 function sign(googleUser){
     if(googleUser == ''){
         signOut();
@@ -83,8 +82,13 @@ function onSignIn(googleUser) {
 // for database 
 var profile = googleUser.getBasicProfile();
 var userID = profile.getId();
+var userIDString = String(userID);
+var data = {
+            username: userIDString
+        };
 var username_send = "username.php?username="+String(userID);
-$.post(username_send, {username: String(userID)}, function (response) {}); 
+$.post('username.php', {use:userID}, function (data){});
+//$.post(username_send, {username: String(userID)}, function (response) {}); 
 ////////////////////////////// more secure id method
 /*var id_token = googleUser.getAuthResponse().id_token;
 
@@ -95,15 +99,17 @@ xhr.onload = function() {
     console.log('Signed in as: ' + xhr.responseText);
 };
 xhr.send('idtoken=' + id_token); */
-} </script>
+} 
+</script>
 
 
-<script>
+<script type="text/javascript">
   function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut();
-    var username_send = "username.php?username=Anon1";
-    $.post(username_send, {username: "Anon1"}, function (response) {}); 
+    var username = 'Anon1';
+    $.post('username.php', {use:username}, function (data){});
+
   }
 </script>
 </body>

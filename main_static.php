@@ -1,6 +1,6 @@
 <?php
-    include 'username.php';
-
+    include_once('username.php');
+    include_once('login.php');
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +37,8 @@
             lgbtq: lgbtq,
             reproductive_issues: reproductive_issues,
             gun_violence: gun_violence}, function (response) {
-               location.href = "threads.php";
+                alert(response);
+                location.href = "threads.php";
         });  
 
         });

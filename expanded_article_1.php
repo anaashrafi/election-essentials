@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -17,14 +20,12 @@
                 <li><a href="aboutme.php"> ABOUT </a></li>
                 <?php include 'login.php';?>
 <?php
-      include 'username.php'; //holds Username
-
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
       $user = 'duttaadri2014@gmail.com';
       $db = new PDO($dsn, $user);
       $statement = $db->prepare("use Election_Essentials;");
       $statement->execute();
-      $check = "Select * from Us_Bo_Ma Where Username = '" .$username. "' and Article = '".$_REQUEST['title']."';";
+      $check = "Select * from Us_Bo_Ma Where Username = '".$_SESSION['user']."' and Article = '".$_REQUEST['title']."';";
       $statement = $db->prepare($check);
       $statement->execute();
       $row = $statement->fetch(PDO::FETCH_ASSOC);
