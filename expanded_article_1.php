@@ -39,12 +39,16 @@
 			</ul>
 		</div>
 <?php
+
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
       $user = 'duttaadri2014@gmail.com';
       $db = new PDO($dsn, $user);
       $statement = $db->prepare("use Election_Essentials;");
       $statement->execute();
-      $sqlGet = "Select * from Ar_Ti_To_Ar Where Title = '" . $_REQUEST['title']."';";
+
+      $title = $_REQUEST['title'];
+
+      $sqlGet = "Select * from Ar_Ti_To_Ar Where Title = '" .addslashes($title)."';";
       $statement = $db->prepare($sqlGet);
       $statement->execute();
       $data = $statement->fetchAll();
@@ -65,6 +69,7 @@
             var bookmark_send = "bookmark_keeping.php?article="+title+"&write=1";
             $.post(bookmark_send, {article: title, write: 1}, function (response) {
                 alert("Bookmarked");
+                //alert(response);
                 location.reload();
             }); 
         }

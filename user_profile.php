@@ -167,7 +167,12 @@
         <div id='bookmarksForeground'>
         <h2 class='title'> Bookmarks </h2>
 <?php
-     
+    function escape($value){
+        $search = array("'",  '"');
+        $replace = array("&#39;", '&quot;');
+
+        return str_replace($search, $replace, $value);
+    }
 
     $getData = "select * from Us_Bo_Ma where Username = '" .$_SESSION['user']. "';";
 
@@ -182,10 +187,11 @@
     $bookmarks = $statement->fetchAll(); 
     $rows = $statement->rowCount();
     for($i = 0; $i < $rows; $i++){
+        $escTitle = escape($bookmarks[$i]['Article']);
         echo "
             <div class='bookmarkWrapper' style='grid-row-start:".($i+2).";grid-column-start:1;'>
-                <a class='bookmarkText' href='expanded_article_1.php?title=".$bookmarks[$i]['Article']."'>".$bookmarks[$i]['Article']."</a>
-                <button onclick='removeBookmark(\"".$bookmarks[$i]['Article']."\")' class='removeButton'>Remove</button>
+                <a class='bookmarkText' href='expanded_article_1.php?title=".$escTitle."'>".$bookmarks[$i]['Article']."</a>
+                <button onclick='removeBookmark(\"".$escTitle."\")' class='removeButton'>Remove</button>
             </div>
         ";
     }
