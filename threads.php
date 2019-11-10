@@ -14,8 +14,8 @@
       $statement->execute();
       $data = $statement->fetchAll();
     
-      $economy= $data[0]['Economy'];
-      $military = $data[0]['Military'];
+      $jobs = $data[0]['Jobs_Wages'];
+      $taxes = $data[0]['Taxes'];
       $cjs = $data[0]['Criminal_Justice_System'];
       $healthcare = $data[0]['Healthcare'];
       $reproductive_issues = $data[0]['Reproductive_Issues'];
@@ -27,12 +27,12 @@
 
       $getArticles = "Select * from Es_To_Ar_Ti where Essential = 'Dummy'"; //dummy here to make appending simpler
 
-      if ($economy){
-        $getArticles .= ' or Essential = "Economy"';
+      if ($jobs){
+        $getArticles .= ' or Essential = "Jobs"';
       }
 
-      if ($military){
-        $getArticles .= ' or Essential = "Military"';
+      if ($taxes){
+        $getArticles .= ' or Essential = "Taxes"';
       }
 
       if ($cjs){
