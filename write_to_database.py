@@ -38,10 +38,10 @@ except mysql.connector.Error as err:
 
 #Read from json file
 
-topics = ["Military",
+topics = ["Taxes",
         "Healthcare",
         "CJS",
-        "Economy",
+        "Jobs",
         "Environment",
         "Education",
         "Gun Violence",

@@ -106,16 +106,6 @@
 				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1042886888225267712/1W9BKljE_400x400.jpg" alt="Andrew Yang"></img></div>
 				<div class="candidate-name">Andrew Yang</div>
             </a>
-            
-        <a id="Roque De La Fuente" onclick="grabCandidate(this.id)" class="candidate-card republican">
-				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/972106822403244033/x6xz5sQQ_400x400.jpg" alt="Roque De La Fuente"></img></div>
-				<div class="candidate-name">Roque De La Fuente</div>
-            </a>
-            
-      <a id="Mark Sanford" onclick="grabCandidate(this.id)" class="candidate-card republican">
-				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/1078744075732426752/nFjsV21f_400x400.jpg" alt="Mark Sanford"></img></div>
-				<div class="candidate-name">Mark Sanford</div>
-			</a>
 
 			<a id="Donald Trump" onclick="grabCandidate(this.id)" class="candidate-card republican">
 				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg" alt="Donald Trump"></img></div>
