@@ -85,9 +85,26 @@
                  location.href ='expanded_article_1.php?title='+name;
         });
         }
+
+        var Page_Number = 1;
+        function nextPage(){
+            if(document.getElementsByClassName("page-"+(Page_Number+1)).length != 0){
+                $('.page-'+Page_Number).css('display','none');
+
+                Page_Number = Page_Number + 1;
+                $('.page-'+Page_Number).css('display','block');
+            }
+        };
+
+        function prevPage(){
+            if(Page_Number > 1){
+                $('.page-'+Page_Number).css('display','none');
+
+                Page_Number = Page_Number - 1;
+                $('.page-'+Page_Number).css('display','block');
+            }
+        };
     </script>
-
-
     
 </head>
 
@@ -114,14 +131,22 @@
             $statement->execute();
             $articles = $statement->fetchAll(); 
             $rows = $statement->rowCount();
+            $count = 1;
             for($i = 0; $i < $rows; $i++){
-                echo "
-                    <a onclick='button(this.innerHTML)' class='article article-name'>".$articles[$i]['Title1']."</a>";
+                if($i >= 10 * $count){
+                    $count++;
+                }
+                if($count == 1){
+                    echo "<a onclick='button(this.innerHTML)' class='article article-name page-".$count."'>".$articles[$i]['Title1']."</a>";
+                }else{
+                    echo "<a onclick='button(this.innerHTML)' class='article article-name page-".$count."' style='display: none;'>".$articles[$i]['Title1']."</a>";
+                }
             }
 ?>
 		</div>
 
-	</header>
-
+    </header>
+    <button id="prev-page" class="page-buttons" onclick="prevPage()">&laquo; Previous</button>
+    <button id="next-page" class="page-buttons" onclick="nextPage()">Next &raquo;</button>
 </body>
 </html>
