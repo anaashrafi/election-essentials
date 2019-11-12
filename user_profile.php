@@ -13,25 +13,25 @@
         <script>
             $(document).ready(function(){
         $("#submit").click(function(){
-            var economy = $("#economy").prop("checked");
+            var jobs = $("#jobs").prop("checked");
             var environment = $("#environment").prop("checked");  
             var cjs = $("#cjs").prop("checked");
             var immigration = $("#immigration").prop("checked");
             var healthcare = $("#healthcare").prop("checked");
             var education = $("#education").prop("checked");
-            var military = $("#military").prop("checked");
+            var taxes = $("#taxes").prop("checked");
             var lgbtq = $("#lgbtq").prop("checked");
             var reproductive_issues = $("#reproductive_issues").prop("checked");
             var gun_violence = $("#gun_violence").prop("checked");
 
             var preference_send = 'preference_send.php';
-            $.post(preference_send, {economy: economy, 
+            $.post(preference_send, {jobs: jobs, 
             environment: environment,
             cjs: cjs,
             immigration: immigration,
             healthcare: healthcare,
             education: education,
-            military: military,
+            taxes: taxes,
             lgbtq: lgbtq,
             reproductive_issues: reproductive_issues,
             gun_violence: gun_violence}, function (response) {
@@ -71,8 +71,8 @@
       $statement->execute();
       $data = $statement->fetchAll();
     
-      $economy= $data[0]['Economy'];
-      $military = $data[0]['Military'];
+      $jobs = $data[0]['Jobs_Wages'];
+      $taxes = $data[0]['Taxes'];
       $cjs = $data[0]['Criminal_Justice_System'];
       $healthcare = $data[0]['Healthcare'];
       $reproductive_issues = $data[0]['Reproductive_Issues'];
@@ -99,8 +99,8 @@
         <div id='essentialsForeground'>
             <h2 class='title'> Your Essentials </h2>
                 <div class="checkBoxWrapper" style="grid-row-start:2;grid-column-start:2;">
-              <input id = "economy" class="checkBox" type="checkbox" <?php if($economy){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> Economy
+              <input id = "jobs" class="checkBox" type="checkbox" <?php if($jobs){echo "checked";}?>>
+              <p class="checkBoxChoices"style="grid-column-start:2;"> Jobs/Wages
 </p>
             </div>
 
@@ -137,8 +137,8 @@
             </div>
 
         <div class="checkBoxWrapper" style="grid-row-start:5;grid-column-start:2;">
-              <input id = "military" class="checkBox" type="checkbox" <?php if($military){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> Military
+              <input id = "taxes" class="checkBox" type="checkbox" <?php if($taxes){echo "checked";}?>>
+              <p class="checkBoxChoices"style="grid-column-start:2;"> Taxes
 </p>
             </div>
 
