@@ -8,7 +8,6 @@ from datetime import date
 topics = {"Jobs": "jobs",
         "Healthcare": "healthcare",
         "CJS": "criminal+justice+system",
-        "Economy": "economy",
         "Environment": "environment",
         "Education": "education",
         "Gun Violence": "+gun+violence",
