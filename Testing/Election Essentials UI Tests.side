@@ -1,0 +1,2880 @@
+{
+  "id": "4ac9a54f-06a5-4672-90a9-6f946c4e2af8",
+  "version": "2.0",
+  "name": "Election Essentials UI Tests",
+  "url": "https://electionessentials.appspot.com/candidates.php",
+  "tests": [{
+    "id": "e25a91b3-00ea-4d95-9001-ab6e88414ffc",
+    "name": "Next and Previous buttons",
+    "commands": [{
+      "id": "88988abc-0b92-4e31-8b76-af5f02490de3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "311d88bc-141f-4517-9328-a90ab9f00c08",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f72db708-3836-4d33-ae0b-d9ba46353c11",
+      "comment": "",
+      "command": "click",
+      "target": "id=gun_violence",
+      "targets": [
+        ["id=gun_violence", "id"],
+        ["css=#gun_violence", "css:finder"],
+        ["xpath=//input[@id='gun_violence']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76e634d1-58ed-4afe-a05f-510280ebb816",
+      "comment": "",
+      "command": "click",
+      "target": "id=lgbtq",
+      "targets": [
+        ["id=lgbtq", "id"],
+        ["css=#lgbtq", "css:finder"],
+        ["xpath=//input[@id='lgbtq']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43f8137e-3b2c-45f9-9860-dbc9773a215d",
+      "comment": "",
+      "command": "click",
+      "target": "id=education",
+      "targets": [
+        ["id=education", "id"],
+        ["css=#education", "css:finder"],
+        ["xpath=//input[@id='education']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc8dab3b-9c71-486d-bd32-ec8cc3d49efa",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[11]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2185091e-134c-437a-b4c4-8237b1c215a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=next-page",
+      "targets": [
+        ["id=next-page", "id"],
+        ["css=#next-page", "css:finder"],
+        ["xpath=//button[@id='next-page']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Next »')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7dc21e2-1ce6-4c35-a25c-14a8bdfd0a49",
+      "comment": "",
+      "command": "click",
+      "target": "id=next-page",
+      "targets": [
+        ["id=next-page", "id"],
+        ["css=#next-page", "css:finder"],
+        ["xpath=//button[@id='next-page']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Next »')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07490f7b-d2cd-43c4-84dc-5cfd6aeec81d",
+      "comment": "",
+      "command": "click",
+      "target": "id=next-page",
+      "targets": [
+        ["id=next-page", "id"],
+        ["css=#next-page", "css:finder"],
+        ["xpath=//button[@id='next-page']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Next »')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccd1a4d2-bb94-42de-a4b1-e2111a74df4a",
+      "comment": "",
+      "command": "click",
+      "target": "id=next-page",
+      "targets": [
+        ["id=next-page", "id"],
+        ["css=#next-page", "css:finder"],
+        ["xpath=//button[@id='next-page']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Next »')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2610a3dd-5147-48b5-871f-5e119c389017",
+      "comment": "",
+      "command": "click",
+      "target": "id=prev-page",
+      "targets": [
+        ["id=prev-page", "id"],
+        ["css=#prev-page", "css:finder"],
+        ["xpath=//button[@id='prev-page']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'« Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "615bff13-386c-47a3-a15b-96e92fa92579",
+      "comment": "",
+      "command": "click",
+      "target": "id=prev-page",
+      "targets": [
+        ["id=prev-page", "id"],
+        ["css=#prev-page", "css:finder"],
+        ["xpath=//button[@id='prev-page']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'« Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00d44b85-d7de-4bca-9b26-9472a9908400",
+      "comment": "",
+      "command": "click",
+      "target": "id=prev-page",
+      "targets": [
+        ["id=prev-page", "id"],
+        ["css=#prev-page", "css:finder"],
+        ["xpath=//button[@id='prev-page']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'« Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "281a2975-dee4-4feb-bc84-5895481e5f9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=prev-page",
+      "targets": [
+        ["id=prev-page", "id"],
+        ["css=#prev-page", "css:finder"],
+        ["xpath=//button[@id='prev-page']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'« Previous')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "920d9e2e-3b27-4cd0-a03f-812f41b13844",
+    "name": "Candidates",
+    "commands": [{
+      "id": "05c200a2-028a-4c3b-bba4-28f6693c4a6b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a52bd893-3bb3-4733-9b67-d1bef30b3a17",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbc2f3aa-128e-4888-9a63-a777e240420b",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[11]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d550aaa0-f340-440b-bb2a-95e201e71e94",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e80119a7-708f-4479-9360-f03e6f6712b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Michael\\ Bennet > .candidate-name",
+      "targets": [
+        ["css=#Michael\\ Bennet > .candidate-name", "css:finder"],
+        ["xpath=//a[@id='Michael Bennet']/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71af9a92-926b-4347-af8b-c3443edadfc1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04e0fee7-ec75-46a7-a571-2bb2457051ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Joe\\ Biden img",
+      "targets": [
+        ["css=#Joe\\ Biden img", "css:finder"],
+        ["xpath=//img[@alt='Joe Biden']", "xpath:img"],
+        ["xpath=//a[@id='Joe Biden']/div/img", "xpath:idRelative"],
+        ["xpath=//a[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fef368e-07fa-4bbf-b7a5-b3c6a10b9a46",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10006eb4-fbb1-474d-8ddc-80b4c0eb84bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cory\\ Booker img",
+      "targets": [
+        ["css=#Cory\\ Booker img", "css:finder"],
+        ["xpath=//img[@alt='Cory Booker']", "xpath:img"],
+        ["xpath=//a[@id='Cory Booker']/div/img", "xpath:idRelative"],
+        ["xpath=//a[3]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "218ca6f0-be58-4e61-9ef9-a2cd142e00a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa438217-306e-4249-b62a-f6a024e753d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Steve\\ Bullock img",
+      "targets": [
+        ["css=#Steve\\ Bullock img", "css:finder"],
+        ["xpath=//img[@alt='Steve Bullock']", "xpath:img"],
+        ["xpath=//a[@id='Steve Bullock']/div/img", "xpath:idRelative"],
+        ["xpath=//a[4]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "852c1b33-3266-4bb9-a7c9-38fd1dfb61b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "632088c8-5d05-4419-a0fc-229fca72c67f",
+      "comment": "",
+      "command": "click",
+      "target": "id=Pete Buttigieg",
+      "targets": [
+        ["id=Pete Buttigieg", "id"],
+        ["linkText=Pete Buttigieg", "linkText"],
+        ["css=#Pete\\ Buttigieg", "css:finder"],
+        ["xpath=//a[@id='Pete Buttigieg']", "xpath:attributes"],
+        ["xpath=//div[@id='cards']/a[5]", "xpath:idRelative"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Pete Buttigieg')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c9e73bb-19b3-49bd-9f51-cb866d7fdfea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41321f1d-e0db-45c3-b9ee-68b3f2c76a45",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Julian\\ Castro img",
+      "targets": [
+        ["css=#Julian\\ Castro img", "css:finder"],
+        ["xpath=//img[@alt='Julián Castro']", "xpath:img"],
+        ["xpath=//a[@id='Julian Castro']/div/img", "xpath:idRelative"],
+        ["xpath=//a[6]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab4820bd-cee7-4f45-869c-cb4152880819",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bbe839c-2565-4b2e-a57c-ebbe7dff3ed0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#John\\ Delaney img",
+      "targets": [
+        ["css=#John\\ Delaney img", "css:finder"],
+        ["xpath=//img[@alt='John Delaney']", "xpath:img"],
+        ["xpath=//a[@id='John Delaney']/div/img", "xpath:idRelative"],
+        ["xpath=//a[7]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b62c5e3-8ecd-46f6-a5e6-b35fca459b90",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c0442b7-9075-40ee-9472-acfd2d5c089f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Tulsi\\ Gabbard img",
+      "targets": [
+        ["css=#Tulsi\\ Gabbard img", "css:finder"],
+        ["xpath=//img[@alt='Tulsi Gabbard']", "xpath:img"],
+        ["xpath=//a[@id='Tulsi Gabbard']/div/img", "xpath:idRelative"],
+        ["xpath=//a[8]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5edc1cde-ce7d-4290-83e5-b151f38b9f25",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": "83.79998779296875,19"
+    }, {
+      "id": "f2c28373-ef03-421a-bc3e-c511f584e824",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": "83.79998779296875,19"
+    }, {
+      "id": "99d920f7-bc90-4c37-9771-4bcc3feab045",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": "83.79998779296875,19"
+    }, {
+      "id": "829df25c-8b3f-4ebc-8f4a-12c0d908ad66",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "243f763c-14d0-48f1-a8af-814787010cc9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Kamala\\ Harris img",
+      "targets": [
+        ["css=#Kamala\\ Harris img", "css:finder"],
+        ["xpath=//img[@alt='Kamela Harris']", "xpath:img"],
+        ["xpath=//a[@id='Kamala Harris']/div/img", "xpath:idRelative"],
+        ["xpath=//a[9]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e58d0be-98b8-4736-98be-cf49d15861ed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2e043b6-c3c0-436d-bca0-00246c8632b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Amy\\ Klobuchar img",
+      "targets": [
+        ["css=#Amy\\ Klobuchar img", "css:finder"],
+        ["xpath=//img[@alt='Amy Klobuchar']", "xpath:img"],
+        ["xpath=//a[@id='Amy Klobuchar']/div/img", "xpath:idRelative"],
+        ["xpath=//a[10]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0961715c-07f5-4fa8-bdbf-f25321b51d8d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53200658-f030-4bf3-8527-d02c5916f7ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Wayne\\ Messam img",
+      "targets": [
+        ["css=#Wayne\\ Messam img", "css:finder"],
+        ["xpath=//img[@alt='Wayne Messam']", "xpath:img"],
+        ["xpath=//a[@id='Wayne Messam']/div/img", "xpath:idRelative"],
+        ["xpath=//a[11]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a4690df-a8df-4b5d-9880-3eac2c69a27e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e8efc16-c1ca-413d-8660-4963f9cfbb1d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Bernie\\ Sanders img",
+      "targets": [
+        ["css=#Bernie\\ Sanders img", "css:finder"],
+        ["xpath=//img[@alt='Bernie Sanders']", "xpath:img"],
+        ["xpath=//a[@id='Bernie Sanders']/div/img", "xpath:idRelative"],
+        ["xpath=//a[12]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec6973a9-8b93-4365-be1b-489257103c0f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da0460e6-4610-4f65-8c02-0f30128ea12e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Joe\\ Sestak img",
+      "targets": [
+        ["css=#Joe\\ Sestak img", "css:finder"],
+        ["xpath=//img[@alt='Joe Sestak']", "xpath:img"],
+        ["xpath=//a[@id='Joe Sestak']/div/img", "xpath:idRelative"],
+        ["xpath=//a[13]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e12b6662-473c-45b1-ac63-f86f12096179",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a85c1a0f-2fb2-411e-8bdf-192aab5d25e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Tom\\ Steyer img",
+      "targets": [
+        ["css=#Tom\\ Steyer img", "css:finder"],
+        ["xpath=//img[@alt='Tom Steyer']", "xpath:img"],
+        ["xpath=//a[@id='Tom Steyer']/div/img", "xpath:idRelative"],
+        ["xpath=//a[14]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a6fb836-ae0c-4240-a727-8bb316118e3c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35df0090-dfdd-46e0-8dea-bc1c86505f97",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Elizabeth\\ Warren img",
+      "targets": [
+        ["css=#Elizabeth\\ Warren img", "css:finder"],
+        ["xpath=//img[@alt='Elizabeth Warren']", "xpath:img"],
+        ["xpath=//a[@id='Elizabeth Warren']/div/img", "xpath:idRelative"],
+        ["xpath=//a[15]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56985472-cba6-46f5-9456-bb68e123d917",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14df3101-8b90-40aa-a924-9dbb63b479ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Marianne\\ Williamson img",
+      "targets": [
+        ["css=#Marianne\\ Williamson img", "css:finder"],
+        ["xpath=//img[@alt='Marianne Williamson']", "xpath:img"],
+        ["xpath=//a[@id='Marianne Williamson']/div/img", "xpath:idRelative"],
+        ["xpath=//a[16]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8886c3bc-7d38-4fd6-99a6-632a6fdc3080",
+      "comment": "",
+      "command": "click",
+      "target": "id=candidateName",
+      "targets": [
+        ["id=candidateName", "id"],
+        ["css=#candidateName", "css:finder"],
+        ["xpath=//div[@id='candidateName']", "xpath:attributes"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c6c760c-83b4-49e9-a32f-db59c2defc24",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54a25640-3dbc-4879-891e-ace2d66118d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Andrew\\ Yang img",
+      "targets": [
+        ["css=#Andrew\\ Yang img", "css:finder"],
+        ["xpath=//img[@alt='Andrew Yang']", "xpath:img"],
+        ["xpath=//a[@id='Andrew Yang']/div/img", "xpath:idRelative"],
+        ["xpath=//a[17]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44792cfe-d5b8-403a-ae53-db88afc62ccf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "539413fd-e126-4000-bbe3-8cb8ccc13d9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Donald\\ Trump img",
+      "targets": [
+        ["css=#Donald\\ Trump img", "css:finder"],
+        ["xpath=//img[@alt='Donald Trump']", "xpath:img"],
+        ["xpath=//a[@id='Donald Trump']/div/img", "xpath:idRelative"],
+        ["xpath=//a[18]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cedb1555-ccb6-4be7-b40d-a48cd72dfaad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62249c58-5089-4ee0-93c7-85b914eb5f15",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Joe\\ Walsh img",
+      "targets": [
+        ["css=#Joe\\ Walsh img", "css:finder"],
+        ["xpath=//img[@alt='Joe Walsh']", "xpath:img"],
+        ["xpath=//a[@id='Joe Walsh']/div/img", "xpath:idRelative"],
+        ["xpath=//a[19]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb33eea6-97b7-48f4-a6f8-1b636daa972e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "abe074f3-3405-4b2b-abc3-181a8ed0675c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Bill\\ Weld img",
+      "targets": [
+        ["css=#Bill\\ Weld img", "css:finder"],
+        ["xpath=//img[@alt='Bill Weld']", "xpath:img"],
+        ["xpath=//a[@id='Bill Weld']/div/img", "xpath:idRelative"],
+        ["xpath=//a[20]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0432c569-03c7-4e80-a43b-97bb1fec31b1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6a031e5b-970e-4ca2-b922-e4cdce9d83ee",
+    "name": "Saved essentials(logged in)",
+    "commands": [{
+      "id": "33e04b76-3877-481f-a77a-9fba3d1f7363",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85cbc506-6ba1-42a0-8957-1358a65cce87",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "022e6011-c34f-44ac-b1c3-585a390b50a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=lgbtq",
+      "targets": [
+        ["id=lgbtq", "id"],
+        ["css=#lgbtq", "css:finder"],
+        ["xpath=//input[@id='lgbtq']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eacfb3f4-a841-40df-9ad8-58038cc3b0e6",
+      "comment": "",
+      "command": "click",
+      "target": "id=gun_violence",
+      "targets": [
+        ["id=gun_violence", "id"],
+        ["css=#gun_violence", "css:finder"],
+        ["xpath=//input[@id='gun_violence']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7b4416e-fd31-47c1-8c28-8dcfa4900fdd",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[11]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ad5eb8c-b9de-43dd-ae52-d083862d23f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MY PROFILE",
+      "targets": [
+        ["linkText=MY PROFILE", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MY PROFILE')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user_profile.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MY PROFILE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92e43ec8-d396-401d-889a-bb8bcdddca36",
+      "comment": "",
+      "command": "click",
+      "target": "id=gun_violence",
+      "targets": [
+        ["id=gun_violence", "id"],
+        ["css=#gun_violence", "css:finder"],
+        ["xpath=//input[@id='gun_violence']", "xpath:attributes"],
+        ["xpath=//div[@id='essentialsForeground']/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ae586dc-51ec-4201-8e9a-5903421ba45f",
+      "comment": "",
+      "command": "click",
+      "target": "id=lgbtq",
+      "targets": [
+        ["id=lgbtq", "id"],
+        ["css=#lgbtq", "css:finder"],
+        ["xpath=//input[@id='lgbtq']", "xpath:attributes"],
+        ["xpath=//div[@id='essentialsForeground']/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0af5e4a7-656d-425f-bb7a-3d100b92c92a",
+      "comment": "",
+      "command": "click",
+      "target": "id=education",
+      "targets": [
+        ["id=education", "id"],
+        ["css=#education", "css:finder"],
+        ["xpath=//input[@id='education']", "xpath:attributes"],
+        ["xpath=//div[@id='essentialsForeground']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6e450f8-bd49-4c39-9e12-5979f5c71946",
+      "comment": "",
+      "command": "click",
+      "target": "id=immigration",
+      "targets": [
+        ["id=immigration", "id"],
+        ["css=#immigration", "css:finder"],
+        ["xpath=//input[@id='immigration']", "xpath:attributes"],
+        ["xpath=//div[@id='essentialsForeground']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2349f28a-8161-44e7-94d6-255ca98e98ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='essentialsForeground']/div[11]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "716d5753-3ff2-4385-8b0e-4d2c3471176d",
+      "comment": "",
+      "command": "//assertAlert",
+      "target": "Essentials Changed",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14983cf5-a5de-4a88-a204-cca811a79118",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HOME",
+      "targets": [
+        ["linkText=HOME", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'HOME')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'threads.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HOME')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "882b5f92-c9ef-45d5-95f7-af1c57767722",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MY PROFILE",
+      "targets": [
+        ["linkText=MY PROFILE", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MY PROFILE')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user_profile.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MY PROFILE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f76de751-81dc-4576-8dbe-e79f140bf008",
+      "comment": "",
+      "command": "click",
+      "target": "id=education",
+      "targets": [
+        ["id=education", "id"],
+        ["css=#education", "css:finder"],
+        ["xpath=//input[@id='education']", "xpath:attributes"],
+        ["xpath=//div[@id='essentialsForeground']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "029763a3-7e06-4436-88f7-ab7d27f9931c",
+      "comment": "",
+      "command": "click",
+      "target": "id=immigration",
+      "targets": [
+        ["id=immigration", "id"],
+        ["css=#immigration", "css:finder"],
+        ["xpath=//input[@id='immigration']", "xpath:attributes"],
+        ["xpath=//div[@id='essentialsForeground']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81d8724b-c203-4949-bb8c-068e679fbe6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='essentialsForeground']/div[11]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e25300ab-6606-484e-b9db-fbd1e4ad6656",
+      "comment": "",
+      "command": "//assertAlert",
+      "target": "Essentials Changed",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55b89bf5-cb60-443e-81d6-4ff7ae1684ab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HOME",
+      "targets": [
+        ["linkText=HOME", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'HOME')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'threads.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HOME')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d6955cd0-6f93-496f-9617-4f641a76769a",
+    "name": "Bookmarking",
+    "commands": [{
+      "id": "fca0a2dc-5868-4adc-9a87-28569632ac1d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f574534-f2b0-4ecc-8600-595f203a4686",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94aec6a2-b648-4368-be65-01735a9c2bb0",
+      "comment": "",
+      "command": "click",
+      "target": "id=environment",
+      "targets": [
+        ["id=environment", "id"],
+        ["css=#environment", "css:finder"],
+        ["xpath=//input[@id='environment']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04ae5797-0158-4cd7-867c-99d01b664c27",
+      "comment": "",
+      "command": "click",
+      "target": "id=immigration",
+      "targets": [
+        ["id=immigration", "id"],
+        ["css=#immigration", "css:finder"],
+        ["xpath=//input[@id='immigration']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc54dd71-ea77-45e1-b76a-a511c210795d",
+      "comment": "",
+      "command": "click",
+      "target": "id=education",
+      "targets": [
+        ["id=education", "id"],
+        ["css=#education", "css:finder"],
+        ["xpath=//input[@id='education']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24a3ccf4-8f6e-45d4-a522-18a7446b3e79",
+      "comment": "",
+      "command": "click",
+      "target": "id=gun_violence",
+      "targets": [
+        ["id=gun_violence", "id"],
+        ["css=#gun_violence", "css:finder"],
+        ["xpath=//input[@id='gun_violence']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[10]/input", "xpath:idRelative"],
+        ["xpath=//div[10]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "072fd3e0-89ed-4b62-8634-10662432e99b",
+      "comment": "",
+      "command": "click",
+      "target": "id=lgbtq",
+      "targets": [
+        ["id=lgbtq", "id"],
+        ["css=#lgbtq", "css:finder"],
+        ["xpath=//input[@id='lgbtq']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[8]/input", "xpath:idRelative"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3410776-9269-4b9c-8274-c3008d1f17f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[11]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b46b3a81-41a0-49c9-90d2-03c3803f0df6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=These Rats Drive Tiny Cars—for Science",
+      "targets": [
+        ["linkText=These Rats Drive Tiny Cars—for Science", "linkText"],
+        ["css=.article:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'These Rats Drive Tiny Cars—for Science')]", "xpath:link"],
+        ["xpath=//a[@onclick='button(this.innerHTML)']", "xpath:attributes"],
+        ["xpath=//div[@id='articles']/a", "xpath:idRelative"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'These Rats Drive Tiny Cars—for Science')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5a30dca-e2f5-4cba-80ef-c6f5463dab01",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ADD BOOKMARK",
+      "targets": [
+        ["linkText=ADD BOOKMARK", "linkText"],
+        ["css=li:nth-child(19) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ADD BOOKMARK')]", "xpath:link"],
+        ["xpath=//a[@onclick='saveBookmark()']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[8]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ADD BOOKMARK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd24527f-1f12-499d-bec3-42593c355b94",
+      "comment": "",
+      "command": "//assertAlert",
+      "target": "Bookmarked",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e150385f-ea8d-4491-8326-8dc9e1874dd7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MY PROFILE",
+      "targets": [
+        ["linkText=MY PROFILE", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MY PROFILE')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user_profile.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MY PROFILE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb7c46f6-e5a6-479c-888e-cde1a07b2bf6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=These Rats Drive Tiny Cars—for Science",
+      "targets": [
+        ["linkText=These Rats Drive Tiny Cars—for Science", "linkText"],
+        ["css=.bookmarkText", "css:finder"],
+        ["xpath=//a[contains(text(),'These Rats Drive Tiny Cars—for Science')]", "xpath:link"],
+        ["xpath=//div[@id='bookmarksForeground']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'expanded_article_1.php?title=These Rats Drive Tiny Cars—for Science')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'These Rats Drive Tiny Cars—for Science')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e4e3494-fc64-442d-b70a-977d47469c6c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=REMOVE BOOKMARK",
+      "targets": [
+        ["linkText=REMOVE BOOKMARK", "linkText"],
+        ["css=li:nth-child(19) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'REMOVE BOOKMARK')]", "xpath:link"],
+        ["xpath=//a[@onclick='removeBookmark()']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[8]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REMOVE BOOKMARK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f7462ea-919a-455e-9003-073d71aec725",
+      "comment": "",
+      "command": "//assertAlert",
+      "target": "Bookmark removed",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ade9e1bb-f486-4d31-8885-3a8b19e03a6c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MY PROFILE",
+      "targets": [
+        ["linkText=MY PROFILE", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MY PROFILE')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user_profile.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MY PROFILE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "422236cc-2a55-4621-8418-57e97993fac4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HOME",
+      "targets": [
+        ["linkText=HOME", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'HOME')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'threads.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HOME')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32aa6758-df30-440a-a5a9-0264e904b885",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’",
+      "targets": [
+        ["linkText=TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’", "linkText"],
+        ["css=.article:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’')]", "xpath:link"],
+        ["xpath=(//a[@onclick='button(this.innerHTML)'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='articles']/a[4]", "xpath:idRelative"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "debac40d-0eb7-4dbe-8e99-b7173d530988",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ADD BOOKMARK",
+      "targets": [
+        ["linkText=ADD BOOKMARK", "linkText"],
+        ["css=li:nth-child(19) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ADD BOOKMARK')]", "xpath:link"],
+        ["xpath=//a[@onclick='saveBookmark()']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[8]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ADD BOOKMARK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "278294fd-2f4d-4525-9670-1b436ae52816",
+      "comment": "",
+      "command": "//assertAlert",
+      "target": "Bookmarked",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35de916e-0518-48e2-9484-63553944499e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MY PROFILE",
+      "targets": [
+        ["linkText=MY PROFILE", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MY PROFILE')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user_profile.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MY PROFILE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "804522ef-f775-43c8-a653-1125ca86f281",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’",
+      "targets": [
+        ["linkText=TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’", "linkText"],
+        ["css=.bookmarkText", "css:finder"],
+        ["xpath=//a[contains(text(),'TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’')]", "xpath:link"],
+        ["xpath=//div[@id='bookmarksForeground']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'expanded_article_1.php?title=TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30012e3e-4291-4332-a486-b5f02effb9c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MY PROFILE",
+      "targets": [
+        ["linkText=MY PROFILE", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'MY PROFILE')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user_profile.php')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MY PROFILE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6e37334-c5b7-43e6-9b9c-6d06b636a5be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.removeButton",
+      "targets": [
+        ["css=.removeButton", "css:finder"],
+        ["xpath=//button[@onclick='removeBookmark(\"TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’\")']", "xpath:attributes"],
+        ["xpath=//div[@id='bookmarksForeground']/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7373a796-1263-4b7c-bd5a-ad69b88d8e03",
+      "comment": "",
+      "command": "//assertAlert",
+      "target": "Bookmark removed",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26e3474f-afb1-4608-a0da-3363ce2b5496",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HOME",
+      "targets": [
+        ["linkText=HOME", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'HOME')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'threads.php')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HOME')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96149b58-8c80-4c67-a610-c0cca3a95ea4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’",
+      "targets": [
+        ["linkText=TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’", "linkText"],
+        ["css=.article:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’')]", "xpath:link"],
+        ["xpath=(//a[@onclick='button(this.innerHTML)'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='articles']/a[4]", "xpath:idRelative"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "faac7736-2c48-45ae-ab49-1cd546cb9b03",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ADD BOOKMARK",
+      "targets": [
+        ["linkText=ADD BOOKMARK", "linkText"],
+        ["css=li:nth-child(19) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ADD BOOKMARK')]", "xpath:link"],
+        ["xpath=//a[@onclick='saveBookmark()']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[8]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ADD BOOKMARK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13bc83e3-33d9-4bef-ac8f-67f234399516",
+      "comment": "",
+      "command": "//assertAlert",
+      "target": "Bookmarked",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "955f8acc-30da-4750-849e-2288e219310a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=REMOVE BOOKMARK",
+      "targets": [
+        ["linkText=REMOVE BOOKMARK", "linkText"],
+        ["css=li:nth-child(19) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'REMOVE BOOKMARK')]", "xpath:link"],
+        ["xpath=//a[@onclick='removeBookmark()']", "xpath:attributes"],
+        ["xpath=(//a[contains(@href, '')])[8]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'REMOVE BOOKMARK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c6573c42-2f5c-4253-ad45-018cfc60506c",
+    "name": "Twitter Share (already logged in)",
+    "commands": [{
+      "id": "9282dcd2-93d3-4ec0-bfda-8bd45b67ade7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0919099-a91c-47a6-abc5-54449b47d526",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab192f39-f256-4a89-9e0b-4a567c00710e",
+      "comment": "",
+      "command": "click",
+      "target": "id=jobs",
+      "targets": [
+        ["id=jobs", "id"],
+        ["css=#jobs", "css:finder"],
+        ["xpath=//input[@id='jobs']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8f55888-6403-4638-93f7-c7ae2df10a40",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='foreground']/div[11]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'SUBMIT')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c2cd43c-390e-4f2f-96bb-dab39b0f6a4e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Jobs Are Plentiful. Big Pay Raises Aren’t.",
+      "targets": [
+        ["linkText=Jobs Are Plentiful. Big Pay Raises Aren’t.", "linkText"],
+        ["css=.article:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Jobs Are Plentiful. Big Pay Raises Aren’t.')]", "xpath:link"],
+        ["xpath=//a[@onclick='button(this.innerHTML)']", "xpath:attributes"],
+        ["xpath=//div[@id='articles']/a", "xpath:idRelative"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Jobs Are Plentiful. Big Pay Raises Aren’t.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5a28095-acda-41e2-bc00-98cd447d1c07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://twitter.com/share?ref_src=twsrc%5Etfw')]", "xpath:href"],
+        ["xpath=//ul/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4057",
+      "windowTimeout": 2000
+    }, {
+      "id": "f504f337-5999-48ff-bd1c-fa7e056b1896",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77058188-2910-44a8-8765-24e5fbeaaf23",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4057}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba91f871-a27a-413b-94b4-08308569837c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//input[@value='Tweet']", "xpath:attributes"],
+        ["xpath=//form[@id='update-form']/div[3]/fieldset/input", "xpath:idRelative"],
+        ["xpath=//fieldset/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6f34901-baad-4c35-aca8-d0b066eb2226",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7378c904-4863-479a-bc08-db7d0405cc56",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4af64f06-6027-4ea1-972b-7668f1700286",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=VOTER INFORMATION",
+      "targets": [
+        ["linkText=VOTER INFORMATION", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'VOTER INFORMATION')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'voting_info.php')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'VOTER INFORMATION')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3699dfcf-568a-424f-a786-0753df8a4a62",
+    "name": "Candidate Campaign Links",
+    "commands": [{
+      "id": "586108bd-d00b-4234-ba5c-b85a7802dbb5",
+      "comment": "",
+      "command": "open",
+      "target": "https://electionessentials.appspot.com/candidates.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "518797db-f7b7-4f8f-b0ac-0e854c524eee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dba6d2a1-f05c-474c-b2a8-989cfbdfb4ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=Michael Bennet",
+      "targets": [
+        ["id=Michael Bennet", "id"],
+        ["linkText=Michael Bennet", "linkText"],
+        ["css=#Michael\\ Bennet", "css:finder"],
+        ["xpath=//a[@id='Michael Bennet']", "xpath:attributes"],
+        ["xpath=//div[@id='cards']/a", "xpath:idRelative"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Michael Bennet')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c3a20e1-ddf6-4cef-bbc7-4aafeac821b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://michaelbennet.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6766",
+      "windowTimeout": 2000
+    }, {
+      "id": "aa326b06-3a9c-488f-a9ca-734aef4415a2",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8766fb3-32ab-4583-a447-7bca91c04f10",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6766}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "854902af-5ad7-4631-b11e-a514c4ffff84",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fd2d0b1-03b8-4524-887c-6dca24a68092",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bab5ef90-4071-40c1-b279-9484308a90b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd06bc40-9cdb-4e9d-9f90-716aaa2d3d1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Joe\\ Biden img",
+      "targets": [
+        ["css=#Joe\\ Biden img", "css:finder"],
+        ["xpath=//img[@alt='Joe Biden']", "xpath:img"],
+        ["xpath=//a[@id='Joe Biden']/div/img", "xpath:idRelative"],
+        ["xpath=//a[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "baa7f65e-7f8c-45e0-8fcb-6cda4ba9301a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://joebiden.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2131",
+      "windowTimeout": 2000
+    }, {
+      "id": "94c28cd0-98ae-4f56-9c0d-4d2d8f3bf08f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2131}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1d84e98-c48f-40c1-bbc7-73a4a159ebbc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6f88424-dd82-462d-9ec8-db6769811d7b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f296ae60-2565-4816-9f13-4b6507424a0d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e13a5c40-7ced-4a40-ba9c-1514ebee2ee6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cory\\ Booker img",
+      "targets": [
+        ["css=#Cory\\ Booker img", "css:finder"],
+        ["xpath=//img[@alt='Cory Booker']", "xpath:img"],
+        ["xpath=//a[@id='Cory Booker']/div/img", "xpath:idRelative"],
+        ["xpath=//a[3]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af226898-10c0-4da1-9e5c-46ca4a5e79f5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://corybooker.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6334",
+      "windowTimeout": 2000
+    }, {
+      "id": "03653918-f09d-459e-a010-a7862d1f40f6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6334}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d77207e-bb6f-41d2-a612-9301f90d57f2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2eef1263-02fa-4ba5-bff5-bac5a711df52",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85fc0f87-f33b-4c5b-aeec-f312232c9f21",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0705f4c9-92cf-4dce-8269-3f8c94066c09",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Steve\\ Bullock img",
+      "targets": [
+        ["css=#Steve\\ Bullock img", "css:finder"],
+        ["xpath=//img[@alt='Steve Bullock']", "xpath:img"],
+        ["xpath=//a[@id='Steve Bullock']/div/img", "xpath:idRelative"],
+        ["xpath=//a[4]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50ff8586-b1f0-439c-a8ea-8954a30ed113",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://stevebullock.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1477",
+      "windowTimeout": 2000
+    }, {
+      "id": "e8c7205a-2764-4fe9-b1ce-ed6cc8d41e4a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1477}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab3e58a9-0510-4a96-8e98-e76cf37c8a93",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a62cdb7-d7cf-444a-91c0-2e063950ca83",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fbf9292-5274-446c-b025-13574ceb99d8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a503fd3f-f55d-4831-9d52-f39f819a013f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Pete\\ Buttigieg img",
+      "targets": [
+        ["css=#Pete\\ Buttigieg img", "css:finder"],
+        ["xpath=//img[@alt='Pete Buttigieg']", "xpath:img"],
+        ["xpath=//a[@id='Pete Buttigieg']/div/img", "xpath:idRelative"],
+        ["xpath=//a[5]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7d91245-e4b1-46e5-83ad-dad6d55d8f28",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://peteforamerica.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2516",
+      "windowTimeout": 2000
+    }, {
+      "id": "0fd91926-cb04-47fc-b39f-8378b473ecd4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2516}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80f823b5-d968-4a82-84cc-96400abd38fa",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06c5a553-ce5c-4a47-ac40-83edb1dfb6ca",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52d341ac-fb9c-49dc-ade9-ccfbe33fa023",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2feede10-1b32-418c-87cf-112c260902dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Julian\\ Castro > .candidate-name",
+      "targets": [
+        ["css=#Julian\\ Castro > .candidate-name", "css:finder"],
+        ["xpath=//a[@id='Julian Castro']/div[2]", "xpath:idRelative"],
+        ["xpath=//a[6]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc3dc83f-cf41-4445-963a-442e9f73ef82",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.julianforthefuture.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3067",
+      "windowTimeout": 2000
+    }, {
+      "id": "352647e1-fd88-484e-9fd5-20a9cb43b820",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3067}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98082ec0-f45f-4e37-ba13-b51e90057dce",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b387987a-4d50-4505-ba13-da520ca890a3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "264786e4-c59d-4316-b8a8-385fb4b3c4b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bb00653-b384-46a5-8630-f5c4ea18cf83",
+      "comment": "",
+      "command": "click",
+      "target": "css=#John\\ Delaney img",
+      "targets": [
+        ["css=#John\\ Delaney img", "css:finder"],
+        ["xpath=//img[@alt='John Delaney']", "xpath:img"],
+        ["xpath=//a[@id='John Delaney']/div/img", "xpath:idRelative"],
+        ["xpath=//a[7]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abd67f50-4fd4-4e55-b914-676f804a2d62",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.johndelaney.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1266",
+      "windowTimeout": 2000
+    }, {
+      "id": "175e6da4-9c6a-467b-a5a8-90cdb976fdb5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1266}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dca34480-c0fc-4e0d-8b26-5dbcd2c78d56",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83e6451d-2e30-4b2e-a802-38105a52e55c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "074c00f4-8f96-4816-9e82-51fc96ce859f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c6f8d3c-7f46-4e91-a3d4-55c4aa5726e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Tulsi\\ Gabbard img",
+      "targets": [
+        ["css=#Tulsi\\ Gabbard img", "css:finder"],
+        ["xpath=//img[@alt='Tulsi Gabbard']", "xpath:img"],
+        ["xpath=//a[@id='Tulsi Gabbard']/div/img", "xpath:idRelative"],
+        ["xpath=//a[8]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b16af6a9-159c-48ba-b434-112f3e5df655",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.tulsi2020.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4565",
+      "windowTimeout": 2000
+    }, {
+      "id": "4c14e551-cf85-4921-ab6b-8cb5c52bdfaf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4565}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8858cf99-1d3b-4620-bdaf-901a8c563512",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d87561f-cb1f-48db-8dab-e57e0c16cb56",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f865a8e-8159-4b6f-9269-edd6c5e90740",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "889a0ff1-cdac-4a4c-813c-292f54d1263a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Kamala\\ Harris img",
+      "targets": [
+        ["css=#Kamala\\ Harris img", "css:finder"],
+        ["xpath=//img[@alt='Kamela Harris']", "xpath:img"],
+        ["xpath=//a[@id='Kamala Harris']/div/img", "xpath:idRelative"],
+        ["xpath=//a[9]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00f48e85-edec-428c-acfd-38e886aac59d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://kamalaharris.org/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9354",
+      "windowTimeout": 2000
+    }, {
+      "id": "2b4294b2-c223-42ae-aaf3-2bc727fbe7ca",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9354}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8dec5a32-a2b2-4178-b55d-b983b38e0fe7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ffef910-e8f6-452a-ace2-e6f80ce13a40",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c381291-f1e7-476f-b689-ff42c90113e5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d26bb002-c4a3-4751-9308-63dcadfe89ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Amy\\ Klobuchar img",
+      "targets": [
+        ["css=#Amy\\ Klobuchar img", "css:finder"],
+        ["xpath=//img[@alt='Amy Klobuchar']", "xpath:img"],
+        ["xpath=//a[@id='Amy Klobuchar']/div/img", "xpath:idRelative"],
+        ["xpath=//a[10]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70bce083-f4ea-4dbd-a282-c02896def3e4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://amyklobuchar.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9330",
+      "windowTimeout": 2000
+    }, {
+      "id": "b0992c8e-9273-4961-90ab-ee8f6c6fc388",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9330}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2016ebb5-24b9-4a5e-86f0-cc041397117c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5a85c84-76ae-47ef-9708-9f1588d5eb2d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60fbf08e-63dc-41be-af84-d68fcd8cdf8a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "715e9784-74b8-48a9-8f1a-be44d869ae35",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Wayne\\ Messam img",
+      "targets": [
+        ["css=#Wayne\\ Messam img", "css:finder"],
+        ["xpath=//img[@alt='Wayne Messam']", "xpath:img"],
+        ["xpath=//a[@id='Wayne Messam']/div/img", "xpath:idRelative"],
+        ["xpath=//a[11]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bb9c42e-b3d9-49cb-bbdc-45981610df8b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://wayneforusa.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6594",
+      "windowTimeout": 2000
+    }, {
+      "id": "74e4a33c-66f5-4926-bb3b-20f28a240727",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6594}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b8a9e5e-7c54-4790-9ef8-85f3ef97ddfb",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7316f234-0216-469b-b2b8-c8ef54c838b7",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10887e47-812e-4123-9c48-7803b0514734",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88f75b6c-39d5-4a16-83d0-0e1e9f9dc5b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Bernie\\ Sanders img",
+      "targets": [
+        ["css=#Bernie\\ Sanders img", "css:finder"],
+        ["xpath=//img[@alt='Bernie Sanders']", "xpath:img"],
+        ["xpath=//a[@id='Bernie Sanders']/div/img", "xpath:idRelative"],
+        ["xpath=//a[12]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4e51ffd-7010-4834-afc6-f939469be6ad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://berniesanders.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2217",
+      "windowTimeout": 2000
+    }, {
+      "id": "a7684624-47b6-451c-b1fa-c1ba145551ee",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2217}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2ed1436-9755-4965-b8ba-e368d84a042f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39c9fb63-fd82-4d0c-afbb-65fa6a660043",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d449afb4-87f6-4823-bdfc-9d1513007bc2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "263e01cc-5bfe-4e89-aa83-4f9c818e3e32",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Joe\\ Sestak img",
+      "targets": [
+        ["css=#Joe\\ Sestak img", "css:finder"],
+        ["xpath=//img[@alt='Joe Sestak']", "xpath:img"],
+        ["xpath=//a[@id='Joe Sestak']/div/img", "xpath:idRelative"],
+        ["xpath=//a[13]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95f15003-9fb8-4978-bac7-346bb060ced0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.joesestak.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6882",
+      "windowTimeout": 2000
+    }, {
+      "id": "1499801c-a2d1-4745-bd27-498e9d33c940",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6882}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf507d03-8bd9-4cb3-9c7e-86cf8b694dfe",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00852a46-dead-4126-b0be-2e8f8b8c66bf",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0a55ab9-8327-4396-b2e4-44232f94493a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20828172-1571-499e-a096-7730e0ee0c87",
+      "comment": "",
+      "command": "click",
+      "target": "id=Tom Steyer",
+      "targets": [
+        ["id=Tom Steyer", "id"],
+        ["linkText=Tom Steyer", "linkText"],
+        ["css=#Tom\\ Steyer", "css:finder"],
+        ["xpath=//a[@id='Tom Steyer']", "xpath:attributes"],
+        ["xpath=//div[@id='cards']/a[14]", "xpath:idRelative"],
+        ["xpath=//a[14]", "xpath:position"],
+        ["xpath=//a[contains(.,'Tom Steyer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82cf0fb7-d9d5-4907-943d-380f26584fdc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.tomsteyer.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8666",
+      "windowTimeout": 2000
+    }, {
+      "id": "fe08bb2a-a041-4a50-8175-e376eac2f336",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8666}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "116781dd-545a-4afe-8f15-bbf9f7fe3d9a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33a3414e-9323-4be6-93fa-0b062d8af415",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f82f54d9-7acd-4aee-8e46-929d0bbe5e8f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "507baa02-d73a-4e45-983c-9ef07bb0b1b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Elizabeth\\ Warren img",
+      "targets": [
+        ["css=#Elizabeth\\ Warren img", "css:finder"],
+        ["xpath=//img[@alt='Elizabeth Warren']", "xpath:img"],
+        ["xpath=//a[@id='Elizabeth Warren']/div/img", "xpath:idRelative"],
+        ["xpath=//a[15]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e2bd2bb-0fad-4eb7-819e-c4fbcdce58ce",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://elizabethwarren.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1982",
+      "windowTimeout": 2000
+    }, {
+      "id": "d37168ca-118a-4d4a-a9c9-3b0836faf26c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1982}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3e0ed46-e19d-4572-8f65-98a99c342b78",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4d69324-dbfc-4bbc-b2e3-dc7c899b8586",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "101a57ba-c17f-47ac-a184-569eba22f015",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9679673-5066-4cef-8114-c7108248f291",
+      "comment": "",
+      "command": "click",
+      "target": "id=Marianne Williamson",
+      "targets": [
+        ["id=Marianne Williamson", "id"],
+        ["linkText=Marianne Williamson", "linkText"],
+        ["css=#Marianne\\ Williamson", "css:finder"],
+        ["xpath=//a[@id='Marianne Williamson']", "xpath:attributes"],
+        ["xpath=//div[@id='cards']/a[16]", "xpath:idRelative"],
+        ["xpath=//a[16]", "xpath:position"],
+        ["xpath=//a[contains(.,'Marianne Williamson')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d51458da-0a08-47b6-99c0-0cc5b3d1be13",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.marianne2020.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2343",
+      "windowTimeout": 2000
+    }, {
+      "id": "9eae1ce8-a947-4388-8107-5f3ef5480aee",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2343}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13ce157d-d6f1-4aae-9cab-4e10bb8bc2a5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5f00a27-b24a-4e4a-a1c6-215ced6619d6",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cbacfd2-9891-42b8-aacf-a8ea93ea9cd6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7e543d0-303d-44b1-b418-3e9eacb48995",
+      "comment": "",
+      "command": "click",
+      "target": "id=Andrew Yang",
+      "targets": [
+        ["id=Andrew Yang", "id"],
+        ["linkText=Andrew Yang", "linkText"],
+        ["css=#Andrew\\ Yang", "css:finder"],
+        ["xpath=//a[@id='Andrew Yang']", "xpath:attributes"],
+        ["xpath=//div[@id='cards']/a[17]", "xpath:idRelative"],
+        ["xpath=//a[17]", "xpath:position"],
+        ["xpath=//a[contains(.,'Andrew Yang')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d13a6407-e7a3-42cc-9c16-b068d9b52a52",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.yang2020.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4500",
+      "windowTimeout": 2000
+    }, {
+      "id": "f20e26b6-ce64-46fb-8d2e-036cdacf8976",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4500}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5f510e3-ddf3-4df3-9f11-e45683d1027b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb98d9c6-11ce-4771-ae54-8844bfe2dc82",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca18aa92-f125-468a-a493-3d44b47f87ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cc4d0b3-3e00-4f9a-8518-e632a1b14c7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=Donald Trump",
+      "targets": [
+        ["id=Donald Trump", "id"],
+        ["linkText=Donald Trump", "linkText"],
+        ["css=#Donald\\ Trump", "css:finder"],
+        ["xpath=//a[@id='Donald Trump']", "xpath:attributes"],
+        ["xpath=//div[@id='cards']/a[18]", "xpath:idRelative"],
+        ["xpath=//a[18]", "xpath:position"],
+        ["xpath=//a[contains(.,'Donald Trump')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "febdcc2c-9618-4e6d-aeb0-b2b714eae5c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.donaldjtrump.com/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win879",
+      "windowTimeout": 2000
+    }, {
+      "id": "2afbac10-6851-4803-abc2-bbb0d2e5b450",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win879}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edf103c9-bf22-4c39-87f7-8be83eb058b5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6178c329-f244-48ed-8b1c-e209a5326a1b",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12622904-1d53-4ae3-a1f2-8bca17752c63",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36413523-22d6-489d-b333-a2fdb245314a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Joe\\ Walsh img",
+      "targets": [
+        ["css=#Joe\\ Walsh img", "css:finder"],
+        ["xpath=//img[@alt='Joe Walsh']", "xpath:img"],
+        ["xpath=//a[@id='Joe Walsh']/div/img", "xpath:idRelative"],
+        ["xpath=//a[19]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c607f88-3a14-4818-a377-f0b5fffba50a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.joewalsh.org/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3674",
+      "windowTimeout": 2000
+    }, {
+      "id": "5d6867fa-b79b-445b-954f-e52bb3c161e3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3674}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bb6603f-4839-40fd-abe6-9bc96ccf8de9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1d476ca-d69f-4e54-b651-cceaf673afdb",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd1f4c62-e554-420c-8f9e-9ef66ee0cda5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CANDIDATES",
+      "targets": [
+        ["linkText=CANDIDATES", "linkText"],
+        ["css=.active-tab > a", "css:finder"],
+        ["xpath=//a[contains(text(),'CANDIDATES')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'candidates.php')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CANDIDATES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b3c6ce9-5fd8-4686-83d1-580dea8258f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Bill\\ Weld img",
+      "targets": [
+        ["css=#Bill\\ Weld img", "css:finder"],
+        ["xpath=//img[@alt='Bill Weld']", "xpath:img"],
+        ["xpath=//a[@id='Bill Weld']/div/img", "xpath:idRelative"],
+        ["xpath=//a[20]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aa49972-c140-48ba-9341-e08ff7d631d2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=here",
+      "targets": [
+        ["linkText=here", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'here')]", "xpath:link"],
+        ["xpath=//div[@id='learnMore']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://weld2020.org/')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'here')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1643",
+      "windowTimeout": 2000
+    }, {
+      "id": "7b2434e4-2f42-4da4-a696-f9fe077413e3",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win1643}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1dfc3536-2bb2-4e0a-8ebc-10499921b688",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec49e226-5c45-4e8e-9fe8-650d2790a79e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "57d1a819-a19b-46d6-9175-1dd4c3ec5113",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e25a91b3-00ea-4d95-9001-ab6e88414ffc"]
+  }],
+  "urls": ["https://electionessentials.appspot.com/", "https://electionessentials.appspot.com/candidates.php"],
+  "plugins": []
+}
