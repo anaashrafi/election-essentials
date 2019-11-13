@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include_once('login.php');
 ?>
 
@@ -36,6 +37,7 @@
             lgbtq: lgbtq,
             reproductive_issues: reproductive_issues,
             gun_violence: gun_violence}, function (response) {
+                //alert(response);
                 location.href = "threads.php";
         });  
 

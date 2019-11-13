@@ -80,25 +80,16 @@ function sign(googleUser){
 
 function onSignIn(googleUser) {
 // for database 
-var profile = googleUser.getBasicProfile();
-var userID = profile.getId();
-var userIDString = String(userID);
-var data = {
-            username: userIDString
-        };
-var username_send = "username.php?username="+String(userID);
-$.post('username.php', {use:userID}, function (data){});
-//$.post(username_send, {username: String(userID)}, function (response) {}); 
-////////////////////////////// more secure id method
-/*var id_token = googleUser.getAuthResponse().id_token;
-
-var xhr = new XMLHttpRequest();
-xhr.open('POST', 'https://yourbackend.example.com/tokensignin');
-xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-xhr.onload = function() {
-    console.log('Signed in as: ' + xhr.responseText);
-};
-xhr.send('idtoken=' + id_token); */
+    var profile = googleUser.getBasicProfile();
+    var userID = profile.getId();
+    var userIDString = String(userID);
+    var data = {
+                username: userIDString
+            };
+    var username_send = "username.php?username="+String(userID);
+    $.post('username.php', {use:userID}, function (data){
+        //alert(data);
+     });
 } 
 </script>
 
