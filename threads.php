@@ -9,8 +9,8 @@
       $statement->execute();
 
       if($_SESSION['user'] == 'Anon1'){
-        $economy= $_SESSION['Economy'];
-        $military = $_SESSION['Military'];
+        $jobs= $_SESSION['Jobs_Wages'];
+        $taxes = $_SESSION['Taxes'];
         $cjs = $_SESSION['Criminal_Justice_System'];
         $healthcare = $_SESSION['Healthcare'];
         $reproductive_issues = $_SESSION['Reproductive_Issues'];
@@ -26,8 +26,8 @@
         $statement->execute();
         $data = $statement->fetchAll();
         
-        $economy= $data[0]['Economy'];
-        $military = $data[0]['Military'];
+        $jobs = $data[0]['Jobs_Wages'];
+        $taxes = $data[0]['Taxes'];
         $cjs = $data[0]['Criminal_Justice_System'];
         $healthcare = $data[0]['Healthcare'];
         $reproductive_issues = $data[0]['Reproductive_Issues'];
@@ -40,12 +40,12 @@
 
       $getArticles = "Select * from Es_To_Ar_Ti where Essential = 'Dummy'"; //dummy here to make appending simpler
 
-      if ($economy == 1 || $economy == "true"){
-        $getArticles .= ' or Essential = "Economy"';
+      if ($jobs){
+        $getArticles .= ' or Essential = "Jobs"';
       }
 
-      if ($military == 1 || $military == "true"){
-        $getArticles .= ' or Essential = "Military"';
+      if ($taxes){
+        $getArticles .= ' or Essential = "Taxes"';
       }
 
       if ($cjs == 1 || $cjs == "true"){

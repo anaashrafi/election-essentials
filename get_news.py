@@ -5,14 +5,14 @@ from datetime import date
 #         "biden": "+joe+biden", 
 #         "sanders": "+bernie+sanders"}
 
-topics = {"Military": "military",
+topics = {"Jobs": "jobs",
         "Healthcare": "healthcare",
         "CJS": "criminal+justice+system",
-        "Economy": "economy",
         "Environment": "environment",
         "Education": "education",
         "Gun Violence": "+gun+violence",
         "Immigration": "immigration",
+        "Taxes": "taxes",
         "LGBTQ": "lgbtq",
         "Reproductive Issues": "abortion"}
 

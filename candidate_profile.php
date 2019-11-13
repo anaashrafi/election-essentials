@@ -76,10 +76,10 @@
         <br>
         <div style='display: inline-block; text-align:left;'>
           <p>
-            Economy: Leans " .$all[0]['Economy']."<br>
+            Jobs/Wages: Leans " .$all[0]['Jobs_Wages']."<br>
+            Taxes: Leans " .$all[0]['Taxes']."<br>
             Criminal Justice System: Leans " .$all[0]['Criminal_Justice_System']."<br>
             Healthcare: Leans ".$all[0]['Healthcare']."<br>
-            Military: Leans ".$all[0]['Military']."<br>
             Reproductive Issues: Leans " .$all[0]['Reproductive_Issues']."<br>
             Environment: Leans " .$all[0]['Environment']."<br>
             Immigration: Leans " .$all[0]['Immigration']."<br>
