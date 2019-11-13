@@ -59,12 +59,12 @@ try:
                     #     cursor.execute(sql_insert_essential_Query, arg1)
                     #     url = data_article['url']
                     #     print("Alternative article: " + url)
-                    cursor.execute(sql_insert_essential_Query, arg1)
                     article = Article(url)
                     article.download()
                     article.parse()
                     # y = article.parse()
                     # print(y)
+                    cursor.execute(sql_insert_essential_Query, arg1)
                     content = str(article.text)
                     content = content.replace('Advertisement', '')
                     arg2 = (data_article['title'], content)
