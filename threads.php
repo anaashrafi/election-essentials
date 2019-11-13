@@ -40,11 +40,11 @@
 
       $getArticles = "Select * from Es_To_Ar_Ti where Essential = 'Dummy'"; //dummy here to make appending simpler
 
-      if ($jobs){
+      if ($jobs == 1 || $jobs == "true"){
         $getArticles .= ' or Essential = "Jobs"';
       }
 
-      if ($taxes){
+      if ($taxes == 1 || $jobs == "true"){
         $getArticles .= ' or Essential = "Taxes"';
       }
 
