@@ -5,69 +5,83 @@
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
       $user = 'duttaadri2014@gmail.com';                                            //'.$_SESSION['user'].'";'
       $db = new PDO($dsn, $user);
-      $statement = $db->prepare("use Election_Essentials;");
-      $sqlGet = 'Select * from Us_Pr Where Username ="'.$_SESSION['user'].'";';
+      $statement = $db->prepare("use Election_Essentials;");       
+      $statement->execute();
 
-      
-      $statement->execute();
-      $statement = $db->prepare($sqlGet);
-      $statement->execute();
-      $data = $statement->fetchAll();
-    
-      $economy= $data[0]['Economy'];
-      $military = $data[0]['Military'];
-      $cjs = $data[0]['Criminal_Justice_System'];
-      $healthcare = $data[0]['Healthcare'];
-      $reproductive_issues = $data[0]['Reproductive_Issues'];
-      $environment = $data[0]['Environment'];
-      $immigration = $data[0]['Immigration'];
-      $education = $data[0]['Education'];
-      $lgbtq = $data[0]['LGBTQ'];
-      $gun_violence = $data[0]['Gun_Violence'];
+      if($_SESSION['user'] == 'Anon1'){
+        $economy= $_SESSION['Economy'];
+        $military = $_SESSION['Military'];
+        $cjs = $_SESSION['Criminal_Justice_System'];
+        $healthcare = $_SESSION['Healthcare'];
+        $reproductive_issues = $_SESSION['Reproductive_Issues'];
+        $environment = $_SESSION['Environment'];
+        $immigration = $_SESSION['Immigration'];
+        $education = $_SESSION['Education'];
+        $lgbtq = $_SESSION['LGBTQ'];
+        $gun_violence = $_SESSION['Gun_Violence'];
+        
+      }else{
+        $sqlGet = 'Select * from Us_Pr Where Username ="'.$_SESSION['user'].'";';
+        $statement = $db->prepare($sqlGet);
+        $statement->execute();
+        $data = $statement->fetchAll();
+        
+        $economy= $data[0]['Economy'];
+        $military = $data[0]['Military'];
+        $cjs = $data[0]['Criminal_Justice_System'];
+        $healthcare = $data[0]['Healthcare'];
+        $reproductive_issues = $data[0]['Reproductive_Issues'];
+        $environment = $data[0]['Environment'];
+        $immigration = $data[0]['Immigration'];
+        $education = $data[0]['Education'];
+        $lgbtq = $data[0]['LGBTQ'];
+        $gun_violence = $data[0]['Gun_Violence'];
+      }
 
       $getArticles = "Select * from Es_To_Ar_Ti where Essential = 'Dummy'"; //dummy here to make appending simpler
 
-      if ($economy){
+      if ($economy == 1 || $economy == "true"){
         $getArticles .= ' or Essential = "Economy"';
       }
 
-      if ($military){
+      if ($military == 1 || $military == "true"){
         $getArticles .= ' or Essential = "Military"';
       }
 
-      if ($cjs){
+      if ($cjs == 1 || $cjs == "true"){
         $getArticles .= ' or Essential = "CJS"'; 
       }
 
-      if ($healthcare){
+      if ($healthcare == 1 || $healthcare == "true"){
         $getArticles .= ' or Essential = "Healthcare"';
       }
 
-      if ($reproductive_issues){
+      if ($reproductive_issues == 1 || $reproductive_issues == "true"){
         $getArticles .= ' or Essential = "Reproductive Issues"';
       }
 
-      if ($environment){
+      if ($environment == 1 || $environment == "true"){
         $getArticles .= ' or Essential = "Environment"';
       }
 
-      if ($immigration){
+      if ($immigration == 1 || $immigration == "true"){
         $getArticles .= ' or Essential = "Immigration"';
       }
 
-      if ($education){
+      if ($education == 1 || $education == "true"){
         $getArticles .= ' or Essential = "Education"';
       }
 
-      if ($lgbtq){
+      if ($lgbtq == 1 || $lgbtq == "true"){
         $getArticles .= ' or Essential = "LGBTQ"';
       }
 
-      if ($gun_violence){
+      if ($gun_violence == 1 || $gun_violence == "true"){
         $getArticles .= ' or Essential = "Gun Violence"';
       }      
 
       $getArticles .= ";"; //end of appending
+
    ?>
 
 
@@ -113,15 +127,27 @@
 <body>
 	<header>
 
-		<div class ="table">
-			<ul class ="nav-tabs">
-				<li class="active-tab"><a href="threads.php"> HOME </a></li> <!-- class="active-tab" means this is the page the user is currently on-->
-				<li><a href="candidates.php"> CANDIDATES </a></li>
-				<li><a href="voting_info.php"> VOTER INFORMATION </a></li>
-				<li><a href="user_profile.php"> MY PROFILE </a></li>
-				<li><a href="aboutme.php"> ABOUT </a></li>
-			</ul>
-		</div>
+		<script>
+        function noAccess(){
+            alert("Must be logged in to access");
+        }
+    </script>
+      <div class ='table'>
+  			<ul class ='nav-tabs'>
+  				<li class='active-tab'><a href='threads.php'> HOME </a></li> <!-- class='active-tab' means this is the page the user is currently on-->
+  				<li><a href='candidates.php'> CANDIDATES </a></li>
+  				<li><a href='voting_info.php'> VOTER INFORMATION </a></li>
+                <li><a 
+                  <?php 
+                    if($_SESSION['user'] == 'Anon1'){
+                        echo "href='' onclick='noAccess()'> MY PROFILE </a></li>";
+                    }else{
+                        echo "href='user_profile.php'> MY PROFILE </a></li>";
+                    }
+                  ?>
+  				<li><a href='aboutme.php'> ABOUT </a></li>
+  			</ul>
+          </div>
 
 		<div id="articles" class ="samplearticles">
 <?php

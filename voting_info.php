@@ -1,4 +1,5 @@
 <?php
+    session_start();
         $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
         $user = 'duttaadri2014@gmail.com';
         $db = new PDO($dsn, $user);
@@ -28,15 +29,27 @@
 
 <body>
 	<header>
-    <div class ="table">
-			<ul class ="nav-tabs">
-				<li><a href="threads.php"> HOME </a></li> <!-- class="active-tab" means this is the page the user is currently on-->
-				<li><a href="candidates.php"> CANDIDATES </a></li>
-				<li class="active-tab"><a href="voting_info.php"> VOTER INFORMATION </a></li>
-				<li><a href="user_profile.php"> MY PROFILE </a></li>
-        <li><a href="aboutme.php"> ABOUT </a></li>
-			</ul>
-		</div>
+    <script>
+        function noAccess(){
+            alert("Must be logged in to access");
+        }
+    </script>
+      <div class ='table'>
+  			<ul class ='nav-tabs'>
+  				<li><a href='threads.php'> HOME </a></li> <!-- class='active-tab' means this is the page the user is currently on-->
+  				<li><a href='candidates.php'> CANDIDATES </a></li>
+  				<li class='active-tab'><a href='voting_info.php'> VOTER INFORMATION </a></li>
+                <li><a 
+                  <?php 
+                    if($_SESSION['user'] == 'Anon1'){
+                        echo "href='' onclick='noAccess()'> MY PROFILE </a></li>";
+                    }else{
+                        echo "href='user_profile.php'> MY PROFILE </a></li>";
+                    }
+                  ?>
+  				<li><a href='aboutme.php'> ABOUT </a></li>
+  			</ul>
+          </div>
 </header>
           <?php include 'login.php';?>
 

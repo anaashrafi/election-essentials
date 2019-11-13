@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -10,18 +13,31 @@
 </head>
 
 <body>
-	<header>
+    <header>
+	<script>
+        function noAccess(){
+            alert("Must be logged in to access");
+        }
+    </script>
+      <div class ='table'>
+  			<ul class ='nav-tabs'>
+  				<li><a href='threads.php'> HOME </a></li> <!-- class='active-tab' means this is the page the user is currently on-->
+  				<li class='active-tab'><a href='candidates.php'> CANDIDATES </a></li>
+  				<li><a href='voting_info.php'> VOTER INFORMATION </a></li>
+                <li><a 
+                  <?php 
+                    if($_SESSION['user'] == 'Anon1'){
+                        echo "href='' onclick='noAccess()'> MY PROFILE </a></li>";
+                    }else{
+                        echo "href='user_profile.php'> MY PROFILE </a></li>";
+                    }
+                  ?>
+  				<li><a href='aboutme.php'> ABOUT </a></li>
+  			</ul>
+          </div>
 
-		<div class ="table">
-			<ul class ="nav-tabs">
-				<li><a href="threads.php"> HOME </a></li> <!-- class="active-tab" means this is the page the user is currently on-->
-				<li class="active-tab"><a href="candidates.php"> CANDIDATES </a></li>
-				<li><a href="voting_info.php"> VOTER INFORMATION </a></li>
-				<li><a href="user_profile.php"> MY PROFILE </a></li>
-				<li><a href="aboutme.php"> ABOUT </a></li>
-			</ul>
-		</div>
         <?php include 'login.php';?>
+        
 		<div id="cards"> <!---cards are a href to make the whole thing clickable --->
       <a id="Michael Bennet" onclick="grabCandidate(this.id)" class="candidate-card democrat">
 				<div class="candidate-picture"><img src="https://pbs.twimg.com/profile_images/897159863863836676/lopmOrpE_400x400.jpg" alt="Michael Bennet"></img></div>
