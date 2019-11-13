@@ -79,14 +79,15 @@
 ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
+    <script type="text/javascript">
         function saveBookmark() {
             var title = document.getElementById("article_title").innerHTML;
             var bookmark_send = "bookmark_keeping.php?article="+title+"&write=1";
             $.post(bookmark_send, {article: title, write: 1}, function (response) {
-                alert("Bookmarked");
-                //alert(response);
-                location.reload();
+                //alert("Bookmarked");
+                if(!alert("Bookmarked")){
+                    location.reload();
+                }
             }); 
         }
 
@@ -94,8 +95,10 @@
             var title = document.getElementById("article_title").innerHTML;
             var bookmark_send = "bookmark_keeping.php?article="+title+"&write=0";
             $.post(bookmark_send, {article: title, write: 0}, function (response) {
-                alert("Bookmark removed");
-                location.reload();
+                //alert("Bookmark removed");
+                if(!alert("Bookmark removed")){
+                    location.reload();
+                }
             }); 
         }
     </script>
