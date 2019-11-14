@@ -41,8 +41,14 @@
 
 <body>
 
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" target="_blank" class="fa fa-twitter" data-show-count="false"></a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="" onclick="twitterShare()" class="fa fa-twitter" ></a>
+<script>
+    function twitterShare(){
+        var url = "https://twitter.com/intent/tweet?url="+window.location.toString().replace(/\?/gi,"%3F").replace(/=/gi,"%3D").replace(/%20/gi,"%2520");
+        //alert(url);
+        window.open(url, '',width=600,height=300);
+    }
+</script>
 
 <div id="sign-in" class="g-signin2 google-button" data-onsuccess="sign"></div>
 
