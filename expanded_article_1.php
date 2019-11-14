@@ -45,9 +45,9 @@
 
       if($_SESSION['user'] != 'Anon1'){
         if($count == 0){
-                    echo '<li><a href="" onclick="saveBookmark()">ADD BOOKMARK</a></li>';
+                    echo '<li><a id="bookmark" href="#" onclick="bookmark()">ADD BOOKMARK</a></li>';
         }else {
-                    echo '<li><a href="" onclick="removeBookmark()">REMOVE BOOKMARK</a></li>';
+                    echo '<li><a id="bookmark" href="#" onclick="bookmark()">REMOVE BOOKMARK</a></li>';
         }
       }
 
@@ -80,14 +80,21 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
+      function bookmark(){
+          var status = document.getElementById("bookmark").innerHTML;
+          if(status == "ADD BOOKMARK"){
+              saveBookmark();
+              document.getElementById("bookmark").innerHTML = "REMOVE BOOKMARK";
+          }else{
+              removeBookmark();
+              document.getElementById("bookmark").innerHTML = "ADD BOOKMARK";
+          }
+      }
+
         function saveBookmark() {
             var title = document.getElementById("article_title").innerHTML;
             var bookmark_send = "bookmark_keeping.php?article="+title+"&write=1";
             $.post(bookmark_send, {article: title, write: 1}, function (response) {
-                //alert("Bookmarked");
-                if(!alert("Bookmarked")){
-                    location.reload();
-                }
             }); 
         }
 
@@ -95,10 +102,6 @@
             var title = document.getElementById("article_title").innerHTML;
             var bookmark_send = "bookmark_keeping.php?article="+title+"&write=0";
             $.post(bookmark_send, {article: title, write: 0}, function (response) {
-                //alert("Bookmark removed");
-                if(!alert("Bookmark removed")){
-                    location.reload();
-                }
             }); 
         }
     </script>
