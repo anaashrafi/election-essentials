@@ -44,7 +44,7 @@
         $getArticles .= ' or Essential = "Jobs"';
       }
 
-      if ($taxes == 1 || $jobs == "true"){
+      if ($taxes == 1 || $taxes == "true"){
         $getArticles .= ' or Essential = "Taxes"';
       }
 

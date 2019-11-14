@@ -94,7 +94,10 @@ function onSignIn(googleUser) {
             };
     var username_send = "username.php?username="+String(userID);
     $.post('username.php', {use:userID}, function (data){
-        //alert(data);
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
      });
 } 
 </script>
@@ -105,7 +108,12 @@ function onSignIn(googleUser) {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut();
     var username = 'Anon1';
-    $.post('username.php', {use:username}, function (data){});
+    $.post('username.php', {use:username}, function (data){
+        if(!window.location.hash) {
+            window.location = window.location + '#loaded';
+            window.location.reload();
+        }
+    });
 
   }
 </script>

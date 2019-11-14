@@ -8,6 +8,7 @@
         $_SESSION['user'] = $_POST['use'];
 
         if($_SESSION['user'] != 'Anon1'){
+
             $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
             $user = 'duttaadri2014@gmail.com';
             $db = new PDO($dsn, $user);
