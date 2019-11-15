@@ -12,7 +12,7 @@
       $row = $statement->fetch(PDO::FETCH_ASSOC);
       $count = $statement->rowCount();
 
-      if($_SESSION['user'] == 'Anon1'){
+      if($_SESSION['user'] == 'Anon1' || $_SESSION['user'] == ''){
         $_SESSION['Jobs_Wages'] = $_POST['jobs'];
         $_SESSION['Taxes'] = $_POST['taxes'];
         $_SESSION['Criminal_Justice_System'] = $_POST['cjs'];

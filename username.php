@@ -4,10 +4,10 @@
 
 
 <?php
-    if($_SESSION['user'] == 'Anon1'){
+    if($_SESSION['user'] == 'Anon1' || $_SESSION['user'] == ''){
         $_SESSION['user'] = $_POST['use'];
 
-        if($_SESSION['user'] != 'Anon1'){
+        if($_SESSION['user'] != 'Anon1' && $_SESSION['user'] != ''){
 
             $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
             $user = 'duttaadri2014@gmail.com';
