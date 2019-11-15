@@ -29,7 +29,7 @@
                             var output = '<ul style="padding-left:30px">';
                             output += '<li>Commits: ' + this.contributions +
                                 '<li>Issues: 0' +
-                                    '<li>Test Cases 0' +
+                                    '<li>Test Cases 4' +
                             '</li></li></li>';
                             totalCommits += this.contributions;
                             output += '</ul>';
@@ -37,7 +37,7 @@
                         }
                     });
                     document.getElementById('stats').innerHTML='<p> Commits: ' + totalCommits +
-                    ' | Issues: 0 | Test Cases: 0';
+                    ' | Issues: 0 | Test Cases: 27';
                 });
             }
     </script>
@@ -114,7 +114,7 @@
             <div id = 'Ana Ashrafi'>
                 <h3>Ana Ashrafi</h3>
                 <p>Major: Electrical and Computer Engineering
-                <br>Responsibilities: Candidate Profiles, Extended Article Pages</p>
+                <br>Responsibilities: Candidate Profiles, Extended Article Pages, Frontend</p>
                 <img src = 'Ana.png'> </img>
                 <p>Ana is a third year ECE major at the University of Texas at Austin. In her free time, she serves as the Vice President of the Student Engineering Council and plays soccer with her friends!
                     </p>
@@ -124,7 +124,7 @@
             <div id = 'Adri Dutta'>
                 <h3>Adri Dutta</h3>
                 <p>Major: Electrical and Computer Engineering
-                <br>Responsibilities: Written Report Requirements, UML, Main Page UI, User Profile UI</p>
+                <br>Responsibilities: Written Report Requirements, UML, Main Page UI, User Profile UI, Frontend</p>
                 <img src = 'Adri.jpg'> </img>
                 <p>Adri is a senior at the University of Texas at Austin. During his free time he likes to watch competitive League of Legends and basketball.
                     </p>
@@ -134,7 +134,7 @@
             <div id = 'Austin Duong'>
                 <h3>Austin Duong</h3>
                 <p>Major: Electrical and Computer Engineering
-                <br>Responsibilities: Navigation tabs UI, Threads page articles</p>
+                <br>Responsibilities: Navigation tabs UI, Threads page articles, Backend</p>
                 <img src = 'Austin.jpg'> </img>
                 <p>Austin is a third-year ECE major at the University of Texas at Austin. In his spare time, he likes playing video games and browsing memes.
                 </p>
@@ -144,7 +144,7 @@
             <div id = 'George Zhang'>
                 <h3>George Zhang</h3>
                 <p>Major: Electrical and Computer Engineering
-                <br>Responsibilities: Voting Info page, Extended Article page</p>
+                <br>Responsibilities: Voting Info page, Extended Article page, Backend</p>
                 <img src = 'George.jpg'> </img>
                 <p>
                 George is a senior ECE student at the University of Texas at Austin.
@@ -155,7 +155,7 @@
             <div id = 'Phat Le'>
                 <h3>Phat Le</h3>
                 <p>Major: Electrical and Computer Engineering
-                <br>Responsibilities: Candidates Page, Styling</p>
+                <br>Responsibilities: Candidates Page, Frontend</p>
                 <img src = 'Phat.jpg'> </img>
                 <p>
                 Phat is a senior ECE student at the University of Texas at Austin.
@@ -166,7 +166,7 @@
             <div id = 'Royce Hong'>
                 <h3>Royce Hong</h3>
                 <p>Major: Electrical and Computer Engineering
-                <br>Responsibilities: About Me page, Login page</p>
+                <br>Responsibilities: About Me page, Login page, Backend</p>
                 <img src = 'Royce.jpg'> </img>
                 <p>
                 Royce is a junior ECE student at the University of Texas at Austin. He wastes all his time reading manga.
