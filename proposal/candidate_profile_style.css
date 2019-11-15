@@ -75,7 +75,7 @@ img {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
-  background: rgba(225, 225, 225, .8);
+  background: rgba(255, 255, 255);
   font-family: "Roboto", sans-serif;
 }
 
@@ -84,6 +84,6 @@ img {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
-  background: rgba(225, 225, 225, .8);
+  background: rgba(255, 255, 255);
   font-family: "Roboto", sans-serif;
 }
