@@ -1,6 +1,7 @@
 <?php
     session_start();
     include_once('login.php');
+
     if($_SESSION['user'] != "Anon1"){
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
       $user = 'duttaadri2014@gmail.com';
@@ -31,7 +32,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Election Essentials</title>
-	<link href="main_style.css" rel="stylesheet" type="text/css">
+    <link href="body_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script> 
     
 <script >
@@ -70,78 +73,73 @@
 </head>
 
 <body>
-	<header>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <?php
+            include 'config.php'; //holds api key
+            echo '<meta name="google-signin-client_id" content="'.$CLIENT_ID.'">';
+        ?>
+    </header>
 
-      <div id="foreground">
-        <h2 id="title"> What Are Your Essentials? </h2>
-            <div class="checkBoxWrapper" style="grid-row-start:2;grid-column-start:2;">
-              <input id = "jobs" class="checkBox" type="checkbox" <?php if($jobs){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> Jobs/Wages
-</p>
+    <div id="foreground" class="w3-container w3-center w3-border w3-white" style="margin-top:100px">
+        <h2 id="title" class="w3-center">What is essential to you?</h2>
+
+        <div class="w3-content w3-left-align" style="width:70%;">
+
+            <div class="w3-container w3-half">
+                <input id = "jobs" class="w3-check" type="checkbox" <?php if($jobs){echo "checked";}?>>
+                <label>Jobs/Wages</label>
             </div>
 
-            <div class="checkBoxWrapper" style="grid-row-start:2;grid-column-start:3;">
-              <input id = "environment"  class="checkBox" type="checkbox" <?php if($environment){echo "checked";}?>>
-              <p class="checkBoxChoices" style="grid-column-start:2;"> Environment
-</p>
+            <div class="w3-container w3-half">
+                <input id = "environment"  class="w3-check" type="checkbox" <?php if($environment){echo "checked";}?>>
+                <label>Environment</label>
             </div>
 
-        <div class="checkBoxWrapper" style="grid-row-start:3;grid-column-start:2;">
-              <input id = "cjs" class="checkBox" type="checkbox" <?php if($cjs){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> Criminal Justice System
-
-</p>
+            <div class="w3-container w3-half">
+                <input id = "cjs" class="w3-check" type="checkbox" <?php if($cjs){echo "checked";}?>>
+                <label>Criminal Justice System</label>
             </div>
 
-        <div class="checkBoxWrapper" style="grid-row-start:3;grid-column-start:3;">
-              <input id = "immigration" class="checkBox" type="checkbox" <?php if($immigration){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> Immigration
-</p>
+            <div class="w3-container w3-half">
+                <input id = "immigration" class="w3-check" type="checkbox" <?php if($immigration){echo "checked";}?>>
+                <label>Immigration</label>
             </div>
 
-               <div class="checkBoxWrapper" style="grid-row-start:4;grid-column-start:2;">
-              <input id = "healthcare" class="checkBox" type="checkbox" <?php if($healthcare){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> Healthcare
-</p>
+            <div class="w3-container w3-half">
+                <input id = "healthcare" class="w3-check" type="checkbox" <?php if($healthcare){echo "checked";}?>>
+                <label>Healthcare</label>
             </div>
 
-        <div class="checkBoxWrapper" style="grid-row-start:4;grid-column-start:3;">
-              <input id = "education" class="checkBox" type="checkbox" <?php if($education){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> Education
-
-</p>
+            <div class="w3-container w3-half">
+                <input id = "education" class="w3-check" type="checkbox" <?php if($education){echo "checked";}?>>
+                <label>Education</label>
             </div>
 
-        <div class="checkBoxWrapper" style="grid-row-start:5;grid-column-start:2;">
-              <input id = "taxes" class="checkBox" type="checkbox" <?php if($taxes){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> Taxes
-</p>
+            <div class="w3-container w3-half">
+                <input id = "taxes" class="w3-check" type="checkbox" <?php if($taxes){echo "checked";}?>>
+                <label>Taxes</label>
             </div>
 
-        <div class="checkBoxWrapper" style="grid-row-start:5;grid-column-start:3;">
-              <input id = "lgbtq" class="checkBox" type="checkbox" <?php if($lgbtq){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> LGBTQ+
-</p>
+            <div class="w3-container w3-half">
+                <input id = "lgbtq" class="w3-check" type="checkbox" <?php if($lgbtq){echo "checked";}?>>
+                <label>LGBTQ+</label>
             </div>
 
-        <div class="checkBoxWrapper" style="grid-row-start:6;grid-column-start:2;">
-              <input id = "reproductive_issues" class="checkBox" type="checkbox" <?php if($reproductive_issues){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> Reproductive Issues
-</p>
+            <div class="w3-container w3-half">
+                <input id = "reproductive_issues" class="w3-check" type="checkbox" <?php if($reproductive_issues){echo "checked";}?>>
+                <label>Reproductive Issues</label>
             </div>
-        <div class="checkBoxWrapper" style="grid-row-start:6;grid-column-start:3;">
-              <input id="gun_violence" class="checkBox" type="checkbox" <?php if($gun_violence){echo "checked";}?>>
-              <p class="checkBoxChoices"style="grid-column-start:2;"> Gun Violence
-</p>
+
+            <div class="w3-container w3-half">
+                <input id="gun_violence" class="w3-check" type="checkbox" <?php if($gun_violence){echo "checked";}?>>
+                <label>Gun Violence</label>
             </div>
-            <div style="grid-row-start:7;grid-column-start:2;grid-column-end:4;justify-content:center;padding-left:48%;transform:scale(1.5);">
-            <br>
-            <button id="submit">SUBMIT</button>
-          </div>
-		</div>
+        </div>
 
-
-
-	</header>
+        <div class = "w3-container">
+            <button id="submit" class="w3-button w3-light-gray w3-round w3-border w3-margin-top w3-margin-bottom">SUBMIT</button>
+        </div>
+    </div>
 </body>
 </html>

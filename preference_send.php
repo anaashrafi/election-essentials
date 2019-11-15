@@ -24,7 +24,6 @@
         $_SESSION['LGBTQ'] = $_POST['lgbtq'];
         $_SESSION['Gun_Violence'] = $_POST['gun_violence'];
       }else{
-
         if($count == 0){
                 $setData = "insert into Us_Pr Set Username =".$_SESSION['user'].", Jobs_Wages =" . $_POST['jobs'] . "," . "Criminal_Justice_System =" . $_POST['cjs'] . "," . "Healthcare =" . $_POST['healthcare']. "," . "Taxes =" . $_POST['taxes']. "," . "Reproductive_Issues =" . $_POST['reproductive_issues']. "," . "Environment =" . $_POST['environment']. "," . "Immigration =" . $_POST['immigration']. "," . "Education =" . $_POST['education']. "," . "LGBTQ =" . $_POST['lgbtq']. "," . "Gun_Violence =" . $_POST['gun_violence'] . 
     ";";

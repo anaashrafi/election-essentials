@@ -49,8 +49,8 @@
         window.open(url, '',width=600,height=300);
     }
 </script>
-
 <div id="sign-in" class="g-signin2 google-button" data-onsuccess="sign"></div>
+
 
 <!--------------------------------------------------------
 hotfix for signout button to look like signin button

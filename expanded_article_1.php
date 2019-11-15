@@ -6,7 +6,10 @@
 <head>
     <meta charset="utf-8" />
     <title>Election Essentials</title>
-    <link href="expanded_article_style.css" rel="stylesheet" type="text/css"> 
+    <link href="expanded_article_style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script> 
 </head>
 
 <body>
@@ -31,52 +34,29 @@
                   ?>
   				<li><a href='aboutme.php'> ABOUT </a></li>
                 <?php include 'login.php';?>
-<?php
-      $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
-      $user = 'duttaadri2014@gmail.com';
-      $db = new PDO($dsn, $user);
-      $statement = $db->prepare("use Election_Essentials;");
-      $statement->execute();
-      $check = "Select * from Us_Bo_Ma Where Username = '".$_SESSION['user']."' and Article = '".$_REQUEST['title']."';";
-      $statement = $db->prepare($check);
-      $statement->execute();
-      $row = $statement->fetch(PDO::FETCH_ASSOC);
-      $count = $statement->rowCount();
+                <?php
+                    $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
+                    $user = 'duttaadri2014@gmail.com';
+                    $db = new PDO($dsn, $user);
+                    $statement = $db->prepare("use Election_Essentials;");
+                    $statement->execute();
+                    $check = "Select * from Us_Bo_Ma Where Username = '".$_SESSION['user']."' and Article = '".$_REQUEST['title']."';";
+                    $statement = $db->prepare($check);
+                    $statement->execute();
+                    $row = $statement->fetch(PDO::FETCH_ASSOC);
+                    $count = $statement->rowCount();
 
-      if($_SESSION['user'] != 'Anon1'){
-        if($count == 0){
-                    echo '<li><a id="bookmark" href="#" onclick="bookmark()">ADD BOOKMARK</a></li>';
-        }else {
-                    echo '<li><a id="bookmark" href="#" onclick="bookmark()">REMOVE BOOKMARK</a></li>';
-        }
-      }
+                    if($_SESSION['user'] != 'Anon1'){
+                        if($count == 0){
+                                    echo '<li><a id="bookmark" href="#" onclick="bookmark()">ADD BOOKMARK</a></li>';
+                        }else {
+                                    echo '<li><a id="bookmark" href="#" onclick="bookmark()">REMOVE BOOKMARK</a></li>';
+                        }
+                    }
 
-?>
+                ?>
 			</ul>
 		</div>
-<?php
-
-      $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
-      $user = 'duttaadri2014@gmail.com';
-      $db = new PDO($dsn, $user);
-      $statement = $db->prepare("use Election_Essentials;");
-      $statement->execute();
-
-      $title = $_REQUEST['title'];
-
-      $sqlGet = "Select * from Ar_Ti_To_Ar Where Title = '" .addslashes($title)."';";
-      $statement = $db->prepare($sqlGet);
-      $statement->execute();
-      $data = $statement->fetchAll();
-
-      echo '<div class="article">
-        <br>
-        <p id="article_title">'.$data[0]["Title"].'</p>
-        <br>
-        <div class="articleBody">
-            <p>'.$data[0]["Article"].' </p> 
-        </div>'
-?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
@@ -105,10 +85,27 @@
             }); 
         }
     </script>
-  </div>
 </header>
 
-  <br>
+<?php
+
+      $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
+      $user = 'duttaadri2014@gmail.com';
+      $db = new PDO($dsn, $user);
+      $statement = $db->prepare("use Election_Essentials;");
+      $statement->execute();
+
+      $title = $_REQUEST['title'];
+
+      $sqlGet = "Select * from Ar_Ti_To_Ar Where Title = '" .addslashes($title)."';";
+      $statement = $db->prepare($sqlGet);
+      $statement->execute();
+      $data = $statement->fetchAll();
+?>
+    <div class="w3-container w3-light-gray w3-margin-top">
+        <h1 id="article_title" class="w3-center"><?php echo $data[0]["Title"]; ?></h1>
+        <article class="w3-container w3-left-align w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $data[0]["Article"]; ?></article> 
+    </div>
 
 </body>
 
