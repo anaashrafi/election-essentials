@@ -69,10 +69,11 @@
                         echo "href='user_profile.php'> MY PROFILE </a></li>";
                     }
                   ?>
-  				<li class='active-tab'><a href='aboutme.php'> ABOUT </a></li>
+                  <li class='active-tab'><a href='aboutme.php'> ABOUT </a></li>
+                  <?php include 'login.php';?>
   			</ul>
           </div>
-        <?php include 'login.php';?>
+
         <div id='aboutInfo'>
             <h1 align='center' style='padding-top: 20px;'> About Us </h1>
             <br>

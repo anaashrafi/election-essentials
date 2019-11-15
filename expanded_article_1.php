@@ -33,7 +33,6 @@
                     }
                   ?>
   				<li><a href='aboutme.php'> ABOUT </a></li>
-                <?php include 'login.php';?>
                 <?php
                     $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
                     $user = 'duttaadri2014@gmail.com';
@@ -55,6 +54,7 @@
                     }
 
                 ?>
+                <?php include 'login.php';?>
 			</ul>
 		</div>
 

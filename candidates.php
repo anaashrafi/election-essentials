@@ -32,11 +32,10 @@
                         echo "href='user_profile.php'> MY PROFILE </a></li>";
                     }
                   ?>
-  				<li><a href='aboutme.php'> ABOUT </a></li>
+                  <li><a href='aboutme.php'> ABOUT </a></li>
+                  <?php include 'login.php';?>
   			</ul>
         </div>
-
-        <?php include 'login.php';?>
         
 	</header>
 

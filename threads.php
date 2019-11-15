@@ -1,7 +1,5 @@
   <?php
     session_start();
-     
-      include 'login.php';
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
       $user = 'duttaadri2014@gmail.com';                                            //'.$_SESSION['user'].'";'
       $db = new PDO($dsn, $user);
@@ -161,7 +159,8 @@
                         echo "href='user_profile.php'> MY PROFILE </a></li>";
                     }
                   ?>
-  				<li><a href='aboutme.php'> ABOUT </a></li>
+                  <li><a href='aboutme.php'> ABOUT </a></li>
+                  <?php include 'login.php'; ?>
   			</ul>
           </div>
 

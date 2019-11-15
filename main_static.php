@@ -1,6 +1,5 @@
 <?php
     session_start();
-    include_once('login.php');
 
     if($_SESSION['user'] != "Anon1" && $_SESSION['user'] != ''){
       $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
@@ -79,6 +78,12 @@
             include 'config.php'; //holds api key
             echo '<meta name="google-signin-client_id" content="'.$CLIENT_ID.'">';
         ?>
+
+        <div class ='table'>
+                <ul class ='nav-tabs'>
+                    <?php include 'login.php'; ?>
+                </ul>
+            </div>
     </header>
 
     <div id="foreground" class="w3-container w3-center w3-border w3-white" style="margin-top:100px">
