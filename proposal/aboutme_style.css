@@ -58,10 +58,8 @@ img {
 
 #aboutInfo
 {
-	background: rgba(225, 225, 225, .85);
-	margin-bottom: 60px;
-	margin-right: 60px;
-	margin-left: 60px;
+	background: rgba(255, 255, 255);
+    margin-top: 130px;
 	padding-right: 30px;
 	padding-bottom: 30px;
 	padding-left: 30px;
