@@ -53,7 +53,7 @@ body
 #candidateName {
   color: white;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 40px;
   font-weight: bold;
 }
@@ -76,7 +76,7 @@ img {
   font-size: 25px;
   font-weight: bold;
   background: rgba(255, 255, 255);
-  font-family: "Roboto", sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 #learnMore {
@@ -85,5 +85,5 @@ img {
   font-size: 25px;
   font-weight: bold;
   background: rgba(255, 255, 255);
-  font-family: "Roboto", sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
