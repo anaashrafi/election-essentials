@@ -1,11 +1,12 @@
 import webScraperFunctions
 import dbFunctions
 
-host = '35.188.54.9'
-username = 'Adri'
-password = ''
+host = '35.223.188.180'
+username = 'root'
+password = '123456'
 
 db = dbFunctions.databaseConnect(host,username,password)
+
 esToArtTi = "Es_To_Ar_Ti"
 arTiToArt = "Ar_Ti_To_Ar"
 topics = ["Jobs",
@@ -28,5 +29,6 @@ for essential in topics:
         article = webScraperFunctions.getContent(webScraperFunctions.getURL(essential, x))
         if article is None or article == "bad url":
             print("failed to get article data: " + essential + " " + str(x))
-        print(dbFunctions.insertData(db, esToArtTi, [essential, title]))            # Need to debug this part. It sends data but the database does not update
+        print(dbFunctions.insertData(db, esToArtTi, [essential, title]))
         print(dbFunctions.insertData(db, arTiToArt, [title, article]))
+        db.commit()
