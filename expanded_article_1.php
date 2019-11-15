@@ -102,8 +102,9 @@
       $statement->execute();
       $data = $statement->fetchAll();
 ?>
-    <div class="w3-container w3-light-gray w3-margin-top">
+    <div class="w3-container w3-white w3-margin-top">
         <h1 id="article_title" class="w3-center"><?php echo $data[0]["Title"]; ?></h1>
+        <hr>
         <article class="w3-container w3-left-align w3-margin">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $data[0]["Article"]; ?></article> 
     </div>
 
