@@ -46,52 +46,29 @@ public class DefaultSuiteTest {
     return whNow.iterator().next();
   }
   @Test
-  public void nextandPreviousbuttons() {
-    driver.get("https://electionessentials.appspot.com");
-    driver.manage().window().setSize(new Dimension(1552, 840));
-    driver.findElement(By.id("gun_violence")).click();
-    driver.findElement(By.id("lgbtq")).click();
-    driver.findElement(By.id("education")).click();
-    driver.findElement(By.id("submit")).click();
-    driver.findElement(By.id("next-page")).click();
-    driver.findElement(By.id("next-page")).click();
-    driver.findElement(By.id("next-page")).click();
-    driver.findElement(By.id("next-page")).click();
-    driver.findElement(By.id("prev-page")).click();
-    driver.findElement(By.id("prev-page")).click();
-    driver.findElement(By.id("prev-page")).click();
-    driver.findElement(By.id("prev-page")).click();
-  }
-  @Test
   public void bookmarking() {
-    driver.get("https://electionessentials.appspot.com");
-    driver.manage().window().setSize(new Dimension(1552, 840));
+    driver.get("https://electionessentials.appspot.com/#loaded");
+    driver.manage().window().setSize(new Dimension(783, 824));
+    driver.findElement(By.cssSelector(".w3-container:nth-child(4)")).click();
     driver.findElement(By.id("environment")).click();
-    driver.findElement(By.id("immigration")).click();
-    driver.findElement(By.id("education")).click();
-    driver.findElement(By.id("gun_violence")).click();
-    driver.findElement(By.id("lgbtq")).click();
     driver.findElement(By.id("submit")).click();
-    driver.findElement(By.linkText("These Rats Drive Tiny Cars—for Science")).click();
-    driver.findElement(By.linkText("ADD BOOKMARK")).click();
+    driver.findElement(By.cssSelector(".w3-white:nth-child(1)")).click();
+    driver.findElement(By.id("bookmark")).click();
     driver.findElement(By.linkText("MY PROFILE")).click();
     driver.findElement(By.linkText("These Rats Drive Tiny Cars—for Science")).click();
-    driver.findElement(By.linkText("REMOVE BOOKMARK")).click();
+    driver.findElement(By.id("bookmark")).click();
     driver.findElement(By.linkText("MY PROFILE")).click();
     driver.findElement(By.linkText("HOME")).click();
-    driver.findElement(By.linkText("TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’")).click();
-    driver.findElement(By.linkText("ADD BOOKMARK")).click();
+    driver.findElement(By.cssSelector(".w3-white:nth-child(1)")).click();
+    driver.findElement(By.id("bookmark")).click();
     driver.findElement(By.linkText("MY PROFILE")).click();
-    driver.findElement(By.linkText("TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’")).click();
-    driver.findElement(By.linkText("MY PROFILE")).click();
-    driver.findElement(By.cssSelector(".removeButton")).click();
+    driver.findElement(By.cssSelector(".w3-container:nth-child(5) > .w3-right-align")).click();
+    assertThat(driver.switchTo().alert().getText(), is("Bookmark removed"));
     driver.findElement(By.linkText("HOME")).click();
-    driver.findElement(By.linkText("TikTok’s new set of safety videos teach users about features, the app’s focus on ‘positivity’")).click();
-    driver.findElement(By.linkText("ADD BOOKMARK")).click();
-    driver.findElement(By.linkText("REMOVE BOOKMARK")).click();
+    driver.findElement(By.cssSelector(".w3-white:nth-child(1)")).click();
   }
   @Test
-  public void candidateCampaignLinks() {
+  public void candidatesandCampaignLinks() {
     driver.get("https://electionessentials.appspot.com/candidates.php");
     driver.manage().window().setSize(new Dimension(1552, 840));
     driver.findElement(By.id("Michael Bennet")).click();
@@ -256,56 +233,77 @@ public class DefaultSuiteTest {
     driver.switchTo().window(vars.get("root").toString());
   }
   @Test
-  public void candidates() {
-    driver.get("https://electionessentials.appspot.com");
-    driver.manage().window().setSize(new Dimension(1552, 840));
+  public void navbars() {
+    driver.get("https://electionessentials.appspot.com/#loaded");
+    driver.manage().window().setSize(new Dimension(783, 824));
     driver.findElement(By.id("submit")).click();
     driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Michael\\ Bennet > .candidate-name")).click();
+    driver.findElement(By.linkText("HOME")).click();
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
+    driver.findElement(By.linkText("HOME")).click();
+    driver.findElement(By.linkText("MY PROFILE")).click();
+    driver.findElement(By.linkText("HOME")).click();
+    driver.findElement(By.linkText("ABOUT")).click();
     driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Joe\\ Biden img")).click();
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
     driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Cory\\ Booker img")).click();
     driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Steve\\ Bullock img")).click();
+    driver.findElement(By.linkText("ABOUT")).click();
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
+    driver.findElement(By.linkText("MY PROFILE")).click();
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
+    driver.findElement(By.linkText("ABOUT")).click();
+    driver.findElement(By.linkText("MY PROFILE")).click();
+    driver.findElement(By.linkText("ABOUT")).click();
+    driver.findElement(By.linkText("HOME")).click();
+    driver.findElement(By.cssSelector(".w3-white:nth-child(1)")).click();
+    driver.findElement(By.linkText("HOME")).click();
+    driver.findElement(By.cssSelector(".w3-white:nth-child(1)")).click();
     driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.id("Pete Buttigieg")).click();
+    driver.findElement(By.linkText("HOME")).click();
+    driver.findElement(By.cssSelector(".w3-white:nth-child(1)")).click();
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
+    driver.findElement(By.linkText("HOME")).click();
+    driver.findElement(By.cssSelector(".w3-white:nth-child(1)")).click();
+    driver.findElement(By.linkText("MY PROFILE")).click();
+    driver.findElement(By.linkText("HOME")).click();
+    driver.findElement(By.cssSelector(".w3-white:nth-child(1)")).click();
+    driver.findElement(By.linkText("ABOUT")).click();
     driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Julian\\ Castro img")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#John\\ Delaney img")).click();
+    driver.findElement(By.cssSelector("#Bernie\\ Sanders img")).click();
+    driver.findElement(By.linkText("HOME")).click();
     driver.findElement(By.linkText("CANDIDATES")).click();
     driver.findElement(By.cssSelector("#Tulsi\\ Gabbard img")).click();
     driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Kamala\\ Harris img")).click();
+    driver.findElement(By.cssSelector("#Julian\\ Castro img")).click();
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
     driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Amy\\ Klobuchar img")).click();
+    driver.findElement(By.cssSelector("#Pete\\ Buttigieg img")).click();
+    driver.findElement(By.linkText("MY PROFILE")).click();
     driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Wayne\\ Messam img")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Bernie\\ Sanders img")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Joe\\ Sestak img")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Tom\\ Steyer img")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Elizabeth\\ Warren img")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Marianne\\ Williamson img")).click();
-    driver.findElement(By.id("candidateName")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Andrew\\ Yang img")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Donald\\ Trump img")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Joe\\ Walsh img")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
-    driver.findElement(By.cssSelector("#Bill\\ Weld img")).click();
-    driver.findElement(By.linkText("CANDIDATES")).click();
+    driver.findElement(By.id("Steve Bullock")).click();
+    driver.findElement(By.linkText("ABOUT")).click();
+  }
+  @Test
+  public void nextandPreviousbuttons() {
+    driver.get("https://electionessentials.appspot.com//");
+    driver.manage().window().setSize(new Dimension(1552, 840));
+    driver.findElement(By.id("gun_violence")).click();
+    driver.findElement(By.id("lgbtq")).click();
+    driver.findElement(By.id("education")).click();
+    driver.findElement(By.id("submit")).click();
+    driver.findElement(By.id("next-page")).click();
+    driver.findElement(By.id("next-page")).click();
+    driver.findElement(By.id("next-page")).click();
+    driver.findElement(By.id("next-page")).click();
+    driver.findElement(By.id("prev-page")).click();
+    driver.findElement(By.id("prev-page")).click();
+    driver.findElement(By.id("prev-page")).click();
+    driver.findElement(By.id("prev-page")).click();
   }
   @Test
   public void savedessentialsloggedin() {
-    driver.get("https://electionessentials.appspot.com");
+    driver.get("https://electionessentials.appspot.com//");
     driver.manage().window().setSize(new Dimension(1552, 840));
     driver.findElement(By.id("lgbtq")).click();
     driver.findElement(By.id("gun_violence")).click();
@@ -324,24 +322,80 @@ public class DefaultSuiteTest {
     driver.findElement(By.linkText("HOME")).click();
   }
   @Test
-  public void twitterSharealreadyloggedin() {
-    driver.get("https://electionessentials.appspot.com");
-    driver.manage().window().setSize(new Dimension(1552, 840));
-    driver.findElement(By.id("jobs")).click();
+  public void votingInfo() {
+    driver.get("https://electionessentials.appspot.com/#loaded");
+    driver.manage().window().setSize(new Dimension(783, 824));
     driver.findElement(By.id("submit")).click();
-    driver.findElement(By.linkText("Jobs Are Plentiful. Big Pay Raises Aren’t.")).click();
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
+    driver.findElement(By.id("myInput")).click();
+    driver.findElement(By.id("myInput")).click();
+    driver.findElement(By.id("myInput")).sendKeys("Texas");
+    driver.findElement(By.id("myInput")).sendKeys(Keys.ENTER);
+    driver.findElement(By.linkText("CANDIDATES")).click();
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
+    driver.findElement(By.linkText("MY PROFILE")).click();
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
+    driver.findElement(By.linkText("ABOUT")).click();
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
+  }
+  @Test
+  public void twitterShare() {
+    driver.get("https://electionessentials.appspot.com/#loaded");
+    driver.manage().window().setSize(new Dimension(1536, 824));
     vars.put("window_handles", driver.getWindowHandles());
-    driver.findElement(By.cssSelector(".fa")).click();
-    vars.put("win4057", waitForWindow(2000));
+    driver.findElement(By.linkText("SHARE")).click();
+    vars.put("win2141", waitForWindow(2000));
     vars.put("root", driver.getWindowHandle());
-    driver.switchTo().window(vars.get("win4057").toString());
-    driver.findElement(By.cssSelector(".button")).click();
+    driver.switchTo().window(vars.get("win2141").toString());
     driver.close();
     driver.switchTo().window(vars.get("root").toString());
-    {
-      WebElement element = driver.findElement(By.linkText("VOTER INFORMATION"));
-      Actions builder = new Actions(driver);
-      builder.moveToElement(element).perform();
-    }
+    driver.findElement(By.id("submit")).click();
+    vars.put("window_handles", driver.getWindowHandles());
+    driver.findElement(By.linkText("SHARE")).click();
+    vars.put("win3970", waitForWindow(2000));
+    driver.switchTo().window(vars.get("win3970").toString());
+    driver.close();
+    driver.switchTo().window(vars.get("root").toString());
+    driver.findElement(By.cssSelector(".w3-white:nth-child(1)")).click();
+    vars.put("window_handles", driver.getWindowHandles());
+    driver.findElement(By.linkText("SHARE")).click();
+    vars.put("win9920", waitForWindow(2000));
+    driver.switchTo().window(vars.get("win9920").toString());
+    driver.close();
+    driver.switchTo().window(vars.get("root").toString());
+    vars.put("window_handles", driver.getWindowHandles());
+    driver.findElement(By.linkText("CANDIDATES")).click();
+    vars.put("win5821", waitForWindow(2000));
+    driver.switchTo().window(vars.get("win5821").toString());
+    driver.close();
+    driver.switchTo().window(vars.get("root").toString());
+    driver.findElement(By.cssSelector("#Cory\\ Booker img")).click();
+    vars.put("window_handles", driver.getWindowHandles());
+    driver.findElement(By.linkText("SHARE")).click();
+    vars.put("win4485", waitForWindow(2000));
+    driver.switchTo().window(vars.get("win4485").toString());
+    driver.close();
+    driver.switchTo().window(vars.get("root").toString());
+    driver.findElement(By.linkText("VOTER INFORMATION")).click();
+    vars.put("window_handles", driver.getWindowHandles());
+    driver.findElement(By.linkText("SHARE")).click();
+    vars.put("win6918", waitForWindow(2000));
+    driver.switchTo().window(vars.get("win6918").toString());
+    driver.close();
+    driver.switchTo().window(vars.get("root").toString());
+    driver.findElement(By.linkText("MY PROFILE")).click();
+    vars.put("window_handles", driver.getWindowHandles());
+    driver.findElement(By.linkText("SHARE")).click();
+    vars.put("win1278", waitForWindow(2000));
+    driver.switchTo().window(vars.get("win1278").toString());
+    driver.close();
+    driver.switchTo().window(vars.get("root").toString());
+    driver.findElement(By.linkText("ABOUT")).click();
+    vars.put("window_handles", driver.getWindowHandles());
+    driver.findElement(By.linkText("SHARE")).click();
+    vars.put("win3667", waitForWindow(2000));
+    driver.switchTo().window(vars.get("win3667").toString());
+    driver.close();
+    driver.switchTo().window(vars.get("root").toString());
   }
 }
