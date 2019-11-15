@@ -23,7 +23,7 @@
                     var totalCommits = 0;
                     $(repos).each(function() {
                         if(myMap.has(this.login)){
-                            var output = '<ul>';
+                            var output = '<ul style="padding-left:30px">';
                             output += '<li>Commits: ' + this.contributions +
                                 '<li>Issues: 0' +
                                     '<li>Test Cases 0' +
@@ -71,7 +71,7 @@
           </div>
         <?php include 'login.php';?>
         <div id='aboutInfo'>
-            <h1 align='center' style='margin-top: 30px;'> About Us </h1>
+            <h1 align='center' style='padding-top: 20px;'> About Us </h1>
             <br>
             <h2>Team Lion</h2>
             <br>
