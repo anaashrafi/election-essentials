@@ -32,6 +32,7 @@
 </script>
 <li><div id="sign-in" class="g-signin2 google-button" data-onsuccess="sign"></div>
 
+
 <!--------------------------------------------------------
 hotfix for signout button to look like signin button
 ---------------------------------------------------------->

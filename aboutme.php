@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'> </script> 
     <html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
@@ -23,7 +26,7 @@
                     var totalCommits = 0;
                     $(repos).each(function() {
                         if(myMap.has(this.login)){
-                            var output = '<ul>';
+                            var output = '<ul style="padding-left:30px">';
                             output += '<li>Commits: ' + this.contributions +
                                 '<li>Issues: 0' +
                                     '<li>Test Cases 0' +
@@ -60,7 +63,7 @@
   				<li><a href='voting_info.php'> VOTER INFORMATION </a></li>
                 <li><a 
                   <?php 
-                    if($_SESSION['user'] == 'Anon1'){
+                    if($_SESSION['user'] == 'Anon1' || $_SESSION['user'] == ''){
                         echo "href='' onclick='noAccess()'> MY PROFILE </a></li>";
                     }else{
                         echo "href='user_profile.php'> MY PROFILE </a></li>";
@@ -71,7 +74,7 @@
           </div>
         <?php include 'login.php';?>
         <div id='aboutInfo'>
-            <h1 align='center' style='margin-top: 30px;'> About Us </h1>
+            <h1 align='center' style='padding-top: 20px;'> About Us </h1>
             <br>
             <h2>Team Lion</h2>
             <br>

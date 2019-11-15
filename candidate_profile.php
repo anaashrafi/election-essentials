@@ -44,7 +44,7 @@
   				<li><a href='voting_info.php'> VOTER INFORMATION </a></li>
                 <li><a 
                   <?php 
-                    if($_SESSION['user'] == 'Anon1'){
+                    if($_SESSION['user'] == 'Anon1' || $_SESSION['user'] == ''){
                         echo "href='' onclick='noAccess()'> MY PROFILE </a></li>";
                     }else{
                         echo "href='user_profile.php'> MY PROFILE </a></li>";
@@ -55,55 +55,46 @@
           </div>
 
           <?php include 'login.php';?>
-          <?php echo"
+    </header>
 
-      <div id='candidateName'>
+    <div id='candidateName'>
         <br>
-  			<p>".$all[0]['Candidate_Name']."</p>
+  		    <p><?php echo $all[0]['Candidate_Name']; ?></p>
         <br>
-  		</div>
+  	</div>
 
-      <div id='candidatePicture'> <!---cards are a href to make the whole thing clickable --->
-      <!---------------------------------------------------------------------------------------
-        image needs to be another column 
-        ------------------------------------------------------------------------------------>
-        <img src=".$all[0]['Profile_Pic']." alt=".$all[0]['Candidate_Name']."></img>
-      </div>
+    <div id='candidatePicture'>
+        <img src="<?php echo $all[0]['Profile_Pic']; ?>" alt="<?php echo $all[0]['Candidate_Name']; ?>"></img>
+    </div>
 
-      <br>
+    <br>
 
-      <div id='candidateStance'>
+    <div id='candidateStance'>
         <br>
         <div style='display: inline-block; text-align:left;'>
-          <p>
-            Jobs/Wages: Leans " .$all[0]['Jobs_Wages']."<br>
-            Taxes: Leans " .$all[0]['Taxes']."<br>
-            Criminal Justice System: Leans " .$all[0]['Criminal_Justice_System']."<br>
-            Healthcare: Leans ".$all[0]['Healthcare']."<br>
-            Reproductive Issues: Leans " .$all[0]['Reproductive_Issues']."<br>
-            Environment: Leans " .$all[0]['Environment']."<br>
-            Immigration: Leans " .$all[0]['Immigration']."<br>
-            Education: Leans " .$all[0]['Education']."<br>
-            LGBTQ+ Issues: Leans ".$all[0]['LGBTQ']."<br>
-            Gun Laws: Leans " .$all[0]['Gun_Violence']."<br>
+            <p>
+                Jobs/Wages: Leans <?php echo $all[0]['Jobs_Wages']; ?><br>
+                Taxes: Leans <?php echo $all[0]['Taxes']; ?><br>
+                Criminal Justice System: Leans <?php echo $all[0]['Criminal_Justice_System']; ?><br>
+                Healthcare: Leans <?php echo $all[0]['Healthcare']; ?><br>
+                Reproductive Issues: Leans <?php echo $all[0]['Reproductive_Issues']; ?><br>
+                Environment: Leans <?php echo $all[0]['Environment']; ?><br>
+                Immigration: Leans <?php echo $all[0]['Immigration']; ?><br>
+                Education: Leans <?php echo $all[0]['Education']; ?><br>
+                LGBTQ+ Issues: Leans <?php echo $all[0]['LGBTQ']; ?><br>
+                Gun Laws: Leans <?php echo $all[0]['Gun_Violence']; ?><br>
           </p>
-          </div>
+        </div>
         <br>
-      </div>
+    </div>
 
-      <div id='learnMore'>
+    <div id='learnMore'>
         <br>
         <p>
-          Learn more about ".$all[0]['Candidate_Name']."'s campaign 
-          <!---------------------------------------------------------------------------------------
-        website link needs to be another column 
-        ------------------------------------------------------------------------------------>
-            <a href= '".$all[0]['Website']."' target='_blank'>here</a>.
+            Learn more about <?php echo $all[0]['Candidate_Name']; ?>'s campaign 
+            <a href= '<?php echo $all[0]['Website']; ?>' target='_blank'>here</a>.
         </p>
         <br>
-      </div>
-    </header>
+    </div>
   </body> 
-</html> "
-
-    ?>
+</html>
