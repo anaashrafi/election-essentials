@@ -18,30 +18,11 @@
         right: 20px;
       }
 
-    .fa-twitter {
-        background: #55ACEE;
-        color: white;
-    }
-
-    .fa {
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        position:absolute;
-        top:60px;
-        right:20px;
-    }
-
-    .fa:hover {
-        opacity: 0.7;
-    }
 </style>
 
 <body>
 
-<a href="" onclick="twitterShare()" class="fa fa-twitter" ></a>
+<li><a href="" onclick="twitterShare()" >SHARE</a></li>
 <script>
     function twitterShare(){
         var url = "https://twitter.com/intent/tweet?url="+window.location.toString().replace(/\?/gi,"%3F").replace(/=/gi,"%3D").replace(/%20/gi,"%2520");
@@ -49,8 +30,7 @@
         window.open(url, '',width=600,height=300);
     }
 </script>
-
-<div id="sign-in" class="g-signin2 google-button" data-onsuccess="sign"></div>
+<li><div id="sign-in" class="g-signin2 google-button" data-onsuccess="sign"></div>
 
 <!--------------------------------------------------------
 hotfix for signout button to look like signin button
@@ -67,8 +47,7 @@ hotfix for signout button to look like signin button
         <span id="not_signed_ino2ldjj120ba7" style="">Sign out</span>
         </span>
     </div>
-</a>
-
+</a></li>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script> 
 <script type="text/javascript">
