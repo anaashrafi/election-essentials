@@ -123,16 +123,33 @@ class TestCalc(unittest.TestCase):
         output = webScraperFunctions.getTitle("Jobs", 10)
         self.assertTrue(output == "article number too high")
 
+
     def test_getData(self):
         db = dbFunctions.databaseConnect(host, username, password)
         dbFunctions.tableCreate(db, tablename, primarykey, primaryType, secondarykey, secondaryType)
         values = ["var1", "var2", "var3"]
         dbFunctions.insertData(db, tablename, values)
         output = dbFunctions.read(db, tablename, "val1", "primvar", "var1")
-        self.assertTrue(output == "var2")
+        self.assertTrue(output[0][0] == "var2")
         dbFunctions.tableDestroy(db, tablename)
 
+    def test_getData_wrong_table(self):
+        db = dbFunctions.databaseConnect(host, username, password)
+        dbFunctions.tableCreate(db, tablename, primarykey, primaryType, secondarykey, secondaryType)
+        values = ["var1", "var2", "var3"]
+        dbFunctions.insertData(db, tablename, values)
+        output = dbFunctions.read(db, "faketable", "val1", "primvar", "var1")
+        self.assertTrue(output == "wrong column or tablename")
+        dbFunctions.tableDestroy(db, tablename)
 
+    def test_getData_wrong_column(self):
+        db = dbFunctions.databaseConnect(host, username, password)
+        dbFunctions.tableCreate(db, tablename, primarykey, primaryType, secondarykey, secondaryType)
+        values = ["var1", "var2", "var3"]
+        dbFunctions.insertData(db, tablename, values)
+        output = dbFunctions.read(db, tablename, "val1", "primvar", "vaar1")
+        self.assertTrue(output == "filter value doesn't exist")
+        dbFunctions.tableDestroy(db, tablename)
 
 
 
