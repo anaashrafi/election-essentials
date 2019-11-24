@@ -61,7 +61,7 @@
 </header>
 
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for state info...">
+<input type="text" id="myInput" onkeyup="votingFilter()" placeholder="Search for state info...">
 
 <div id = 'state-dates'></div>
 
@@ -73,7 +73,7 @@
 </html>
 
 <script>
-function myFunction() {
+function votingFilter() {
   // Declare variables
   var input, filter, ul, li, a, i, txtValue;
   input = document.getElementById('myInput');

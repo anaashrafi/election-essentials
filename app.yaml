@@ -61,7 +61,7 @@ handlers:
 - url: /user_preference_main_factory\.php
   script: user_preference_main_factory.php  
 - url: /
-  static_dir: proposal
+  static_dir: static_files
 
 env_variables:
   MYSQL_DSN: mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata
