@@ -34,9 +34,9 @@
                   ?>
   				<li><a href='aboutme.php'> ABOUT </a></li>
                 <?php
-                    $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
-                    $user = 'duttaadri2014@gmail.com';
-                    $db = new PDO($dsn, $user);
+                    require "connection.php";
+                    $connect = Connection::getInstance();
+                    $db = $connect->getDB();
                     $statement = $db->prepare("use Election_Essentials;");
                     $statement->execute();
                     $check = "Select * from Us_Bo_Ma Where Username = '".$_SESSION['user']."' and Article = '".$_REQUEST['title']."';";
@@ -89,9 +89,8 @@
 
 <?php
 
-      $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
-      $user = 'duttaadri2014@gmail.com';
-      $db = new PDO($dsn, $user);
+      $connect = Connection::getInstance();
+      $db = $connect->getDB();
       $statement = $db->prepare("use Election_Essentials;");
       $statement->execute();
 

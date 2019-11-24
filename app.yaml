@@ -40,8 +40,8 @@ handlers:
 - url: /bookmark_keeping\.php
   script: bookmark_keeping.php
 
-- url: /sanders_profile\.php
-  script: sanders_profile.php
+- url: /connection\.php
+  script: connection.php
 
 - url: /trump_profile\.php
   script: trump_profile.php
@@ -52,6 +52,14 @@ handlers:
 - url: /preference_send\.php
   script: preference_send.php
 
+- url: /send_data_form\.php
+  script: send_data_form.php
+
+- url: /user_preference_factory\.php
+  script: user_preference_factory.php
+
+- url: /user_preference_main_factory\.php
+  script: user_preference_main_factory.php  
 - url: /
   static_dir: proposal
 

@@ -7,26 +7,26 @@
     <link href="candidate_profile_style.css" rel="stylesheet" type="text/css">
 
     <?php
-    //jquery/php attempt
-    //echo $_REQUEST['candidate'] . "<br>";
-    $getData = "select * from Candidate_To_Stance where Candidate_Name = '" . $_REQUEST['candidate']  . "';";
-    //$getData = "select * from Candidate_To_Stance where Candidate_Name = 'Tim Ryan';";
-    //echo $getData;
-    $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
-    $user = 'duttaadri2014@gmail.com';
-    $db = new PDO($dsn, $user);
-    $statement = $db->prepare("use Election_Essentials;");
-    $statement->execute();
-    $statement = $db->prepare($getData);
-    $statement->execute();
-    $all = $statement->fetchAll();
-    //echo "something is something<p/>";
-    //var_dump($all);
-/********************************************************************
-    $all contains the row, to call individual things do $all[0]['Candidate_Name'], where 0 is the row (should only be 1 row) 
-    and 'Candidate_Name is the column header name
-*******************************************************/
-	//echo $all[0]['Economy']."<br>";
+        //jquery/php attempt
+        //echo $_REQUEST['candidate'] . "<br>";
+        $getData = "select * from Candidate_To_Stance where Candidate_Name = '" . $_REQUEST['candidate']  . "';";
+        //$getData = "select * from Candidate_To_Stance where Candidate_Name = 'Tim Ryan';";
+        //echo $getData;
+        require "connection.php";
+        $connect = Connection::getInstance();
+        $db = $connect->getDB();
+        $statement = $db->prepare("use Election_Essentials;");
+        $statement->execute();
+        $statement = $db->prepare($getData);
+        $statement->execute();
+        $all = $statement->fetchAll();
+        //echo "something is something<p/>";
+        //var_dump($all);
+    /********************************************************************
+        $all contains the row, to call individual things do $all[0]['Candidate_Name'], where 0 is the row (should only be 1 row) 
+        and 'Candidate_Name is the column header name
+    *******************************************************/
+        //echo $all[0]['Economy']."<br>";
      
  ?> </head>
 

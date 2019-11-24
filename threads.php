@@ -1,8 +1,8 @@
   <?php
     session_start();
-      $dsn = 'mysql:unix_socket=/cloudsql/backend-256601:us-central1:database;dbname=testdata';
-      $user = 'duttaadri2014@gmail.com';                                            //'.$_SESSION['user'].'";'
-      $db = new PDO($dsn, $user);
+      require "connection.php";
+      $connect = Connection::getInstance();
+      $db = $connect->getDB();
       $statement = $db->prepare("use Election_Essentials;");       
       $statement->execute();
 
