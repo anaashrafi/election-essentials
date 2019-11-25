@@ -1,5 +1,7 @@
 <?php
     session_start();
+    const checked = 1;
+    const unchecked = 0;
 ?>
 
 
@@ -21,54 +23,54 @@
             $count = $statement->rowCount();
 
             if($_SESSION['Jobs_Wages'] == "true"){
-                $jobs = 1;
+                $jobs = checked;
             }else{
-                $jobs = 0;
+                $jobs = unchecked;
             }
             if($_SESSION['Taxes'] == "true"){
-                $taxes = 1;
+                $taxes = checked;
             }else{
-                $taxes = 0;
+                $taxes = unchecked;
             }
             if($_SESSION['Criminal_Justice_System'] == "true"){
-                $cjs = 1;
+                $cjs = checked;
             }else{
-                $cjs = 0;
+                $cjs = unchecked;
             }
             if($_SESSION['Healthcare'] == "true"){
-                $healthcare = 1;
+                $healthcare = checked;
             }else {
-                $healthcare = 0;
+                $healthcare = unchecked;
             }
             if($_SESSION['Reproductive_Issues'] == "true"){
-                $reproductive_issues = 1;
+                $reproductive_issues = checked;
             }else{
-                $reproductive_issues = 0;
+                $reproductive_issues = unchecked;
             }
             if($_SESSION['Environment'] == "true"){
-                $environment = 1;
+                $environment = checked;
             }else{
-                $environment = 0;
+                $environment = unchecked;
             }
             if($_SESSION['Immigration'] == "true"){
-                $immigration = 1;
+                $immigration = checked;
             }else{
-                $immigration = 0;
+                $immigration = unchecked;
             }
             if($_SESSION['Education'] == "true"){
-                $education = 1;
+                $education = checked;
             }else{
-                $education = 0;
+                $education = unchecked;
             }
             if($_SESSION['LGBTQ'] == "true"){
-                $lgbtq = 1;
+                $lgbtq = checked;
             }else{
-                $lgbtq = 0;
+                $lgbtq = unchecked;
             }
             if($_SESSION['Gun_Violence'] == "true"){
-                $gun_violence = 1;
+                $gun_violence = checked;
             }else{
-                $gun_violence = 0;
+                $gun_violence = unchecked;
             }
 
             if($count == 0){
