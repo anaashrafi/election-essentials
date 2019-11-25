@@ -1,0 +1,103 @@
+/* Makes everything touch the edges of the screen*/
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* Background Image*/
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(background.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+/*Makes our tabs centered on screen*/
+.table{
+	display: table;
+	margin: 0 auto;
+  grid-column-start:2;
+	/*margin-top: 25px;*/
+}
+
+
+/*Makes our ordered list into horizontal tabs*/
+.nav-tabs li
+{
+	display: inline-block;
+	margin-top: 25px;
+}
+
+/*tabs text formatting*/
+.nav-tabs li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	transition: 0.45s ease;
+}
+
+/*Shows that the home page is the active page atm*/
+.nav-tabs li.active-tab a
+{
+	border: 1px solid white;	/*Creates border around HOME*/
+
+}
+
+.nav-tabs a:hover{
+	background-color: white;
+	color: black;
+}
+
+
+#registration {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background: rgba(225, 225, 225, .8);
+}
+
+#myInput {
+  display: block;
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 80%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}

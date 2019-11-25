@@ -1,0 +1,56 @@
+		/*Style for overall card layout*/
+		#cards {
+			width: 60%;
+			margin-left: 20%;
+			margin-right: 20%;
+			margin-top: 20px;
+			
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 120px); /*auto fills columns so it adapts to window size*/
+			grid-gap: 20px;
+			justify-content: center;
+		}
+		
+		/*Style for the individual cards*/
+		.candidate-card {
+			padding: 10px;
+			border-radius: 10px;
+			display: grid;
+			grid-template-areas: 'picture' 'name';
+			grid-template-columns: 100px;
+			
+			grid-template-rows: 100px 2.5em;
+			box-shadow: -5px 5px 5px gray;
+		}
+		.candidate-card:hover {
+			opacity: 0.9;
+		}
+		
+		/*For candidate pictures, just pulling from twitter for now*/
+		.candidate-picture {
+			grid-area: picture;
+		}
+
+		img {
+			height: 100px;
+			width: 100px;
+			border-radius: 10px;
+		}
+		
+		/*Candidate name text*/
+		.candidate-name {
+			margin-top: 10px;
+			font-size: 15px;
+			grid-area: name;
+			text-align: center;
+		}
+		
+		/*Differentiating candidates by party*/
+		.republican {
+			background-color: rgb(236, 196, 196);
+			border-color: red;
+		}
+		.democrat {
+			background-color: rgb(205, 227, 239);
+			border-color: blue;
+		}

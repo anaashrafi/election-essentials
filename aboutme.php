@@ -6,15 +6,15 @@
     <html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
     <script type='text/javascript'>
         function getGitStats(){
-            var myMap = new Map();
+            var contributorsMap = new Map();
             // setting the values
-            myMap.set('ple', 'Phat Le');
-            myMap.set('anaashrafi', 'Ana Ashrafi');
-            myMap.set('AustinDuong', 'Austin Duong');
-            myMap.set('RoyceHong', 'Royce Hong');
-            myMap.set('adridutta', 'Adri Dutta');
-            myMap.set('GeorgeZhang98', 'George Zhang');
-            var obj = $.getJSON('https://api.github.com/repos/anaashrafi/Election-Essentials/contributors',
+            contributorsMap.set('ple', 'Phat Le');
+            contributorsMap.set('anaashrafi', 'Ana Ashrafi');
+            contributorsMap.set('AustinDuong', 'Austin Duong');
+            contributorsMap.set('RoyceHong', 'Royce Hong');
+            contributorsMap.set('adridutta', 'Adri Dutta');
+            contributorsMap.set('GeorgeZhang98', 'George Zhang');
+            $.getJSON('https://api.github.com/repos/anaashrafi/Election-Essentials/contributors',
                 function(data, err) {
                     if (err !== 'success') {
                     //   x.innerHTML = 'Err';
@@ -25,7 +25,7 @@
                     var repos = data;
                     var totalCommits = 0;
                     $(repos).each(function() {
-                        if(myMap.has(this.login)){
+                        if(contributorsMap.has(this.login)){
                             var output = '<ul style="padding-left:30px">';
                             output += '<li>Commits: ' + this.contributions +
                                 '<li>Issues: 0' +
@@ -33,7 +33,7 @@
                             '</li></li></li>';
                             totalCommits += this.contributions;
                             output += '</ul>';
-                            document.getElementById(myMap.get(this.login)+'-stats').innerHTML=output;
+                            document.getElementById(contributorsMap.get(this.login)+'-stats').innerHTML=output;
                         }
                     });
                     document.getElementById('stats').innerHTML='<p> Commits: ' + totalCommits +

@@ -1,6 +1,8 @@
   <?php
     session_start();
       require "connection.php";
+      const isSelected = 1;
+
       $connect = Connection::getInstance();
       $db = $connect->getDB();
       $statement = $db->prepare("use Election_Essentials;");       
@@ -40,52 +42,52 @@
 
       $informEssentials = "Here are articles that talk about";
 
-      if ($jobs == 1 || $jobs == "true"){
+      if ($jobs == isSelected || $jobs == "true"){
         $getArticles .= ' or Essential = "Jobs"';
         $informEssentials .= " Jobs,";
       }
 
-      if ($taxes == 1 || $taxes == "true"){
+      if ($taxes == isSelected || $taxes == "true"){
         $getArticles .= ' or Essential = "Taxes"';
         $informEssentials .= " Taxes,";
       }
 
-      if ($cjs == 1 || $cjs == "true"){
+      if ($cjs == isSelected || $cjs == "true"){
         $getArticles .= ' or Essential = "CJS"'; 
         $informEssentials .= " Criminal Justice System,";
       }
 
-      if ($healthcare == 1 || $healthcare == "true"){
+      if ($healthcare == isSelected || $healthcare == "true"){
         $getArticles .= ' or Essential = "Healthcare"';
         $informEssentials .= " Healthcare,";
       }
 
-      if ($reproductive_issues == 1 || $reproductive_issues == "true"){
+      if ($reproductive_issues == isSelected || $reproductive_issues == "true"){
         $getArticles .= ' or Essential = "Reproductive Issues"';
         $informEssentials .= " Reproductive Issues,";
       }
 
-      if ($environment == 1 || $environment == "true"){
+      if ($environment == isSelected || $environment == "true"){
         $getArticles .= ' or Essential = "Environment"';
         $informEssentials .= " Enviroment,";
       }
 
-      if ($immigration == 1 || $immigration == "true"){
+      if ($immigration == isSelected || $immigration == "true"){
         $getArticles .= ' or Essential = "Immigration"';
         $informEssentials .= " Immigration,";
       }
 
-      if ($education == 1 || $education == "true"){
+      if ($education == isSelected || $education == "true"){
         $getArticles .= ' or Essential = "Education"';
         $informEssentials .= " Education,";
       }
 
-      if ($lgbtq == 1 || $lgbtq == "true"){
+      if ($lgbtq == isSelected || $lgbtq == "true"){
         $getArticles .= ' or Essential = "LGBTQ"';
         $informEssentials .= " LGBTQ+,";
       }
 
-      if ($gun_violence == 1 || $gun_violence == "true"){
+      if ($gun_violence == isSelected || $gun_violence == "true"){
         $getArticles .= ' or Essential = "Gun Violence"';
         $informEssentials .= " Gun Violence,";
       }      
