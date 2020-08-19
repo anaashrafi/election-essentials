@@ -14,7 +14,7 @@ HTML | CSS | JavaScript | PHP | Python | JQuery | MySQL | Google Cloud Platform
 * [Voting Information by State](#voting-information-by-state)
 
 ### Google Sign-In
-Upon entry of our website, you will see different political topics that you can select from. Once you select the topics that matter the most to you, you will be given relevant new articles on those topics. If you want to save your selections for the future, you can sign-in with a Google account and it will save all of your activity in your user profile.
+Upon entry of our website, you will see different political topics that you can select from. Once you select the topics that matter most to you, you will be given relevant news articles on those topics. If you want to save your selections for the future, you can sign-in with a Google account and it will save all of your activity in your user profile.
 
 ![Homepage](essentials.png)
 
@@ -26,7 +26,7 @@ Once you submit your essentials, you'll be taken to your news feed, which displa
 
 ![News Feed](newsfeed.png)
 
-You can click on any article to view its contents without leaving our site.
+You can click on any article to view its contents within our site.
 
 ![Article](article.png)
 
